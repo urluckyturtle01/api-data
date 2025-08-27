@@ -9,13 +9,12 @@
       "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13448/results.json",
       "apiKey": "enfT00LNZEyisrWZh1mcgCLaPvcddY6r4nqlyN5J",
       "title": "Avg & Median Cu Price",
-      "subtitle": "Includes all non-vote transactions (successful and failed).....jj",
+      "subtitle": "Includes all non-vote transactions (successful and failed).....jj hello",
       "page": "compute-units",
       "pageName": "Compute Units",
       "menuId": "compute-units",
       "menuName": "Compute Units",
       "id": "api-0",
-      //qsgvqhqvhg
       "responseColumns": [
         {
           "name": "partition_0",
