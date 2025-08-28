@@ -8181,61 +8181,62 @@
       "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13798/results.json",
       "apiKey": "20klT9XAM7tquzMqHrfWwcuZDzU8nABon5Nh9DCx",
       "title": "Volume",
-      "subtitle": "",
+      "subtitle": "Daily trading activity and cumulative growth of xStocks (tokenized U.S. equities) on the Solana blockchain",
       "page": "xstocks-traction",
       "pageName": "Traction",
       "menuId": "xstocks",
       "menuName": "xStocks",
       "id": "api-213",
       "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-25"
-        },
-        {
-          "name": "trades",
-          "type": "uint",
-          "description": "trades field containing integer data for application-specific processing and analysis",
-          "example": "2393"
-        },
-        {
-          "name": "cumulative_trades",
-          "type": "uint",
-          "description": "cumulative_trades field containing integer data for application-specific processing and analysis",
-          "example": "827150"
-        },
-        {
-          "name": "traders",
-          "type": "uint",
-          "description": "traders field containing integer data for application-specific processing and analysis",
-          "example": "335"
-        },
-        {
-          "name": "new_traders",
-          "type": "uint",
-          "description": "new_traders field containing integer data for application-specific processing and analysis",
-          "example": "13"
-        },
-        {
-          "name": "cumulative_traders",
-          "type": "uint",
-          "description": "cumulative_traders field containing integer data for application-specific processing and analysis",
-          "example": "39659"
-        },
-        {
-          "name": "volume_usd",
-          "type": "null",
-          "description": "Null or undefined value indicating missing, unknown, or not applicable data"
-        },
-        {
-          "name": "cumulative_volume",
-          "type": "decimal",
-          "description": "Volume field measuring transaction throughput, capacity, or market activity",
-          "example": "183868043.49164757"
-        }
-      ],
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "The calendar date (daily granularity) when xStocks trading activity on Solana was recorded.",
+      "example": "2025-08-25"
+    },
+    {
+      "name": "trades",
+      "type": "uint",
+      "description": "The total number of trades executed across all xStocks on Solana for the given date.",
+      "example": "2393"
+    },
+    {
+      "name": "cumulative_trades",
+      "type": "uint",
+      "description": "The running total number of trades executed across all xStocks on Solana up to and including the given date.",
+      "example": "827150"
+    },
+    {
+      "name": "traders",
+      "type": "uint",
+      "description": "The number of unique wallet addresses that traded xStocks on Solana during the given date.",
+      "example": "335"
+    },
+    {
+      "name": "new_traders",
+      "type": "uint",
+      "description": "The number of first-time wallet addresses that began trading xStocks on Solana on the given date.",
+      "example": "13"
+    },
+    {
+      "name": "cumulative_traders",
+      "type": "uint",
+      "description": "The running total number of unique wallet addresses that have ever traded xStocks on Solana up to and including the given date.",
+      "example": "39659"
+    },
+    {
+      "name": "volume_usd",
+      "type": "decimal",
+      "description": "The total trading volume of xStocks on Solana for the given date, denominated in USD. (May be null if data is missing).",
+      "example": "1582739.42"
+    },
+    {
+      "name": "cumulative_volume",
+      "type": "decimal",
+      "description": "The running total trading volume of xStocks on Solana, denominated in USD, up to and including the given date.",
+      "example": "183868043.49164757"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.887Z"
     },
@@ -8243,43 +8244,43 @@
       "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13800/results.json",
       "apiKey": "D8qevDhHHS5wUoegABX72UQUsFYjBEzngJ8rjamR",
       "title": "Volume By Asset",
-      "subtitle": "",
+      "subtitle": "The daily trading activity of individual xStocks (tokenized U.S. equities) on Solana, including trades, traders, and volume",
       "page": "xstocks-traction",
       "pageName": "Traction",
       "menuId": "xstocks",
       "menuName": "xStocks",
       "id": "api-214",
       "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-24"
-        },
-        {
-          "name": "mint",
-          "type": "text",
-          "description": "Token mint address controlling supply, metadata, and minting authority on Solana",
-          "example": "MCDx"
-        },
-        {
-          "name": "trades",
-          "type": "uint",
-          "description": "trades field containing integer data for application-specific processing and analysis",
-          "example": "1"
-        },
-        {
-          "name": "traders",
-          "type": "uint",
-          "description": "traders field containing integer data for application-specific processing and analysis",
-          "example": "1"
-        },
-        {
-          "name": "volume_usd",
-          "type": "decimal",
-          "description": "volume_usd field containing float data for application-specific processing and analysis",
-          "example": "3.0719087919612673"
-        }
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "The calendar date (daily granularity) when the asset-level trading activity of xStocks on Solana was recorded.",
+      "example": "2025-08-24"
+    },
+    {
+      "name": "mint",
+      "type": "text",
+      "description": "The identifier (ticker or mint symbol) of the specific xStock token on Solana, e.g., MCDx for McDonald’s.",
+      "example": "MCDx"
+    },
+    {
+      "name": "trades",
+      "type": "uint",
+      "description": "The total number of trades executed for the given xStock on that day.",
+      "example": "1"
+    },
+    {
+      "name": "traders",
+      "type": "uint",
+      "description": "The number of unique wallet addresses that traded the given xStock on that day.",
+      "example": "1"
+    },
+    {
+      "name": "volume_usd",
+      "type": "decimal",
+      "description": "The total trading volume of the given xStock on Solana for that day, denominated in USD.",
+      "example": "3.0719087919612673"
+    }
       ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.887Z"
@@ -8288,7 +8289,7 @@
       "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13820/results.json",
       "apiKey": "91oZw6oUPyaDyz89IsoVYSxQ1vO4cVlmS78sEXpE",
       "title": "Volume By Day Of Week",
-      "subtitle": "",
+      "subtitle": "Distribution of xStocks (tokenized U.S. equities) trading volume across days of the week on Solana",
       "page": "xstocks-traction",
       "pageName": "Traction",
       "menuId": "xstocks",
@@ -8298,19 +8299,19 @@
         {
           "name": "day_of_week",
           "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
+          "description": "The day of the week (Monday–Sunday) for which xStocks trading activity on Solana is aggregated.",
           "example": "Monday"
         },
         {
           "name": "volume_USD",
           "type": "decimal",
-          "description": "volume_USD field containing float data for application-specific processing and analysis",
+          "description": "The total trading volume of xStocks on Solana for the given day of the week, denominated in USD.",
           "example": "33679216.847853564"
         },
         {
           "name": "% volume",
           "type": "decimal",
-          "description": "Volume field measuring transaction throughput, capacity, or market activity",
+          "description": "The percentage share of trading volume for that day of the week relative to the total weekly xStocks volume.",
           "example": "18.27590844982035"
         }
       ],
@@ -8321,7 +8322,7 @@
       "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13805/results.json",
       "apiKey": "Fwa8vT15hbyRxbpLhOnQNQQ0HXN0LcNn8VTQ7pb4",
       "title": "Volume By Hour",
-      "subtitle": "",
+      "subtitle": "Shows the hourly trading volume of xStocks (tokenized U.S. equities) on the Solana blockchain",
       "page": "xstocks-traction",
       "pageName": "Traction",
       "menuId": "xstocks",
@@ -8331,19 +8332,19 @@
         {
           "name": "hour",
           "type": "uint",
-          "description": "hour field containing integer data for application-specific processing and analysis",
+          "description": "The hour of the day (0–23, UTC) during which xStocks trading activity on Solana was measured.",
           "example": "0"
         },
         {
           "name": "volume_USD",
           "type": "decimal",
-          "description": "volume_USD field containing float data for application-specific processing and analysis",
+          "description": "The total trading volume of xStocks during the given hour, denominated in USD.",
           "example": "4913387.131718233"
         },
         {
           "name": "% volume",
           "type": "decimal",
-          "description": "Volume field measuring transaction throughput, capacity, or market activity",
+          "description": "The percentage share of the given hour’s trading volume relative to the total daily xStocks volume.",
           "example": "2.6827374061117433"
         }
       ],
@@ -8354,59 +8355,59 @@
       "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13811/results.json",
       "apiKey": "wgLJTpxiFdZvIcBq0sWtxBblW0Keb7xTJQDUWfFf",
       "title": "Asset Wise TVL",
-      "subtitle": "",
+      "subtitle": "Tracks the daily total value locked (TVL) for each individual xStock (tokenized U.S. equity) on Solana",
       "page": "xstocks-tvl",
       "pageName": "TVL",
       "menuId": "xstocks",
       "menuName": "xStocks",
       "id": "api-217",
       "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-23"
-        },
-        {
-          "name": "asset",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "TSLAx"
-        },
-        {
-          "name": "tvl",
-          "type": "decimal",
-          "description": "tvl field containing float data for application-specific processing and analysis",
-          "example": "922928.6590439291"
-        }
-      ],
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "The calendar date (daily granularity) when the asset-wise xStocks TVL snapshot was recorded on Solana.",
+      "example": "2025-08-23"
+    },
+    {
+      "name": "asset",
+      "type": "text",
+      "description": "The ticker symbol of the tokenized stock or ETF (xStock) on Solana, e.g. TSLAx for Tesla.",
+      "example": "TSLAx"
+    },
+    {
+      "name": "tvl",
+      "type": "decimal",
+      "description": "The total value locked (TVL) of the specific xStock on Solana for the given date, denominated in USD.",
+      "example": "922928.6590439291"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.887Z"
     },
     {
       "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13851/results.json",
       "apiKey": "hujPcxW5PDHBBscbjjjINceulhhIB5TBrAo2Nt3U",
-      "title": "Total Daily TVL",
-      "subtitle": "",
+      "title": "Total Daily xStocks TVL on Solana",
+      "subtitle": "Tracks the total value locked (TVL) of tokenized U.S. equities (xStocks) on the Solana blockchain",
       "page": "xstocks-tvl",
       "pageName": "TVL",
       "menuId": "xstocks",
       "menuName": "xStocks",
       "id": "api-218",
       "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-05"
-        },
-        {
-          "name": "tvl",
-          "type": "decimal",
-          "description": "tvl field containing float data for application-specific processing and analysis",
-          "example": "2909610.728466759"
-        }
-      ],
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "The calendar date (daily granularity) when the snapshot of xStocks TVL on Solana was recorded.",
+      "example": "2025-08-05"
+    },
+    {
+      "name": "tvl",
+      "type": "decimal",
+      "description": "The total value locked (TVL) of xStocks on Solana for that date, expressed in USD.",
+      "example": "2909610.728466759"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.887Z"
     }
