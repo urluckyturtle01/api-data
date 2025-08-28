@@ -25,7 +25,7 @@
     {
       "name": "max_compute_unit_price",
       "type": "decimal",
-      "description": "The highest compute unit price (priority fee per CU) paid by any transaction on that date. Unit: micro-lamports per compute unit.",
+      "description": "The highest compute unit price (priority fee per CU) paid by any transaction on that date. Unit: lamports per compute unit.",
       "example": "135533.33"
     },
     {
@@ -81,842 +81,829 @@
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13447/results.json",
-      "apiKey": "dYp9G4vrqTAqE4pEI2cjoisceJ5g1442XW7yagI7",
-      "title": "Avg Cu Allocated & Consumed Per Transaction",
-      "subtitle": "Includes all non-vote transactions (successful and failed)",
-      "page": "compute-units",
-      "pageName": "Compute Units",
-      "menuId": "compute-units",
-      "menuName": "Compute Units",
-      "id": "api-1",
-      "responseColumns": [
-        {
-          "name": "partition_0",
-          "type": "date",
-          "description": "ISO date format string for temporal data representation and chronological organization",
-          "example": "2025-08-20"
-        },
-        {
-          "name": "avg_cu_allocated",
-          "type": "decimal",
-          "description": "avg_cu_allocated field containing float data for application-specific processing and analysis",
-          "example": "306622.9094637724"
-        },
-        {
-          "name": "avg_cu_consumed",
-          "type": "decimal",
-          "description": "avg_cu_consumed field containing float data for application-specific processing and analysis",
-          "example": "72825.2846643213"
-        },
-        {
-          "name": "max_unused_cu_single_txn",
-          "type": "bigint",
-          "description": "max_unused_cu_single_txn field containing integer data for application-specific processing and analysis",
-          "example": "3489536949"
-        },
-        {
-          "name": "max_cu_allocated_single_txn",
-          "type": "bigint",
-          "description": "max_cu_allocated_single_txn field containing integer data for application-specific processing and analysis",
-          "example": "3489660928"
-        },
-        {
-          "name": "max_cu_consumed_single_txn",
-          "type": "uint",
-          "description": "max_cu_consumed_single_txn field containing integer data for application-specific processing and analysis",
-          "example": "1400000"
-        },
-        {
-          "name": "avg_unused_cu",
-          "type": "decimal",
-          "description": "avg_unused_cu field containing float data for application-specific processing and analysis",
-          "example": "233797.62479945106"
-        },
-        {
-          "name": "median_unused_cu",
-          "type": "uint",
-          "description": "median_unused_cu field containing integer data for application-specific processing and analysis",
-          "example": "113809"
-        }
-      ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
+  "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13447/results.json",
+  "apiKey": "dYp9G4vrqTAqE4pEI2cjoisceJ5g1442XW7yagI7",
+  "title": "Avg Cu Allocated & Consumed Per Transaction",
+  "subtitle": "Includes all non-vote transactions (successful and failed)",
+  "page": "compute-units",
+  "pageName": "Compute Units",
+  "menuId": "compute-units",
+  "menuName": "Compute Units",
+  "id": "api-1",
+  "responseColumns": [
+    {
+      "name": "partition_0",
+      "type": "date",
+      "description": "UTC date (YYYY-MM-DD) representing when the transactions were confirmed on Solana.",
+      "example": "2025-08-20"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13455/results.json",
-      "apiKey": "IDknsOk4xxg7L0oseAOQHt80gsQjVRZTZ9Svyfgw",
-      "title": "Avg Cu Consumed Per Block",
-      "subtitle": "Includes all non-vote transactions (successful and failed)",
-      "page": "compute-units",
-      "pageName": "Compute Units",
-      "menuId": "compute-units",
-      "menuName": "Compute Units",
-      "id": "api-2",
-      "responseColumns": [
-        {
-          "name": "partition_0",
-          "type": "date",
-          "description": "ISO date format string for temporal data representation and chronological organization",
-          "example": "2025-08-05"
-        },
-        {
-          "name": "avg_consumed_cu_per_block",
-          "type": "decimal",
-          "description": "Block field referencing batched transactions in blockchain structure",
-          "example": "37052534.717920475"
-        }
-      ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
+      "name": "avg_cu_allocated",
+      "type": "decimal",
+      "description": "Average number of compute units requested (allocated) per transaction on this date.",
+      "example": "306622.9094637724"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13449/results.json",
-      "apiKey": "myAJgSU2nhoxFvmgmgSJRY08ecwK59QIkw4xs44T",
-      "title": "Cu Consumed By Ecosystem",
-      "subtitle": "Includes all non-vote transactions (successful and failed)",
-      "page": "compute-units",
-      "pageName": "Compute Units",
-      "menuId": "compute-units",
-      "menuName": "Compute Units",
-      "id": "api-3",
-      "responseColumns": [],
-      "fetchStatus": "error",
-      "fetchError": "value.includes is not a function"
+      "name": "avg_cu_consumed",
+      "type": "decimal",
+      "description": "Average number of compute units actually used (consumed) per transaction on this date.",
+      "example": "72825.2846643213"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13450/results.json",
-      "apiKey": "YuPnlyIpkHRQgCUHIsAWdWNTC1JmjOVgOVhdjNcs",
-      "title": "Cu Consumed By Ecosystem - Last 30 Days",
-      "subtitle": "Includes all non-vote transactions (successful and failed)",
-      "page": "compute-units",
-      "pageName": "Compute Units",
-      "menuId": "compute-units",
-      "menuName": "Compute Units",
-      "id": "api-4",
-      "responseColumns": [
-        {
-          "name": "category",
-          "type": "text",
-          "description": "Category classification for organizational hierarchy and filtered data access",
-          "example": "Asset Burner"
-        },
-        {
-          "name": "total_cu_consumed",
-          "type": "bigint",
-          "description": "total_cu_consumed field containing integer data for application-specific processing and analysis",
-          "example": "42926070280"
-        }
-      ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
+      "name": "max_unused_cu_single_txn",
+      "type": "bigint",
+      "description": "Maximum number of unused compute units (allocated minus consumed) observed in a single transaction.",
+      "example": "3489536949"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13446/results.json",
-      "apiKey": "1aLYPZuX8Lq4nGINkeibVqOmujWcw7oDnydJ1OwT",
-      "title": "Transactions Using Compute Budget Program",
-      "subtitle": "Includes all non-vote transactions (successful and failed)",
-      "page": "compute-units",
-      "pageName": "Compute Units",
-      "menuId": "compute-units",
-      "menuName": "Compute Units",
-      "id": "api-5",
-      "responseColumns": [],
-      "fetchStatus": "error",
-      "fetchError": "value.includes is not a function"
+      "name": "max_cu_allocated_single_txn",
+      "type": "bigint",
+      "description": "Largest allocation of compute units made by any single transaction on this date.",
+      "example": "3489660928"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13453/results.json",
-      "apiKey": "YsiiU9f3RuuT8L5YbysSgde9MNkpLOptBhUXoI9g",
-      "title": "Cu Overspending",
-      "subtitle": "Daily CU overspending by transactions, measured as (allocated - consumed) / allocated. For example, xxx transactions overspent by 80–100%",
-      "page": "cu-overspending",
-      "pageName": "CU Overspending",
-      "menuId": "compute-units",
-      "menuName": "Compute Units",
-      "id": "api-6",
-      "responseColumns": [
-        {
-          "name": "partition_0",
-          "type": "date",
-          "description": "ISO date format string for temporal data representation and chronological organization",
-          "example": "2025-07-26"
-        },
-        {
-          "name": "overspent_fee_bucket",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "50-80%"
-        },
-        {
-          "name": "txns",
-          "type": "uint",
-          "description": "txns field containing integer data for application-specific processing and analysis",
-          "example": "21279652"
-        }
-      ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
+      "name": "max_cu_consumed_single_txn",
+      "type": "uint",
+      "description": "Largest number of compute units consumed by a single transaction on this date.",
+      "example": "1400000"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13454/results.json",
-      "apiKey": "1HAPupelDkhIsTwEJFUSc9OcXjnA9gajslaIMFbq",
-      "title": "Priority Fee Breakdown",
-      "subtitle": "Unused CU fee is calculated by multiplying the unused compute units with the per-unit priority fee derived from total allocated units",
-      "page": "cu-overspending",
-      "pageName": "CU Overspending",
-      "menuId": "compute-units",
-      "menuName": "Compute Units",
-      "id": "api-7",
-      "responseColumns": [
-        {
-          "name": "partition_0",
-          "type": "date",
-          "description": "ISO date format string for temporal data representation and chronological organization",
-          "example": "2025-08-21"
-        },
-        {
-          "name": "priorty_fee",
-          "type": "decimal",
-          "description": "Fee field containing charges for network usage, transactions, or protocol services",
-          "example": "6886.988395538"
-        },
-        {
-          "name": "consumed_cu_fee_paid",
-          "type": "decimal",
-          "description": "ID field providing primary key functionality for data integrity and linkage",
-          "example": "3160.528612762"
-        },
-        {
-          "name": "unused_cu_fee_paid",
-          "type": "decimal",
-          "description": "ID field providing primary key functionality for data integrity and linkage",
-          "example": "2610.857751685"
-        },
-        {
-          "name": "priorty_fee_usd",
-          "type": "decimal",
-          "description": "priorty_fee_usd field containing float data for application-specific processing and analysis",
-          "example": "1279520.8222826489"
-        },
-        {
-          "name": "consumed_cu_fee_paid_usd",
-          "type": "decimal",
-          "description": "consumed_cu_fee_paid_usd field containing float data for application-specific processing and analysis",
-          "example": "587188.759032774"
-        },
-        {
-          "name": "unused_cu_fee_paid_usd",
-          "type": "decimal",
-          "description": "unused_cu_fee_paid_usd field containing float data for application-specific processing and analysis",
-          "example": "485066.4275060178"
-        },
-        {
-          "name": "unused_cu_fee_paid_percentage",
-          "type": "decimal",
-          "description": "Percentage field enabling ratio calculations and comparative analysis",
-          "example": "37.910006547659414"
-        }
-      ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
+      "name": "avg_unused_cu",
+      "type": "decimal",
+      "description": "Average number of compute units left unused per transaction (allocated minus consumed).",
+      "example": "233797.62479945106"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13456/results.json",
-      "apiKey": "pIZbUOVVSmy0JoeBNIcBxy61FAo06MVVtl3HVav1",
-      "title": "Total Cu Overspending - Last 30 Days",
-      "subtitle": "Daily CU overspending by transactions, measured as (allocated - consumed) / allocated. For example, xxx transactions overspent by 80–100%",
-      "page": "cu-overspending",
-      "pageName": "CU Overspending",
-      "menuId": "compute-units",
-      "menuName": "Compute Units",
-      "id": "api-8",
-      "responseColumns": [
-        {
-          "name": "overspent_fee_bucket",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "0%"
-        },
-        {
-          "name": "txns",
-          "type": "uint",
-          "description": "txns field containing integer data for application-specific processing and analysis",
-          "example": "183953701"
-        }
-      ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
+      "name": "median_unused_cu",
+      "type": "uint",
+      "description": "Median number of unused compute units per transaction. Half of transactions wasted more, half wasted less.",
+      "example": "113809"
+    }
+  ],
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13455/results.json",
+  "apiKey": "IDknsOk4xxg7L0oseAOQHt80gsQjVRZTZ9Svyfgw",
+  "title": "Avg Cu Consumed Per Block",
+  "subtitle": "Includes all non-vote transactions (successful and failed)",
+  "page": "compute-units",
+  "pageName": "Compute Units",
+  "menuId": "compute-units",
+  "menuName": "Compute Units",
+  "id": "api-2",
+  "responseColumns": [
+    {
+      "name": "partition_0",
+      "type": "date",
+      "description": "UTC date (YYYY-MM-DD) representing the block date.",
+      "example": "2025-08-05"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13444/results.json",
-      "apiKey": "ji0D2QXyi9GzZEObhD0cgoNviXHLQLJopbpjc87q",
-      "title": "Account Bytes Vs Data Bytes",
-      "subtitle": "Solana's max transaction size is 1232 bytes",
-      "page": "transaction-bytes",
-      "pageName": "Transaction Bytes",
-      "menuId": "compute-units",
-      "menuName": "Compute Units",
-      "id": "api-9",
-      "responseColumns": [],
-      "fetchStatus": "error",
-      "fetchError": "value.includes is not a function"
+      "name": "avg_consumed_cu_per_block",
+      "type": "decimal",
+      "description": "Average compute units consumed per block across all transactions included on this date.",
+      "example": "37052534.717920475"
+    }
+  ],
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13449/results.json",
+  "apiKey": "myAJgSU2nhoxFvmgmgSJRY08ecwK59QIkw4xs44T",
+  "title": "Cu Consumed By Ecosystem",
+  "subtitle": "Includes all non-vote transactions (successful and failed)",
+  "page": "compute-units",
+  "pageName": "Compute Units",
+  "menuId": "compute-units",
+  "menuName": "Compute Units",
+  "id": "api-3",
+  "responseColumns": [],
+  "fetchStatus": "error",
+  "fetchError": "value.includes is not a function"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13450/results.json",
+  "apiKey": "YuPnlyIpkHRQgCUHIsAWdWNTC1JmjOVgOVhdjNcs",
+  "title": "Cu Consumed By Ecosystem - Last 30 Days",
+  "subtitle": "Includes all non-vote transactions (successful and failed)",
+  "page": "compute-units",
+  "pageName": "Compute Units",
+  "menuId": "compute-units",
+  "menuName": "Compute Units",
+  "id": "api-4",
+  "responseColumns": [
+    {
+      "name": "category",
+      "type": "text",
+      "description": "Ecosystem category label (e.g., DEX, Lending, NFT) for the transactions consuming compute units.",
+      "example": "Asset Burner"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13445/results.json",
-      "apiKey": "xnfRkicaESr2bwMlF8KTLwLwtjTzU84DQyIWUqjQ",
-      "title": "Byte Size Quantiles",
-      "subtitle": "Solana's max transaction size is 1232 bytes",
-      "page": "transaction-bytes",
-      "pageName": "Transaction Bytes",
-      "menuId": "compute-units",
-      "menuName": "Compute Units",
-      "id": "api-10",
-      "responseColumns": [
-        {
-          "name": "partition_0",
-          "type": "date",
-          "description": "ISO date format string for temporal data representation and chronological organization",
-          "example": "2025-08-24"
-        },
-        {
-          "name": "byte_size_25th_percentile",
-          "type": "uint",
-          "description": "byte_size_25th_percentile field containing integer data for application-specific processing and analysis",
-          "example": "453"
-        },
-        {
-          "name": "byte_size_median",
-          "type": "uint",
-          "description": "byte_size_median field containing integer data for application-specific processing and analysis",
-          "example": "762"
-        },
-        {
-          "name": "byte_size_75th_percentile",
-          "type": "uint",
-          "description": "byte_size_75th_percentile field containing integer data for application-specific processing and analysis",
-          "example": "945"
-        },
-        {
-          "name": "byte_size_90th_percentile",
-          "type": "uint",
-          "description": "byte_size_90th_percentile field containing integer data for application-specific processing and analysis",
-          "example": "1087"
-        }
-      ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
+      "name": "total_cu_consumed",
+      "type": "bigint",
+      "description": "Total compute units consumed by transactions in this category over the last 30 days.",
+      "example": "42926070280"
+    }
+  ],
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13446/results.json",
+  "apiKey": "1aLYPZuX8Lq4nGINkeibVqOmujWcw7oDnydJ1OwT",
+  "title": "Transactions Using Compute Budget Program",
+  "subtitle": "Includes all non-vote transactions (successful and failed)",
+  "page": "compute-units",
+  "pageName": "Compute Units",
+  "menuId": "compute-units",
+  "menuName": "Compute Units",
+  "id": "api-5",
+  "responseColumns": [],
+  "fetchStatus": "error",
+  "fetchError": "value.includes is not a function"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13453/results.json",
+  "apiKey": "YsiiU9f3RuuT8L5YbysSgde9MNkpLOptBhUXoI9g",
+  "title": "Cu Overspending",
+  "subtitle": "Daily CU overspending by transactions, measured as (allocated - consumed) / allocated. For example, xxx transactions overspent by 80–100%",
+  "page": "cu-overspending",
+  "pageName": "CU Overspending",
+  "menuId": "compute-units",
+  "menuName": "Compute Units",
+  "id": "api-6",
+  "responseColumns": [
+    {
+      "name": "partition_0",
+      "type": "date",
+      "description": "UTC date (YYYY-MM-DD) representing when the overspending occurred.",
+      "example": "2025-07-26"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13443/results.json",
-      "apiKey": "XsCunes5JrcnFMTFz23pOgDn6fTX7hqZRKYPXTM1",
-      "title": "Transaction Bytes",
-      "subtitle": "Solana's max transaction size is 1232 bytes",
-      "page": "transaction-bytes",
-      "pageName": "Transaction Bytes",
-      "menuId": "compute-units",
-      "menuName": "Compute Units",
-      "id": "api-11",
-      "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-24"
-        },
-        {
-          "name": "median_byte_size",
-          "type": "uint",
-          "description": "median_byte_size field containing integer data for application-specific processing and analysis",
-          "example": "762"
-        },
-        {
-          "name": "max_byte_size_txns",
-          "type": "uint",
-          "description": "max_byte_size_txns field containing integer data for application-specific processing and analysis",
-          "example": "137419"
-        },
-        {
-          "name": "avg_byte_size",
-          "type": "decimal",
-          "description": "avg_byte_size field containing float data for application-specific processing and analysis",
-          "example": "717.8904649779648"
-        },
-        {
-          "name": "max_byte_size_txns_percentage",
-          "type": "decimal",
-          "description": "Percentage field enabling ratio calculations and comparative analysis",
-          "example": "0.17"
-        },
-        {
-          "name": "total_txns",
-          "type": "uint",
-          "description": "total_txns field containing integer data for application-specific processing and analysis",
-          "example": "80771591"
-        }
-      ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
+      "name": "overspent_fee_bucket",
+      "type": "text",
+      "description": "Overspending range bucket. Example: '50–80%' means transactions consumed only 20–50% of allocated units.",
+      "example": "50-80%"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13234/results.json",
-      "apiKey": "jes4jbtggmsezoHwIxltmSjmQxmExPOgnQNhFzZm",
-      "title": "DEX Volume Aggregator Vs Direct Share",
-      "subtitle": "Aggregator vs Direct share Since Jan'25",
-      "page": "aggregators",
-      "pageName": "DEX Aggregators",
-      "menuId": "dex",
-      "menuName": "DEX",
-      "id": "api-12",
-      "responseColumns": [
-        {
-          "name": "year",
-          "type": "date",
-          "description": "year field containing date data for application-specific processing and analysis",
-          "example": "2025-01-01"
-        },
-        {
-          "name": "dex",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "Pump.Fun AMM"
-        },
-        {
-          "name": "medium",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "Direct"
-        },
-        {
-          "name": "Volume",
-          "type": "decimal",
-          "description": "Trading volume indicating market liquidity, activity levels, and investor interest",
-          "example": "612896024507.5752"
-        },
-        {
-          "name": "rn1",
-          "type": "uint",
-          "description": "rn1 field containing integer data for application-specific processing and analysis",
-          "example": "1"
-        }
-      ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
+      "name": "txns",
+      "type": "uint",
+      "description": "Number of transactions in this overspending bucket on the given date.",
+      "example": "21279652"
+    }
+  ],
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13454/results.json",
+  "apiKey": "1HAPupelDkhIsTwEJFUSc9OcXjnA9gajslaIMFbq",
+  "title": "Priority Fee Breakdown",
+  "subtitle": "Unused CU fee is calculated by multiplying the unused compute units with the per-unit priority fee derived from total allocated units",
+  "page": "cu-overspending",
+  "pageName": "CU Overspending",
+  "menuId": "compute-units",
+  "menuName": "Compute Units",
+  "id": "api-7",
+  "responseColumns": [
+    {
+      "name": "partition_0",
+      "type": "date",
+      "description": "UTC date (YYYY-MM-DD) for which the fee breakdown is calculated.",
+      "example": "2025-08-21"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12428/results.json",
-      "apiKey": "M50ElvuV9FtY3XlSVP2GtGfSTefJ13C8z4y742da",
-      "title": "DEX Volume Share",
-      "subtitle": "",
-      "page": "aggregators",
-      "pageName": "DEX Aggregators",
-      "menuId": "dex",
-      "menuName": "DEX",
-      "id": "api-13",
-      "responseColumns": [
-        {
-          "name": "month",
-          "type": "date",
-          "description": "month field containing date data for application-specific processing and analysis",
-          "example": "2025-08-01"
-        },
-        {
-          "name": "aggregator",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "Titan"
-        },
-        {
-          "name": "Trades",
-          "type": "uint",
-          "description": "Trades field containing integer data for application-specific processing and analysis",
-          "example": "100588"
-        },
-        {
-          "name": "volume",
-          "type": "decimal",
-          "description": "Trading volume indicating market liquidity, activity levels, and investor interest",
-          "example": "72120799.4463837"
-        }
-      ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
+      "name": "priorty_fee",
+      "type": "decimal",
+      "description": "Total priority fees (in SOL) paid by all transactions on this date.",
+      "example": "6886.988395538"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12459/results.json",
-      "apiKey": "MwgPFDxoN9SCpEC6I6nhBH85dtNkXndNYcRtHLYA",
-      "title": "Daily TVL Vs Velocity",
-      "subtitle": "TVL(Total Value Locked) represents total amount of assets (in USD) locked in a pool.",
-      "page": "dex-summary",
-      "pageName": "Summary",
-      "menuId": "dex",
-      "menuName": "DEX",
-      "id": "api-14",
-      "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-22"
-        },
-        {
-          "name": "volume_usd",
-          "type": "decimal",
-          "description": "volume_usd field containing float data for application-specific processing and analysis",
-          "example": "9756851889.387009"
-        },
-        {
-          "name": "tvl",
-          "type": "decimal",
-          "description": "tvl field containing float data for application-specific processing and analysis",
-          "example": "4188239146.69191"
-        },
-        {
-          "name": "velocity",
-          "type": "decimal",
-          "description": "velocity field containing float data for application-specific processing and analysis",
-          "example": "2.3295832801461396"
-        }
-      ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
+      "name": "consumed_cu_fee_paid",
+      "type": "decimal",
+      "description": "Portion of priority fees corresponding to compute units actually consumed.",
+      "example": "3160.528612762"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12439/results.json",
-      "apiKey": "zFtRMSKAAC8nTdp6JX2NebxyP6YCct9poXLe5WfN",
-      "title": "Velocity By DEX Program Category",
-      "subtitle": "",
-      "page": "dex-summary",
-      "pageName": "Summary",
-      "menuId": "dex",
-      "menuName": "DEX",
-      "id": "api-15",
-      "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-01-01"
-        },
-        {
-          "name": "program_type",
-          "type": "text",
-          "description": "Type field enabling polymorphic behavior and category-based processing",
-          "example": "AMM"
-        },
-        {
-          "name": "velocity",
-          "type": "decimal",
-          "description": "velocity field containing float data for application-specific processing and analysis",
-          "example": "6.121255568770081"
-        }
-      ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
+      "name": "unused_cu_fee_paid",
+      "type": "decimal",
+      "description": "Portion of priority fees wasted on compute units that were allocated but never used.",
+      "example": "2610.857751685"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12392/results.json",
-      "apiKey": "aSgz8ztgBg46FAoarkY8JGS5K0jxqm9t60sF3CDQ",
-      "title": "Distribution By Traders' Trade Frequency",
-      "subtitle": "",
-      "page": "traders",
-      "pageName": "Traders",
-      "menuId": "dex",
-      "menuName": "DEX",
-      "id": "api-16",
-      "responseColumns": [
-        {
-          "name": "month",
-          "type": "date",
-          "description": "month field containing date data for application-specific processing and analysis",
-          "example": "2025-08-01"
-        },
-        {
-          "name": "monthly_transactions",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "1-3 txns"
-        },
-        {
-          "name": "volume",
-          "type": "decimal",
-          "description": "Trading volume indicating market liquidity, activity levels, and investor interest",
-          "example": "1141293412.5758774"
-        },
-        {
-          "name": "Signers",
-          "type": "uint",
-          "description": "Signers field containing integer data for application-specific processing and analysis",
-          "example": "19146681"
-        }
-      ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
+      "name": "priorty_fee_usd",
+      "type": "decimal",
+      "description": "Total priority fees converted to USD using the SOL/USD exchange rate.",
+      "example": "1279520.8222826489"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13181/results.json",
-      "apiKey": "fLzwXGF8j4St6XvrckEAe1gjQRHKveWvvCafx2Zz",
-      "title": "Monthly Traders",
-      "subtitle": "",
-      "page": "traders",
-      "pageName": "Traders",
-      "menuId": "dex",
-      "menuName": "DEX",
-      "id": "api-17",
-      "responseColumns": [
-        {
-          "name": "month",
-          "type": "date",
-          "description": "month field containing date data for application-specific processing and analysis",
-          "example": "2025-08-01"
-        },
-        {
-          "name": "active_traders",
-          "type": "uint",
-          "description": "active_traders field containing integer data for application-specific processing and analysis",
-          "example": "22500658"
-        },
-        {
-          "name": "new_traders",
-          "type": "uint",
-          "description": "new_traders field containing integer data for application-specific processing and analysis",
-          "example": "19571848"
-        },
-        {
-          "name": "cumulative_signer",
-          "type": "uint",
-          "description": "cumulative_signer field containing integer data for application-specific processing and analysis",
-          "example": "811754408"
-        }
-      ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
+      "name": "consumed_cu_fee_paid_usd",
+      "type": "decimal",
+      "description": "Priority fees for consumed compute units, expressed in USD.",
+      "example": "587188.759032774"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12422/results.json",
-      "apiKey": "pOuD9xaxsmquzZGOnUcR9disUQI3EeXNQKuKpO6l",
-      "title": "Volume Distribution By Traders' Lifetime Trade Volume",
-      "subtitle": "",
-      "page": "traders",
-      "pageName": "Traders",
-      "menuId": "dex",
-      "menuName": "DEX",
-      "id": "api-18",
-      "responseColumns": [
-        {
-          "name": "month",
-          "type": "date",
-          "description": "month field containing date data for application-specific processing and analysis",
-          "example": "2025-07-01"
-        },
-        {
-          "name": "wallet_lifetime_trade_vol",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "500k-2.5M USD"
-        },
-        {
-          "name": "active_wallet",
-          "type": "uint",
-          "description": "active_wallet field containing integer data for application-specific processing and analysis",
-          "example": "33452"
-        },
-        {
-          "name": "volume_usd",
-          "type": "decimal",
-          "description": "volume_usd field containing float data for application-specific processing and analysis",
-          "example": "3260237191.8124833"
-        }
-      ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
+      "name": "unused_cu_fee_paid_usd",
+      "type": "decimal",
+      "description": "Priority fees for unused compute units, expressed in USD.",
+      "example": "485066.4275060178"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13461/results.json",
-      "apiKey": "6VxvtalvUgsuSnkLIzcoEdI6t2GySCTmClGbKAK1",
-      "title": "DEX TVL",
-      "subtitle": "",
-      "page": "tvl",
-      "pageName": "TVL",
-      "menuId": "dex",
-      "menuName": "DEX",
-      "id": "api-19",
-      "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-23"
-        },
-        {
-          "name": "TVL",
-          "type": "decimal",
-          "description": "TVL field containing float data for application-specific processing and analysis",
-          "example": "4059867181.7241373"
-        }
-      ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
+      "name": "unused_cu_fee_paid_percentage",
+      "type": "decimal",
+      "description": "Percentage of total priority fees that were wasted on unused compute units.",
+      "example": "37.910006547659414"
+    }
+  ],
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13456/results.json",
+  "apiKey": "pIZbUOVVSmy0JoeBNIcBxy61FAo06MVVtl3HVav1",
+  "title": "Total Cu Overspending - Last 30 Days",
+  "subtitle": "Daily CU overspending by transactions, measured as (allocated - consumed) / allocated. For example, xxx transactions overspent by 80–100%",
+  "page": "cu-overspending",
+  "pageName": "CU Overspending",
+  "menuId": "compute-units",
+  "menuName": "Compute Units",
+  "id": "api-8",
+  "responseColumns": [
+    {
+      "name": "overspent_fee_bucket",
+      "type": "text",
+      "description": "Overspending range bucket across the last 30 days (e.g., '0%' = fully used allocation, '80–100%' = mostly unused).",
+      "example": "0%"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12435/results.json",
-      "apiKey": "QoHzXXunvuLg0rrTWyFTNzmIjIoqY5MJhHo3ltZg",
-      "title": "DEX TVL Daily",
-      "subtitle": "",
-      "page": "tvl",
-      "pageName": "TVL",
-      "menuId": "dex",
-      "menuName": "DEX",
-      "id": "api-20",
-      "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-23"
-        },
-        {
-          "name": "Program_Type",
-          "type": "text",
-          "description": "Type field enabling polymorphic behavior and category-based processing",
-          "example": "AMM"
-        },
-        {
-          "name": "tvl",
-          "type": "decimal",
-          "description": "tvl field containing float data for application-specific processing and analysis",
-          "example": "975041611.9495468"
-        }
-      ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
+      "name": "txns",
+      "type": "uint",
+      "description": "Number of transactions in this overspending bucket during the last 30 days.",
+      "example": "183953701"
+    }
+  ],
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13445/results.json",
+  "apiKey": "xnfRkicaESr2bwMlF8KTLwLwtjTzU84DQyIWUqjQ",
+  "title": "Byte Size Quantiles",
+  "subtitle": "Solana's max transaction size is 1232 bytes",
+  "page": "transaction-bytes",
+  "pageName": "Transaction Bytes",
+  "menuId": "compute-units",
+  "menuName": "Compute Units",
+  "id": "api-10",
+  "responseColumns": [
+    {
+      "name": "partition_0",
+      "type": "date",
+      "description": "UTC date (YYYY-MM-DD) for which transaction size quantiles are reported.",
+      "example": "2025-08-24"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13225/results.json",
-      "apiKey": "6rNImjI05B6uxQzhrJcoOkrYN4Upw6oFkN1yqm76",
-      "title": "Top Pools By TVL",
-      "subtitle": "",
-      "page": "tvl",
-      "pageName": "TVL",
-      "menuId": "dex",
-      "menuName": "DEX",
-      "id": "api-21",
-      "responseColumns": [
-        {
-          "name": "pool",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "ZsSh - USDC"
-        },
-        {
-          "name": "pool_pair",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "CHA4baG8PYxq2inwzG8AHQ2kgffJAxGzsJeXj4YGisty - EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
-        },
-        {
-          "name": "tvl",
-          "type": "decimal",
-          "description": "tvl field containing float data for application-specific processing and analysis",
-          "example": "423211735.42097896"
-        }
-      ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
+      "name": "byte_size_25th_percentile",
+      "type": "uint",
+      "description": "25th percentile transaction size (in bytes). A quarter of transactions are smaller than this size.",
+      "example": "453"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13192/results.json",
-      "apiKey": "PSDSE4K3HsoXJX8a3dgeps4GF1ilSejrVjmkF8Fe",
-      "title": "DEX Volume",
-      "subtitle": "",
-      "page": "volume",
-      "pageName": "Volume",
-      "menuId": "dex",
-      "menuName": "DEX",
-      "id": "api-22",
-      "responseColumns": [
-        {
-          "name": "partition_0",
-          "type": "date",
-          "description": "ISO date format string for temporal data representation and chronological organization",
-          "example": "2025-08-24"
-        },
-        {
-          "name": "volume_usd",
-          "type": "decimal",
-          "description": "volume_usd field containing float data for application-specific processing and analysis",
-          "example": "10916046938.880363"
-        }
-      ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
+      "name": "byte_size_median",
+      "type": "uint",
+      "description": "Median transaction size (in bytes). Half of transactions are smaller, half are larger.",
+      "example": "762"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12401/results.json",
-      "apiKey": "fGkLNd9bLPAbP4nEImmeGpeNc03BFl1B6nuUcD16",
-      "title": "Distribution By Token Category",
-      "subtitle": "",
-      "page": "volume",
-      "pageName": "Volume",
-      "menuId": "dex",
-      "menuName": "DEX",
-      "id": "api-23",
-      "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-22"
-        },
-        {
-          "name": "mint_category",
-          "type": "text",
-          "description": "Category field providing taxonomical organization and content grouping",
-          "example": "Stable"
-        },
-        {
-          "name": "Volume",
-          "type": "decimal",
-          "description": "Trading volume indicating market liquidity, activity levels, and investor interest",
-          "example": "2279049591.660959"
-        }
-      ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
+      "name": "byte_size_75th_percentile",
+      "type": "uint",
+      "description": "75th percentile transaction size (in bytes). A quarter of transactions are larger than this size.",
+      "example": "945"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13231/results.json",
-      "apiKey": "gFXy7839FSeqNL8PFFT8rVNNBWt9IJ9Jp7UOKzSu",
-      "title": "Top Memecoins By Volume",
-      "subtitle": "",
-      "page": "volume",
-      "pageName": "Volume",
-      "menuId": "dex",
-      "menuName": "DEX",
-      "id": "api-24",
-      "responseColumns": [
-        {
-          "name": "month",
-          "type": "date",
-          "description": "month field containing date data for application-specific processing and analysis",
-          "example": "2025-06-01"
-        },
-        {
-          "name": "mint",
-          "type": "text",
-          "description": "Token mint address controlling supply, metadata, and minting authority on Solana",
-          "example": "Fartcoin"
-        },
-        {
-          "name": "volume_usd",
-          "type": "decimal",
-          "description": "volume_usd field containing float data for application-specific processing and analysis",
-          "example": "3063781857.758836"
-        }
-      ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
+      "name": "byte_size_90th_percentile",
+      "type": "uint",
+      "description": "90th percentile transaction size (in bytes). Only 10% of transactions are larger.",
+      "example": "1087"
+    }
+  ],
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13443/results.json",
+  "apiKey": "XsCunes5JrcnFMTFz23pOgDn6fTX7hqZRKYPXTM1",
+  "title": "Transaction Bytes",
+  "subtitle": "Solana's max transaction size is 1232 bytes",
+  "page": "transaction-bytes",
+  "pageName": "Transaction Bytes",
+  "menuId": "compute-units",
+  "menuName": "Compute Units",
+  "id": "api-11",
+  "responseColumns": [
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "UTC date (YYYY-MM-DD) when the transactions in the block were processed.",
+      "example": "2025-08-24"
     },
+    {
+      "name": "median_byte_size",
+      "type": "uint",
+      "description": "Median transaction size (in bytes) on this date.",
+      "example": "762"
+    },
+    {
+      "name": "max_byte_size_txns",
+      "type": "uint",
+      "description": "Number of transactions that reached Solana’s maximum allowed transaction size (1232 bytes).",
+      "example": "137419"
+    },
+    {
+      "name": "avg_byte_size",
+      "type": "decimal",
+      "description": "Average transaction size (in bytes) across all transactions on this date.",
+      "example": "717.8904649779648"
+    },
+    {
+      "name": "max_byte_size_txns_percentage",
+      "type": "decimal",
+      "description": "Percentage of total transactions that hit the maximum 1232-byte size limit.",
+      "example": "0.17"
+    },
+    {
+      "name": "total_txns",
+      "type": "uint",
+      "description": "Total number of transactions processed on this date.",
+      "example": "80771591"
+    }
+  ],
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+    {
+  "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13234/results.json",
+  "apiKey": "jes4jbtggmsezoHwIxltmSjmQxmExPOgnQNhFzZm",
+  "title": "DEX Volume Aggregator Vs Direct Share",
+  "subtitle": "Aggregator vs Direct share Since Jan'25",
+  "page": "aggregators",
+  "pageName": "DEX Aggregators",
+  "menuId": "dex",
+  "menuName": "DEX",
+  "id": "api-12",
+  "responseColumns": [
+    {
+      "name": "year",
+      "type": "date",
+      "description": "Year of aggregation (truncated to YYYY-01-01).",
+      "example": "2025-01-01"
+    },
+    {
+      "name": "dex",
+      "type": "text",
+      "description": "Name of the decentralized exchange (DEX) or AMM where trades were executed.",
+      "example": "Pump.Fun AMM"
+    },
+    {
+      "name": "medium",
+      "type": "text",
+      "description": "Execution method: 'Aggregator' if routed via an aggregator, or 'Direct' if executed directly on the DEX.",
+      "example": "Direct"
+    },
+    {
+      "name": "Volume",
+      "type": "decimal",
+      "description": "Total trading volume (in USD) for this DEX and execution method during the year.",
+      "example": "612896024507.5752"
+    },
+    {
+      "name": "rn1",
+      "type": "uint",
+      "description": "Row number for internal ordering (not a metric).",
+      "example": "1"
+    }
+  ],
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12428/results.json",
+  "apiKey": "M50ElvuV9FtY3XlSVP2GtGfSTefJ13C8z4y742da",
+  "title": "DEX Volume Share",
+  "subtitle": "",
+  "page": "aggregators",
+  "pageName": "DEX Aggregators",
+  "menuId": "dex",
+  "menuName": "DEX",
+  "id": "api-13",
+  "responseColumns": [
+    {
+      "name": "month",
+      "type": "date",
+      "description": "Month (YYYY-MM) for which trading volume share is calculated.",
+      "example": "2025-08-01"
+    },
+    {
+      "name": "aggregator",
+      "type": "text",
+      "description": "Name of the DEX aggregator routing the trades (e.g., Jupiter, Titan).",
+      "example": "Titan"
+    },
+    {
+      "name": "Trades",
+      "type": "uint",
+      "description": "Number of trades routed via this aggregator during the month.",
+      "example": "100588"
+    },
+    {
+      "name": "volume",
+      "type": "decimal",
+      "description": "Total trading volume (in USD) routed through this aggregator during the month.",
+      "example": "72120799.4463837"
+    }
+  ],
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12459/results.json",
+  "apiKey": "MwgPFDxoN9SCpEC6I6nhBH85dtNkXndNYcRtHLYA",
+  "title": "Daily TVL Vs Velocity",
+  "subtitle": "TVL(Total Value Locked) represents total amount of assets (in USD) locked in a pool.",
+  "page": "dex-summary",
+  "pageName": "Summary",
+  "menuId": "dex",
+  "menuName": "DEX",
+  "id": "api-14",
+  "responseColumns": [
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Date (UTC) for which TVL and velocity are calculated.",
+      "example": "2025-08-22"
+    },
+    {
+      "name": "volume_usd",
+      "type": "decimal",
+      "description": "Total daily DEX trading volume in USD.",
+      "example": "9756851889.387009"
+    },
+    {
+      "name": "tvl",
+      "type": "decimal",
+      "description": "Total value locked (in USD) across all DEX pools on this date.",
+      "example": "4188239146.69191"
+    },
+    {
+      "name": "velocity",
+      "type": "decimal",
+      "description": "Ratio of daily trading volume to TVL (volume ÷ TVL). Measures capital efficiency of DEX liquidity.",
+      "example": "2.3295832801461396"
+    }
+  ],
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12439/results.json",
+  "apiKey": "zFtRMSKAAC8nTdp6JX2NebxyP6YCct9poXLe5WfN",
+  "title": "Velocity By DEX Program Category",
+  "subtitle": "",
+  "page": "dex-summary",
+  "pageName": "Summary",
+  "menuId": "dex",
+  "menuName": "DEX",
+  "id": "api-15",
+  "responseColumns": [
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Date (UTC) for which velocity is reported.",
+      "example": "2025-01-01"
+    },
+    {
+      "name": "program_type",
+      "type": "text",
+      "description": "Type of DEX program (e.g., AMM, Orderbook, CLMM).",
+      "example": "AMM"
+    },
+    {
+      "name": "velocity",
+      "type": "decimal",
+      "description": "Ratio of trading volume to TVL for this DEX type on the given date.",
+      "example": "6.121255568770081"
+    }
+  ],
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12392/results.json",
+  "apiKey": "aSgz8ztgBg46FAoarkY8JGS5K0jxqm9t60sF3CDQ",
+  "title": "Distribution By Traders' Trade Frequency",
+  "subtitle": "",
+  "page": "traders",
+  "pageName": "Traders",
+  "menuId": "dex",
+  "menuName": "DEX",
+  "id": "api-16",
+  "responseColumns": [
+    {
+      "name": "month",
+      "type": "date",
+      "description": "Month (YYYY-MM) for which trader frequency distribution is calculated.",
+      "example": "2025-08-01"
+    },
+    {
+      "name": "monthly_transactions",
+      "type": "text",
+      "description": "Bucket of transactions per wallet (e.g., '1–3 txns', '10–50 txns').",
+      "example": "1-3 txns"
+    },
+    {
+      "name": "volume",
+      "type": "decimal",
+      "description": "Total trading volume (in USD) generated by traders in this frequency bucket.",
+      "example": "1141293412.5758774"
+    },
+    {
+      "name": "Signers",
+      "type": "uint",
+      "description": "Number of unique traders (wallets) in this frequency bucket.",
+      "example": "19146681"
+    }
+  ],
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13181/results.json",
+  "apiKey": "fLzwXGF8j4St6XvrckEAe1gjQRHKveWvvCafx2Zz",
+  "title": "Monthly Traders",
+  "subtitle": "",
+  "page": "traders",
+  "pageName": "Traders",
+  "menuId": "dex",
+  "menuName": "DEX",
+  "id": "api-17",
+  "responseColumns": [
+    {
+      "name": "month",
+      "type": "date",
+      "description": "Month (YYYY-MM) for which trader activity is measured.",
+      "example": "2025-08-01"
+    },
+    {
+      "name": "active_traders",
+      "type": "uint",
+      "description": "Number of unique wallets that traded on DEXs during this month.",
+      "example": "22500658"
+    },
+    {
+      "name": "new_traders",
+      "type": "uint",
+      "description": "Number of wallets making their first-ever trade on a DEX in this month.",
+      "example": "19571848"
+    },
+    {
+      "name": "cumulative_signer",
+      "type": "uint",
+      "description": "Cumulative count of unique wallets that have traded on DEXs up to this month.",
+      "example": "811754408"
+    }
+  ],
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12422/results.json",
+  "apiKey": "pOuD9xaxsmquzZGOnUcR9disUQI3EeXNQKuKpO6l",
+  "title": "Volume Distribution By Traders' Lifetime Trade Volume",
+  "subtitle": "",
+  "page": "traders",
+  "pageName": "Traders",
+  "menuId": "dex",
+  "menuName": "DEX",
+  "id": "api-18",
+  "responseColumns": [
+    {
+      "name": "month",
+      "type": "date",
+      "description": "Month (YYYY-MM) for which lifetime trade volume distribution is reported.",
+      "example": "2025-07-01"
+    },
+    {
+      "name": "wallet_lifetime_trade_vol",
+      "type": "text",
+      "description": "Bucket of a wallet’s lifetime trading volume (e.g., '<10k USD', '500k–2.5M USD').",
+      "example": "500k-2.5M USD"
+    },
+    {
+      "name": "active_wallet",
+      "type": "uint",
+      "description": "Number of wallets active in this lifetime trade volume bucket.",
+      "example": "33452"
+    },
+    {
+      "name": "volume_usd",
+      "type": "decimal",
+      "description": "Total trading volume (in USD) contributed by wallets in this bucket during the month.",
+      "example": "3260237191.8124833"
+    }
+  ],
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13461/results.json",
+  "apiKey": "6VxvtalvUgsuSnkLIzcoEdI6t2GySCTmClGbKAK1",
+  "title": "DEX TVL",
+  "subtitle": "",
+  "page": "tvl",
+  "pageName": "TVL",
+  "menuId": "dex",
+  "menuName": "DEX",
+  "id": "api-19",
+  "responseColumns": [
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Date (UTC) for which DEX TVL is reported.",
+      "example": "2025-08-23"
+    },
+    {
+      "name": "TVL",
+      "type": "decimal",
+      "description": "Total value locked (USD) across all DEXs on this date.",
+      "example": "4059867181.7241373"
+    }
+  ],
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12435/results.json",
+  "apiKey": "QoHzXXunvuLg0rrTWyFTNzmIjIoqY5MJhHo3ltZg",
+  "title": "DEX TVL Daily",
+  "subtitle": "",
+  "page": "tvl",
+  "pageName": "TVL",
+  "menuId": "dex",
+  "menuName": "DEX",
+  "id": "api-20",
+  "responseColumns": [
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Date (UTC) for which daily DEX TVL is reported.",
+      "example": "2025-08-23"
+    },
+    {
+      "name": "Program_Type",
+      "type": "text",
+      "description": "Category of DEX program (e.g., AMM, CLMM, Orderbook).",
+      "example": "AMM"
+    },
+    {
+      "name": "tvl",
+      "type": "decimal",
+      "description": "Total value locked (USD) for this program type on the given date.",
+      "example": "975041611.9495468"
+    }
+  ],
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13225/results.json",
+  "apiKey": "6rNImjI05B6uxQzhrJcoOkrYN4Upw6oFkN1yqm76",
+  "title": "Top Pools By TVL",
+  "subtitle": "",
+  "page": "tvl",
+  "pageName": "TVL",
+  "menuId": "dex",
+  "menuName": "DEX",
+  "id": "api-21",
+  "responseColumns": [
+    {
+      "name": "pool",
+      "type": "text",
+      "description": "Readable pool name (e.g., token pair shorthand).",
+      "example": "ZsSh - USDC"
+    },
+    {
+      "name": "pool_pair",
+      "type": "text",
+      "description": "Full mint addresses of the token pair in the pool.",
+      "example": "CHA4baG8PYxq2inwzG8AHQ2kgffJAxGzsJeXj4YGisty - EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+    },
+    {
+      "name": "tvl",
+      "type": "decimal",
+      "description": "Total value locked (USD) in this pool on the given date.",
+      "example": "423211735.42097896"
+    }
+  ],
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13192/results.json",
+  "apiKey": "PSDSE4K3HsoXJX8a3dgeps4GF1ilSejrVjmkF8Fe",
+  "title": "DEX Volume",
+  "subtitle": "",
+  "page": "volume",
+  "pageName": "Volume",
+  "menuId": "dex",
+  "menuName": "DEX",
+  "id": "api-22",
+  "responseColumns": [
+    {
+      "name": "partition_0",
+      "type": "date",
+      "description": "Date (UTC) for which DEX trading volume is reported.",
+      "example": "2025-08-24"
+    },
+    {
+      "name": "volume_usd",
+      "type": "decimal",
+      "description": "Total DEX trading volume (USD) across all pools on this date.",
+      "example": "10916046938.880363"
+    }
+  ],
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12401/results.json",
+  "apiKey": "fGkLNd9bLPAbP4nEImmeGpeNc03BFl1B6nuUcD16",
+  "title": "Distribution By Token Category",
+  "subtitle": "",
+  "page": "volume",
+  "pageName": "Volume",
+  "menuId": "dex",
+  "menuName": "DEX",
+  "id": "api-23",
+  "responseColumns": [
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Date (UTC) for which token category trading volume is reported.",
+      "example": "2025-08-22"
+    },
+    {
+      "name": "mint_category",
+      "type": "text",
+      "description": "Category of traded tokens (e.g., Stable, Meme, DeFi).",
+      "example": "Stable"
+    },
+    {
+      "name": "Volume",
+      "type": "decimal",
+      "description": "Total DEX trading volume (USD) for this token category on the given date.",
+      "example": "2279049591.660959"
+    }
+  ],
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13231/results.json",
+  "apiKey": "gFXy7839FSeqNL8PFFT8rVNNBWt9IJ9Jp7UOKzSu",
+  "title": "Top Memecoins By Volume",
+  "subtitle": "",
+  "page": "volume",
+  "pageName": "Volume",
+  "menuId": "dex",
+  "menuName": "DEX",
+  "id": "api-24",
+  "responseColumns": [
+    {
+      "name": "month",
+      "type": "date",
+      "description": "Month (YYYY-MM) for which memecoin trading volume is reported.",
+      "example": "2025-06-01"
+    },
+    {
+      "name": "mint",
+      "type": "text",
+      "description": "Token mint address of the memecoin being measured.",
+      "example": "Fartcoin"
+    },
+    {
+      "name": "volume_usd",
+      "type": "decimal",
+      "description": "Total DEX trading volume (USD) for this memecoin during the month.",
+      "example": "3063781857.758836"
+    }
+  ],
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+
     {
       "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13843/results.json",
       "apiKey": "xqFztHCpLEqootvUoAnZ5AgMbhcqrBzCFOPmpPAd",
