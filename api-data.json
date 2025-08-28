@@ -9,7 +9,7 @@
       "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13448/results.json",
       "apiKey": "enfT00LNZEyisrWZh1mcgCLaPvcddY6r4nqlyN5J",
       "title": "Avg & Median Cu Price",
-      "subtitle": "Includes all non-vote transactions (successful and failed)",
+      "subtitle": "Includes all non-vote transactions (successful and failed).....jj hello",
       "page": "compute-units",
       "pageName": "Compute Units",
       "menuId": "compute-units",
@@ -17,65 +17,65 @@
       "id": "api-0",
       "responseColumns": [
         {
-          "name": "partition_0",
-          "type": "date",
-          "description": "ISO date format string for temporal data representation and chronological organization",
-          "example": "2025-08-15"
-        },
-        {
-          "name": "max_compute_unit_price",
-          "type": "decimal",
-          "description": "Price field containing current or historical market values for financial analysis",
-          "example": "135533.33"
-        },
-        {
-          "name": "median_compute_unit_price",
-          "type": "decimal",
-          "description": "Price field containing current or historical market values for financial analysis",
-          "example": "0.007045299"
-        },
-        {
-          "name": "99 percentile compute unit price",
-          "type": "decimal",
-          "description": "Price field containing current or historical market values for financial analysis",
-          "example": "10.465031"
-        },
-        {
-          "name": "99.99 percentile compute unit price",
-          "type": "decimal",
-          "description": "Price field containing current or historical market values for financial analysis",
-          "example": "373.8003"
-        },
-        {
-          "name": "avg_compute_unit_price",
-          "type": "decimal",
-          "description": "Price field containing current or historical market values for financial analysis",
-          "example": "0.99"
-        },
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-15"
-        },
-        {
-          "name": "mint",
-          "type": "solana_address",
-          "description": "Token mint address controlling supply, metadata, and minting authority on Solana",
-          "example": "So11111111111111111111111111111111111111112"
-        },
-        {
-          "name": "price_in_usd",
-          "type": "decimal",
-          "description": "price_in_usd field containing float data for application-specific processing and analysis",
-          "example": "190.3407938597828"
-        },
-        {
-          "name": "max_compute_unit_price_usd",
-          "type": "decimal",
-          "description": "max_compute_unit_price_usd field containing float data for application-specific processing and analysis",
-          "example": "0.025797521626659912"
-        }
+      "name": "partition_0",
+      "type": "date",
+      "description": "The date used for partitioning and grouping data (YYYY-MM-DD). This aligns with the day transactions were confirmed on Solana.",
+      "example": "2025-08-15"
+    },
+    {
+      "name": "max_compute_unit_price",
+      "type": "decimal",
+      "description": "The highest compute unit price (priority fee per CU) paid by any transaction on that date. Unit: micro-lamports per compute unit.",
+      "example": "135533.33"
+    },
+    {
+      "name": "median_compute_unit_price",
+      "type": "decimal",
+      "description": "The middle value of all compute unit prices on that date. Half of the transactions paid less than this price, and half paid more.",
+      "example": "0.007045299"
+    },
+    {
+      "name": "99 percentile compute unit price",
+      "type": "decimal",
+      "description": "The compute unit price at the 99th percentile. Only 1% of transactions paid this price or higher for compute units.",
+      "example": "10.465031"
+    },
+    {
+      "name": "99.99 percentile compute unit price",
+      "type": "decimal",
+      "description": "The compute unit price at the 99.99th percentile. Represents the extreme upper end of fees paid by a very small share of transactions.",
+      "example": "373.8003"
+    },
+    {
+      "name": "avg_compute_unit_price",
+      "type": "decimal",
+      "description": "The average (mean) compute unit price across all transactions on that date.",
+      "example": "0.99"
+    },
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "The actual calendar date (UTC) derived from the block time of transactions. Used for reporting and analysis.",
+      "example": "2025-08-15"
+    },
+    {
+      "name": "mint",
+      "type": "solana_address",
+      "description": "The Solana token mint address used as the fee currency (usually Wrapped SOL).",
+      "example": "So11111111111111111111111111111111111111112"
+    },
+    {
+      "name": "price_in_usd",
+      "type": "decimal",
+      "description": "The daily USD price of the fee currency (e.g., SOL). Used to convert lamport-denominated fees into USD values.",
+      "example": "190.3407938597828"
+    },
+    {
+      "name": "max_compute_unit_price_usd",
+      "type": "decimal",
+      "description": "The highest compute unit price of the day, converted into USD per compute unit using the SOL/USD price.",
+      "example": "0.025797521626659912"
+    }
       ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
