@@ -5338,58 +5338,58 @@
       "menuName": "Valuation Insights",
       "id": "api-199",
       "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-04"
-        },
-        {
-          "name": "platform",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "Helium"
-        },
-        {
-          "name": "protocol_revenue_usd",
-          "type": "decimal",
-          "description": "protocol_revenue_usd field containing float data for application-specific processing and analysis",
-          "example": "9922.646439999997"
-        },
-        {
-          "name": "price_in_usd",
-          "type": "decimal",
-          "description": "price_in_usd field containing float data for application-specific processing and analysis",
-          "example": "2.865006162832094"
-        },
-        {
-          "name": "FDV",
-          "type": "null",
-          "description": "Null or undefined value indicating missing, unknown, or not applicable data"
-        },
-        {
-          "name": "FDV/Rvenue Ratio",
-          "type": "null",
-          "description": "Ratio field providing proportional relationships between financial metrics"
-        },
-        {
-          "name": "Protocol Revenue/Solana Revenue Share",
-          "type": "decimal",
-          "description": "Protocol Revenue/Solana Revenue Share field containing float data for application-specific processing and analysis",
-          "example": "0.5479508879731915"
-        },
-        {
-          "name": "TVL",
-          "type": "null",
-          "description": "Null or undefined value indicating missing, unknown, or not applicable data"
-        },
-        {
-          "name": "Active_Wallets",
-          "type": "uint",
-          "description": "Active_Wallets field containing integer data for application-specific processing and analysis",
-          "example": "1624"
-        }
-      ],
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Date for which revenue and metrics are recorded (daily granularity).",
+      "example": "2025-08-04"
+    },
+    {
+      "name": "platform",
+      "type": "text",
+      "description": "Name of the protocol or platform generating revenue on Solana.",
+      "example": "Helium"
+    },
+    {
+      "name": "protocol_revenue_usd",
+      "type": "decimal",
+      "description": "Total protocol revenue generated on the given date, expressed in USD.",
+      "example": "9922.646439999997"
+    },
+    {
+      "name": "price_in_usd",
+      "type": "decimal",
+      "description": "Price of the protocol’s token on the given date, expressed in USD.",
+      "example": "2.865006162832094"
+    },
+    {
+      "name": "FDV",
+      "type": "null",
+      "description": "Fully Diluted Valuation (FDV) of the protocol."
+    },
+    {
+      "name": "FDV/Revenue Ratio",
+      "type": "null",
+      "description": "Ratio of Fully Diluted Valuation (FDV) to protocol revenue."
+    },
+    {
+      "name": "Protocol Revenue/Solana Revenue Share",
+      "type": "decimal",
+      "description": "Ratio representing a protocol’s share of total Solana ecosystem revenue.",
+      "example": "0.5479508879731915"
+    },
+    {
+      "name": "TVL",
+      "type": "null",
+      "description": "Total Value Locked (TVL) for the protocol."
+    },
+    {
+      "name": "Active_Wallets",
+      "type": "uint",
+      "description": "Number of active wallets interacting with the protocol on the given date.",
+      "example": "1624"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.887Z"
     },
