@@ -4876,31 +4876,31 @@
       "menuName": "Stablecoins",
       "id": "api-187",
       "responseColumns": [
-        {
-          "name": "month",
-          "type": "date",
-          "description": "month field containing datetime data for application-specific processing and analysis",
-          "example": "2025-08-01"
-        },
-        {
-          "name": "name",
-          "type": "text",
-          "description": "Human-readable identifier for user recognition, categorization, and display purposes",
-          "example": "OKX"
-        },
-        {
-          "name": "flow_type",
-          "type": "text",
-          "description": "Type field enabling polymorphic behavior and category-based processing",
-          "example": "to cex"
-        },
-        {
-          "name": "volume",
-          "type": "decimal",
-          "description": "Trading volume indicating market liquidity, activity levels, and investor interest",
-          "example": "889.41"
-        }
-      ],
+    {
+      "name": "month",
+      "type": "date",
+      "description": "Month of recorded stablecoin transfer activity",
+      "example": "2025-08-01"
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Destination centralized exchange receiving the stablecoin transfers",
+      "example": "OKX"
+    },
+    {
+      "name": "flow_type",
+      "type": "text",
+      "description": "Direction of flow, categorizing whether transfers are going to or from CEXs",
+      "example": "to cex"
+    },
+    {
+      "name": "volume",
+      "type": "decimal",
+      "description": "Total stablecoin transfer volume (in USD) for the given month from Centralized Exchanges to Solana",
+      "example": "889.41"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.887Z"
     },
@@ -4918,19 +4918,19 @@
         {
           "name": "month",
           "type": "date",
-          "description": "month field containing datetime data for application-specific processing and analysis",
+          "description": "Month of recorded stablecoin inflow activity from Centralized Exchanges to Solana",
           "example": "2024-01-01"
         },
         {
           "name": "monthly_inflow",
           "type": "decimal",
-          "description": "monthly_inflow field containing float data for application-specific processing and analysis",
+          "description": "Stablecoin inflow volume (in USD) from Centralized Exchanges to Solana recorded during the given month",
           "example": "84620368.81667376"
         },
         {
           "name": "total_inflow",
           "type": "decimal",
-          "description": "total_inflow field containing float data for application-specific processing and analysis",
+          "description": "Cumulative stablecoin inflow volume (in USD) from Centralized Exchanges to Solana from the start of data collection up to the given month",
           "example": "84620368.81667376"
         }
       ],
@@ -4948,31 +4948,31 @@
       "menuName": "Stablecoins",
       "id": "api-189",
       "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-24"
-        },
-        {
-          "name": "mint_name",
-          "type": "text",
-          "description": "Name field containing descriptive labels for entity identification and organization",
-          "example": "EURC"
-        },
-        {
-          "name": "Avg_P2P_Transfer_Size",
-          "type": "decimal",
-          "description": "Avg_P2P_Transfer_Size field containing float data for application-specific processing and analysis",
-          "example": "4957.506556185907"
-        },
-        {
-          "name": "Median_P2P_Transfer_Size",
-          "type": "decimal",
-          "description": "Median_P2P_Transfer_Size field containing float data for application-specific processing and analysis",
-          "example": "96.42505893055555"
-        }
-      ],
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Daily data point marking when P2P transfer activity was recorded",
+      "example": "2025-08-24"
+    },
+    {
+      "name": "mint_name",
+      "type": "text",
+      "description": "Token identifier by name (e.g., USDC, EURC) representing the stablecoin involved in transfers",
+      "example": "EURC"
+    },
+    {
+      "name": "Avg_P2P_Transfer_Size",
+      "type": "decimal",
+      "description": "Mean size of peer-to-peer transactions, showing typical transfer magnitude",
+      "example": "4957.506556185907"
+    },
+    {
+      "name": "Median_P2P_Transfer_Size",
+      "type": "decimal",
+      "description": "Median size of peer-to-peer transactions, highlighting the central tendency while reducing outlier effects",
+      "example": "96.42505893055555"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.887Z"
     },
