@@ -4526,105 +4526,7 @@
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
-    {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13212/results",
-      "apiKey": "fJpv71SeTrORlyPx2dVbdTt07HrwuKbUobmb7Uzj",
-      "title": "Block Rewards & Jito Commission",
-      "subtitle": "",
-      "page": "rev-issuance-burn",
-      "pageName": "Issuance & Burn",
-      "menuId": "rev",
-      "menuName": "REV",
-      "id": "api-123",
-      "responseColumns": [
-        {
-          "name": "backfilling_epoch_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-23"
-        },
-        {
-          "name": "jito_labs_commission_sol",
-          "type": "decimal",
-          "description": "jito_labs_commission_sol field containing float data for application-specific processing and analysis",
-          "example": "442.7695476475528"
-        },
-        {
-          "name": "sol_burn_sol",
-          "type": "decimal",
-          "description": "sol_burn_sol field containing float data for application-specific processing and analysis",
-          "example": "6613.162336576001"
-        },
-        {
-          "name": "staking_reward_sol",
-          "type": "decimal",
-          "description": "staking_reward_sol field containing float data for application-specific processing and analysis",
-          "example": "104719.744645955"
-        },
-        {
-          "name": "voting_reward_sol",
-          "type": "decimal",
-          "description": "voting_reward_sol field containing float data for application-specific processing and analysis",
-          "example": "39552.744312355"
-        },
-        {
-          "name": "gross_sol_issuance_sol",
-          "type": "decimal",
-          "description": "gross_sol_issuance_sol field containing float data for application-specific processing and analysis",
-          "example": "144272.48895831"
-        },
-        {
-          "name": "net_sol_issuance_sol",
-          "type": "decimal",
-          "description": "net_sol_issuance_sol field containing float data for application-specific processing and analysis",
-          "example": "137659.32662173398"
-        },
-        {
-          "name": "burn_ratio",
-          "type": "decimal",
-          "description": "Ratio field providing proportional relationships between financial metrics",
-          "example": "4.583799991477923"
-        },
-        {
-          "name": "jito_labs_commission_usd",
-          "type": "decimal",
-          "description": "jito_labs_commission_usd field containing float data for application-specific processing and analysis",
-          "example": "86114.66942102704"
-        },
-        {
-          "name": "sol_burn_usd",
-          "type": "decimal",
-          "description": "sol_burn_usd field containing float data for application-specific processing and analysis",
-          "example": "1291485.1965213623"
-        },
-        {
-          "name": "staking_reward_usd",
-          "type": "decimal",
-          "description": "staking_reward_usd field containing float data for application-specific processing and analysis",
-          "example": "21224689.15838596"
-        },
-        {
-          "name": "voting_reward_usd",
-          "type": "decimal",
-          "description": "voting_reward_usd field containing float data for application-specific processing and analysis",
-          "example": "8016584.706437976"
-        },
-        {
-          "name": "gross_sol_issuance_usd",
-          "type": "decimal",
-          "description": "gross_sol_issuance_usd field containing float data for application-specific processing and analysis",
-          "example": "29241273.864823934"
-        },
-        {
-          "name": "net_sol_issuance_usd",
-          "type": "decimal",
-          "description": "net_sol_issuance_usd field containing float data for application-specific processing and analysis",
-          "example": "27949788.668302573"
-        }
-      ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
-    },
+  
     {
       "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13212/results.json",
       "apiKey": "fJpv71SeTrORlyPx2dVbdTt07HrwuKbUobmb7Uzj",
@@ -4636,91 +4538,91 @@
       "menuName": "REV",
       "id": "api-124",
       "responseColumns": [
-        {
-          "name": "backfilling_epoch_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-23"
-        },
-        {
-          "name": "jito_labs_commission_sol",
-          "type": "decimal",
-          "description": "jito_labs_commission_sol field containing float data for application-specific processing and analysis",
-          "example": "442.7695476475528"
-        },
-        {
-          "name": "sol_burn_sol",
-          "type": "decimal",
-          "description": "sol_burn_sol field containing float data for application-specific processing and analysis",
-          "example": "6613.162336576001"
-        },
-        {
-          "name": "staking_reward_sol",
-          "type": "decimal",
-          "description": "staking_reward_sol field containing float data for application-specific processing and analysis",
-          "example": "104719.744645955"
-        },
-        {
-          "name": "voting_reward_sol",
-          "type": "decimal",
-          "description": "voting_reward_sol field containing float data for application-specific processing and analysis",
-          "example": "39552.744312355"
-        },
-        {
-          "name": "gross_sol_issuance_sol",
-          "type": "decimal",
-          "description": "gross_sol_issuance_sol field containing float data for application-specific processing and analysis",
-          "example": "144272.48895831"
-        },
-        {
-          "name": "net_sol_issuance_sol",
-          "type": "decimal",
-          "description": "net_sol_issuance_sol field containing float data for application-specific processing and analysis",
-          "example": "137659.32662173398"
-        },
-        {
-          "name": "burn_ratio",
-          "type": "decimal",
-          "description": "Ratio field providing proportional relationships between financial metrics",
-          "example": "4.583799991477923"
-        },
-        {
-          "name": "jito_labs_commission_usd",
-          "type": "decimal",
-          "description": "jito_labs_commission_usd field containing float data for application-specific processing and analysis",
-          "example": "86114.66942102704"
-        },
-        {
-          "name": "sol_burn_usd",
-          "type": "decimal",
-          "description": "sol_burn_usd field containing float data for application-specific processing and analysis",
-          "example": "1291485.1965213623"
-        },
-        {
-          "name": "staking_reward_usd",
-          "type": "decimal",
-          "description": "staking_reward_usd field containing float data for application-specific processing and analysis",
-          "example": "21224689.15838596"
-        },
-        {
-          "name": "voting_reward_usd",
-          "type": "decimal",
-          "description": "voting_reward_usd field containing float data for application-specific processing and analysis",
-          "example": "8016584.706437976"
-        },
-        {
-          "name": "gross_sol_issuance_usd",
-          "type": "decimal",
-          "description": "gross_sol_issuance_usd field containing float data for application-specific processing and analysis",
-          "example": "29241273.864823934"
-        },
-        {
-          "name": "net_sol_issuance_usd",
-          "type": "decimal",
-          "description": "net_sol_issuance_usd field containing float data for application-specific processing and analysis",
-          "example": "27949788.668302573"
-        }
-      ],
+  {
+    "name": "backfilling_epoch_date",
+    "type": "date",
+    "description": "Epoch date used for aggregating issuance, rewards, and burn data on Solana.",
+    "example": "2025-08-23"
+  },
+  {
+    "name": "jito_labs_commission_sol",
+    "type": "decimal",
+    "description": "Total SOL commissions earned by Jito Labs validators from MEV operations during the epoch.",
+    "example": "442.7695476475528"
+  },
+  {
+    "name": "sol_burn_sol",
+    "type": "decimal",
+    "description": "Amount of SOL permanently burned (removed from supply) through transaction fees in the epoch.",
+    "example": "6613.162336576001"
+  },
+  {
+    "name": "staking_reward_sol",
+    "type": "decimal",
+    "description": "Total SOL issued as staking rewards to validators and delegators for securing the network.",
+    "example": "104719.744645955"
+  },
+  {
+    "name": "voting_reward_sol",
+    "type": "decimal",
+    "description": "SOL issued to validators as rewards for vote transactions confirming blocks.",
+    "example": "39552.744312355"
+  },
+  {
+    "name": "gross_sol_issuance_sol",
+    "type": "decimal",
+    "description": "Total SOL newly issued during the epoch before accounting for burns (staking + voting rewards + commissions).",
+    "example": "144272.48895831"
+  },
+  {
+    "name": "net_sol_issuance_sol",
+    "type": "decimal",
+    "description": "Net SOL issuance after subtracting SOL burned from gross issuance.",
+    "example": "137659.32662173398"
+  },
+  {
+    "name": "burn_ratio",
+    "type": "decimal",
+    "description": "Percentage of gross issuance offset by SOL burned (burn ÷ gross issuance × 100).",
+    "example": "4.583799991477923"
+  },
+  {
+    "name": "jito_labs_commission_usd",
+    "type": "decimal",
+    "description": "USD value of Jito Labs commissions from MEV rewards during the epoch.",
+    "example": "86114.66942102704"
+  },
+  {
+    "name": "sol_burn_usd",
+    "type": "decimal",
+    "description": "USD value of SOL burned from transaction fees during the epoch.",
+    "example": "1291485.1965213623"
+  },
+  {
+    "name": "staking_reward_usd",
+    "type": "decimal",
+    "description": "USD value of SOL issued as staking rewards to validators and delegators.",
+    "example": "21224689.15838596"
+  },
+  {
+    "name": "voting_reward_usd",
+    "type": "decimal",
+    "description": "USD value of SOL issued as voting rewards for block confirmations.",
+    "example": "8016584.706437976"
+  },
+  {
+    "name": "gross_sol_issuance_usd",
+    "type": "decimal",
+    "description": "USD value of total SOL issued during the epoch before burns.",
+    "example": "29241273.864823934"
+  },
+  {
+    "name": "net_sol_issuance_usd",
+    "type": "decimal",
+    "description": "USD value of net SOL issuance after accounting for SOL burned.",
+    "example": "27949788.668302573"
+  }
+],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
