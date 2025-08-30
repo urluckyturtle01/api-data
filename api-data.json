@@ -4738,31 +4738,31 @@
         {
           "name": "block_date",
           "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
+          "description": "Date of recorded burn activity",
           "example": "2025-08-23"
         },
         {
           "name": "sol_burn_sol",
           "type": "decimal",
-          "description": "sol_burn_sol field containing float data for application-specific processing and analysis",
+          "description": "Amount of SOL burned on this date (in native SOL)",
           "example": "2841.3531220255136"
         },
         {
           "name": "sol_burn_usd",
           "type": "decimal",
-          "description": "sol_burn_usd field containing float data for application-specific processing and analysis",
+          "description": "Value of SOL burned on this date (in USD terms)",
           "example": "575887.9283757906"
         },
         {
           "name": "cumulative_sol_burn_sol",
           "type": "decimal",
-          "description": "cumulative_sol_burn_sol field containing float data for application-specific processing and analysis",
+          "description": "Total cumulative SOL burned to date (in native SOL)",
           "example": "4422995.801121242"
         },
         {
           "name": "cumulative_sol_burn_usd",
           "type": "decimal",
-          "description": "cumulative_sol_burn_usd field containing float data for application-specific processing and analysis",
+          "description": "Total cumulative value of burned SOL to date (in USD terms)",
           "example": "700140826.899172"
         }
       ],
@@ -4783,43 +4783,43 @@
         {
           "name": "month",
           "type": "date",
-          "description": "month field containing date data for application-specific processing and analysis",
+          "description": "Month of recorded economic value data",
           "example": "2025-07-01"
         },
         {
           "name": "real_economic_value",
           "type": "decimal",
-          "description": "Value field containing quantitative data for metrics, calculations, and reporting",
+          "description": "Real Economic Value (REV) in native SOL",
           "example": "513397.5529600907"
         },
         {
           "name": "total_economic_value",
           "type": "decimal",
-          "description": "Value field containing quantitative data for metrics, calculations, and reporting",
+          "description": "Total Economic Value (TEV) in native SOL, combining SOL issuance and REV",
           "example": "2851360.33439102"
         },
         {
           "name": "sol_issuance",
           "type": "decimal",
-          "description": "sol_issuance field containing float data for application-specific processing and analysis",
+          "description": "Amount of new SOL issued during the month",
           "example": "2337962.781430929"
         },
         {
           "name": "real_economic_value_usd",
           "type": "decimal",
-          "description": "real_economic_value_usd field containing float data for application-specific processing and analysis",
+          "description": "Real Economic Value (REV) expressed in USD terms",
           "example": "86998928.19748412"
         },
         {
           "name": "total_economic_value_usd",
           "type": "decimal",
-          "description": "total_economic_value_usd field containing float data for application-specific processing and analysis",
+          "description": "Total Economic Value (TEV) expressed in USD terms",
           "example": "481858568.11086357"
         },
         {
           "name": "sol_issuance_usd",
           "type": "decimal",
-          "description": "sol_issuance_usd field containing float data for application-specific processing and analysis",
+          "description": "Value of newly issued SOL expressed in USD terms",
           "example": "394859639.91337943"
         }
       ],
@@ -4837,31 +4837,31 @@
       "menuName": "Stablecoins",
       "id": "api-186",
       "responseColumns": [
-        {
-          "name": "month",
-          "type": "date",
-          "description": "month field containing datetime data for application-specific processing and analysis",
-          "example": "2025-08-01"
-        },
-        {
-          "name": "name",
-          "type": "text",
-          "description": "Human-readable identifier for user recognition, categorization, and display purposes",
-          "example": "Backpack"
-        },
-        {
-          "name": "flow_type",
-          "type": "text",
-          "description": "Type field enabling polymorphic behavior and category-based processing",
-          "example": "from cex"
-        },
-        {
-          "name": "volume",
-          "type": "decimal",
-          "description": "Trading volume indicating market liquidity, activity levels, and investor interest",
-          "example": "267919509.241662"
-        }
-      ],
+    {
+      "name": "month",
+      "type": "date",
+      "description": "Month of recorded stablecoin transfer activity",
+      "example": "2025-08-01"
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Source centralized exchange sending the stablecoin transfers",
+      "example": "Backpack"
+    },
+    {
+      "name": "flow_type",
+      "type": "text",
+      "description": "Direction of flow, categorizing whether transfers are going to or from CEXs",
+      "example": "from cex"
+    },
+    {
+      "name": "volume",
+      "type": "decimal",
+      "description": "Total stablecoin transfer volume (in USD) for the given month from Centralized Exchanges",
+      "example": "267919509.241662"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.887Z"
     },
@@ -4897,7 +4897,7 @@
     {
       "name": "volume",
       "type": "decimal",
-      "description": "Total stablecoin transfer volume (in USD) for the given month from Centralized Exchanges to Solana",
+      "description": "Total stablecoin transfer volume (in USD) for the given month to Centralized Exchanges",
       "example": "889.41"
     }
   ],
