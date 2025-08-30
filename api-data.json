@@ -9,7 +9,7 @@
       "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13448/results.json",
       "apiKey": "enfT00LNZEyisrWZh1mcgCLaPvcddY6r4nqlyN5J",
       "title": "Avg & Median Cu Price",
-      "subtitle": "Includes all non-vote transactions (successful and failed).....jj hello",
+      "subtitle": "Includes all non-vote transactions (successful and failed)",
       "page": "compute-units",
       "pageName": "Compute Units",
       "menuId": "compute-units",
@@ -4976,111 +4976,7 @@
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.887Z"
     },
-    {
-      "endpoint": "https://analytics.topledger.xyz/solana/api/queries/12455/results.json",
-      "apiKey": "ypIOlDBsixHtBlfsFtuv5LzvZ8Vi4avG3wcLC74q",
-      "title": "Monthly Stablecoin Transfer Velocity",
-      "subtitle": "The rate at which stablecoins are moved within the ecosystem, giving insight into liquidity flow",
-      "page": "liquidity-velocity",
-      "pageName": "Liquidity Velocity",
-      "menuId": "stablecoins",
-      "menuName": "Stablecoins",
-      "id": "api-190",
-      "responseColumns": [
-        {
-          "name": "month",
-          "type": "date",
-          "description": "month field containing date data for application-specific processing and analysis",
-          "example": "2025-08-01"
-        },
-        {
-          "name": "mint",
-          "type": "solana_address",
-          "description": "Token mint address controlling supply, metadata, and minting authority on Solana",
-          "example": "USDSwr9ApdHk5bvJKMjzff41FfuX8bSxdKcR81vTwcA"
-        },
-        {
-          "name": "mint_name",
-          "type": "text",
-          "description": "Name field containing descriptive labels for entity identification and organization",
-          "example": "USDS"
-        },
-        {
-          "name": "token_supply",
-          "type": "decimal",
-          "description": "Supply field containing token availability, distribution, and inflation data",
-          "example": "51422919.77864399"
-        },
-        {
-          "name": "fee_payer",
-          "type": "uint",
-          "description": "fee_payer field containing integer data for application-specific processing and analysis",
-          "example": "9928"
-        },
-        {
-          "name": "p2p_fee_payer",
-          "type": "uint",
-          "description": "p2p_fee_payer field containing integer data for application-specific processing and analysis",
-          "example": "419"
-        },
-        {
-          "name": "transfers",
-          "type": "uint",
-          "description": "transfers field containing integer data for application-specific processing and analysis",
-          "example": "1065442"
-        },
-        {
-          "name": "p2p_transfers",
-          "type": "uint",
-          "description": "p2p_transfers field containing integer data for application-specific processing and analysis",
-          "example": "3503"
-        },
-        {
-          "name": "volume_usd",
-          "type": "decimal",
-          "description": "volume_usd field containing float data for application-specific processing and analysis",
-          "example": "653821102.701081"
-        },
-        {
-          "name": "p2p_volume",
-          "type": "decimal",
-          "description": "Volume field measuring transaction throughput, capacity, or market activity",
-          "example": "10528958.897149984"
-        },
-        {
-          "name": "avg_transfer_size",
-          "type": "decimal",
-          "description": "avg_transfer_size field containing float data for application-specific processing and analysis",
-          "example": "613.6618442872358"
-        },
-        {
-          "name": "p2p_avg_transfer_size",
-          "type": "decimal",
-          "description": "p2p_avg_transfer_size field containing float data for application-specific processing and analysis",
-          "example": "3005.6976583357077"
-        },
-        {
-          "name": "velocity",
-          "type": "decimal",
-          "description": "velocity field containing float data for application-specific processing and analysis",
-          "example": "0.4238195118153092"
-        },
-        {
-          "name": "p2p_velocity",
-          "type": "decimal",
-          "description": "p2p_velocity field containing float data for application-specific processing and analysis",
-          "example": "0.006825075240426595"
-        },
-        {
-          "name": "program_interacted",
-          "type": "uint",
-          "description": "program_interacted field containing integer data for application-specific processing and analysis",
-          "example": "150"
-        }
-      ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.887Z"
-    },
+    
     {
       "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12796/results.json",
       "apiKey": "FsMRolQsXioS23lMYqhIqoD98nrm2EjkxgeqyPuW",
@@ -5092,31 +4988,31 @@
       "menuName": "Stablecoins",
       "id": "api-191",
       "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-24"
-        },
-        {
-          "name": "mint",
-          "type": "text",
-          "description": "Token mint address controlling supply, metadata, and minting authority on Solana",
-          "example": "USDY"
-        },
-        {
-          "name": "Mint_Amount",
-          "type": "decimal",
-          "description": "Amount field storing quantitative values for financial operations and accounting",
-          "example": "144.434436"
-        },
-        {
-          "name": "Burn_Amount",
-          "type": "decimal",
-          "description": "Amount field storing quantitative values for financial operations and accounting",
-          "example": "54.74655"
-        }
-      ],
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Date on which stablecoin mint and burn events were aggregated",
+      "example": "2025-08-24"
+    },
+    {
+      "name": "mint",
+      "type": "text",
+      "description": "Readable symbol or identifier of the stablecoin mint on Solana",
+      "example": "USDY"
+    },
+    {
+      "name": "mint_amount",
+      "type": "decimal",
+      "description": "Total quantity of the stablecoin minted (issued) on the given date",
+      "example": "144.434436"
+    },
+    {
+      "name": "burn_amount",
+      "type": "decimal",
+      "description": "Total quantity of the stablecoin burned (redeemed/destroyed) on the given date",
+      "example": "54.74655"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.887Z"
     },
@@ -5134,31 +5030,31 @@
         {
           "name": "block_date",
           "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
+          "description": "Daily snapshot date for which stablecoin holder and supply data is recorded",
           "example": "2025-08-23"
         },
         {
           "name": "mint",
           "type": "solana_address",
-          "description": "Token mint address controlling supply, metadata, and minting authority on Solana",
+          "description": "Stablecoin mint address on Solana, uniquely identifying the token and its authority",
           "example": "A1KLoBrKBde8Ty9qtNQUtq3C2ortoC3u7twggz7sEto6"
         },
         {
           "name": "holders",
           "type": "uint",
-          "description": "holders field containing integer data for application-specific processing and analysis",
+          "description": "Number of unique wallet addresses holding the stablecoin on the given date",
           "example": "6055"
         },
         {
           "name": "token_supply",
           "type": "decimal",
-          "description": "Supply field containing token availability, distribution, and inflation data",
+          "description": "Circulating supply of the stablecoin on Solana at the given block_date",
           "example": "162101041.89126801"
         },
         {
           "name": "mint_name",
           "type": "text",
-          "description": "Name field containing descriptive labels for entity identification and organization",
+          "description": "Readable symbol or name of the stablecoin mint",
           "example": "USDY"
         }
       ],
@@ -5168,7 +5064,7 @@
     {
       "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13409/results.json",
       "apiKey": "w5H1Xhtgura5ZnmyZFeYIu1lQO0dBdth7UCAaU18",
-      "title": "Transfer Volume",
+      "title": "Stablecoin Activity",
       "subtitle": "Stablecoin transfer volume on Solana, reflecting ecosystem liquidity and adoption trends",
       "page": "stablecoin-usage",
       "pageName": "Stablecoin Usage",
@@ -5176,94 +5072,97 @@
       "menuName": "Stablecoins",
       "id": "api-193",
       "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-23"
-        },
-        {
-          "name": "mint",
-          "type": "solana_address",
-          "description": "Token mint address controlling supply, metadata, and minting authority on Solana",
-          "example": "AUSD1jCcCyPLybk1YnvPWsHQSrZ46dxwoMniN4N2UEB9"
-        },
-        {
-          "name": "mint_name",
-          "type": "text",
-          "description": "Name field containing descriptive labels for entity identification and organization",
-          "example": "AUSD"
-        },
-        {
-          "name": "token_supply",
-          "type": "decimal",
-          "description": "Supply field containing token availability, distribution, and inflation data",
-          "example": "39382809.735209"
-        },
-        {
-          "name": "fee_payer",
-          "type": "uint",
-          "description": "fee_payer field containing integer data for application-specific processing and analysis",
-          "example": "78"
-        },
-        {
-          "name": "p2p_fee_payer",
-          "type": "uint",
-          "description": "p2p_fee_payer field containing integer data for application-specific processing and analysis",
-          "example": "0"
-        },
-        {
-          "name": "transfers",
-          "type": "uint",
-          "description": "transfers field containing integer data for application-specific processing and analysis",
-          "example": "7428"
-        },
-        {
-          "name": "p2p_transfers",
-          "type": "uint",
-          "description": "p2p_transfers field containing integer data for application-specific processing and analysis",
-          "example": "0"
-        },
-        {
-          "name": "volume_usd",
-          "type": "decimal",
-          "description": "volume_usd field containing float data for application-specific processing and analysis",
-          "example": "748365.4853000001"
-        },
-        {
-          "name": "p2p_volume",
-          "type": "null",
-          "description": "Volume field measuring transaction throughput, capacity, or market activity"
-        },
-        {
-          "name": "avg_transfer_size",
-          "type": "decimal",
-          "description": "avg_transfer_size field containing float data for application-specific processing and analysis",
-          "example": "100.7492575794292"
-        },
-        {
-          "name": "p2p_avg_transfer_size",
-          "type": "null",
-          "description": "Null or undefined value indicating missing, unknown, or not applicable data"
-        },
-        {
-          "name": "velocity",
-          "type": "decimal",
-          "description": "velocity field containing float data for application-specific processing and analysis",
-          "example": "0.0006334112864061318"
-        },
-        {
-          "name": "p2p_velocity",
-          "type": "null",
-          "description": "Null or undefined value indicating missing, unknown, or not applicable data"
-        },
-        {
-          "name": "program_interacted",
-          "type": "uint",
-          "description": "program_interacted field containing integer data for application-specific processing and analysis",
-          "example": "18"
-        }
-      ],
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Daily date for which stablecoin transfer activity metrics are recorded",
+      "example": "2025-08-23"
+    },
+    {
+      "name": "mint",
+      "type": "solana_address",
+      "description": "Stablecoin mint address on Solana, uniquely identifying the token",
+      "example": "AUSD1jCcCyPLybk1YnvPWsHQSrZ46dxwoMniN4N2UEB9"
+    },
+    {
+      "name": "mint_name",
+      "type": "text",
+      "description": "Readable symbol or name of the stablecoin mint",
+      "example": "AUSD"
+    },
+    {
+      "name": "token_supply",
+      "type": "decimal",
+      "description": "Circulating supply of the stablecoin at the given block_date",
+      "example": "39382809.735209"
+    },
+    {
+      "name": "fee_payer",
+      "type": "uint",
+      "description": "Count of fee-paying accounts involved in transfers",
+      "example": "78"
+    },
+    {
+      "name": "p2p_fee_payer",
+      "type": "uint",
+      "description": "Count of fee-paying accounts involved specifically in peer-to-peer (wallet-to-wallet) transfers",
+      "example": "0"
+    },
+    {
+      "name": "transfers",
+      "type": "uint",
+      "description": "Total number of stablecoin transfer transactions on Solana for the given day",
+      "example": "7428"
+    },
+    {
+      "name": "p2p_transfers",
+      "type": "uint",
+      "description": "Number of direct wallet-to-wallet transfer transactions",
+      "example": "0"
+    },
+    {
+      "name": "volume_usd",
+      "type": "decimal",
+      "description": "Total daily transfer volume denominated in USD",
+      "example": "748365.4853000001"
+    },
+    {
+      "name": "p2p_volume",
+      "type": "decimal",
+      "description": "Daily transfer volume from peer-to-peer transactions denominated in USD",
+      "example": null
+    },
+    {
+      "name": "avg_transfer_size",
+      "type": "decimal",
+      "description": "Average size of a transfer in USD, computed as total transfer volume divided by number of transfers",
+      "example": "100.7492575794292"
+    },
+    {
+      "name": "p2p_avg_transfer_size",
+      "type": "decimal",
+      "description": "Average peer-to-peer transfer size in USD, computed as P2P transfer volume divided by P2P transfers",
+      "example": null
+    },
+    {
+      "name": "velocity",
+      "type": "decimal",
+      "description": "Velocity of stablecoins on Solana, calculated as transfer volume divided by circulating supply. Indicates how frequently the token supply turns over in a day.",
+      "example": "0.0006334112864061318"
+    },
+    {
+      "name": "p2p_velocity",
+      "type": "decimal",
+      "description": "Peer-to-peer velocity, calculated as P2P transfer volume divided by supply. Shows turnover frequency for wallet-to-wallet transactions only.",
+      "example": null
+    },
+    {
+      "name": "program_interacted",
+      "type": "uint",
+      "description": "Number of unique Solana programs (smart contracts) stablecoins interacted with during transfers",
+      "example": "18"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.887Z"
     },
@@ -5281,19 +5180,19 @@
         {
           "name": "block_date",
           "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
+          "description": "Date on which the stablecoin swap volume on Solana DEXs is recorded (daily granularity).",
           "example": "2025-08-23"
         },
         {
           "name": "mint",
           "type": "text",
-          "description": "Token mint address controlling supply, metadata, and minting authority on Solana",
+          "description": "Stablecoin mint address (on Solana) identifying the token being swapped, e.g., USDC, USDT, or other Solana-based stablecoins.",
           "example": "USDG"
         },
         {
           "name": "dex_volume_usd",
           "type": "decimal",
-          "description": "dex_volume_usd field containing float data for application-specific processing and analysis",
+          "description": "Trading volume of stablecoin swaps on Solana DEXs, expressed in USD.",
           "example": "10652918.131137159"
         }
       ],
@@ -5310,20 +5209,20 @@
       "menuId": "stablecoins",
       "menuName": "Stablecoins",
       "id": "api-195",
-      "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-23"
-        },
-        {
-          "name": "tvl_dex_pool",
-          "type": "decimal",
-          "description": "tvl_dex_pool field containing float data for application-specific processing and analysis",
-          "example": "656277573.7914726"
-        }
-      ],
+     "responseColumns": [
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Date on which the stablecoin TVL in Solana DEX pools is recorded (daily granularity).",
+      "example": "2025-08-23"
+    },
+    {
+      "name": "tvl_dex_pool",
+      "type": "decimal",
+      "description": "Total value locked in Solana DEX pools containing stablecoins, expressed in USD.",
+      "example": "656277573.7914726"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.887Z"
     },
