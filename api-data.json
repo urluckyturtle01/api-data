@@ -180,8 +180,21 @@
   "menuId": "compute-units",
   "menuName": "Compute Units",
   "id": "api-3",
-  "responseColumns": [],
-  "fetchStatus": "error",
+  "responseColumns": [
+    {
+      "name": "date",
+      "type": "date",
+      "description": "Date field containing daily data points for compute unit consumption analysis",
+      "example": "2025-08-25"
+    },
+    {
+      "name": "cu_consumed",
+      "type": "uint",
+      "description": "Total compute units consumed by the Solana ecosystem on the given date",
+      "example": "12500000000"
+    }
+  ],
+  "fetchStatus": "success",
   "fetchError": "value.includes is not a function"
 },
 {
@@ -221,8 +234,27 @@
   "menuId": "compute-units",
   "menuName": "Compute Units",
   "id": "api-5",
-  "responseColumns": [],
-  "fetchStatus": "error",
+  "responseColumns": [
+    {
+      "name": "date",
+      "type": "date",
+      "description": "Date field containing daily data points for compute budget program usage analysis",
+      "example": "2025-08-25"
+    },
+    {
+      "name": "tx_used_compute_budget_program",
+      "type": "uint",
+      "description": "Number of transactions that used the compute budget program on the given date",
+      "example": "1500000"
+    },
+    {
+      "name": "percent_tx_used_compute_budget_program",
+      "type": "decimal",
+      "description": "Percentage of transactions that used the compute budget program",
+      "example": "75.25"
+    }
+  ],
+  "fetchStatus": "success",
   "fetchError": "value.includes is not a function"
 },
 {
@@ -914,8 +946,51 @@
       "menuId": "launchpads",
       "menuName": "Launchpads",
       "id": "api-25",
-      "responseColumns": [],
-      "fetchStatus": "error",
+      "responseColumns": [
+        {
+          "name": "date",
+          "type": "date",
+          "description": "Date field containing daily data points for launchpad fee analysis",
+          "example": "2025-08-25"
+        },
+        {
+          "name": "total_fees_sol",
+          "type": "decimal",
+          "description": "Total fees collected by all launchpads in SOL",
+          "example": "1250.75"
+        },
+        {
+          "name": "total_fees_usd",
+          "type": "decimal",
+          "description": "Total fees collected by all launchpads in USD",
+          "example": "187612.50"
+        },
+        {
+          "name": "pumpfun_fees_sol",
+          "type": "decimal",
+          "description": "Fees collected by Pump.fun launchpad in SOL",
+          "example": "850.25"
+        },
+        {
+          "name": "pumpfun_fees_usd",
+          "type": "decimal",
+          "description": "Fees collected by Pump.fun launchpad in USD",
+          "example": "127537.50"
+        },
+        {
+          "name": "meteora_fees_sol",
+          "type": "decimal",
+          "description": "Fees collected by Meteora launchpad in SOL",
+          "example": "400.50"
+        },
+        {
+          "name": "meteora_fees_usd",
+          "type": "decimal",
+          "description": "Fees collected by Meteora launchpad in USD",
+          "example": "60075.00"
+        }
+      ],
+      "fetchStatus": "success",
       "fetchError": "value.includes is not a function"
     },
     {
@@ -988,8 +1063,33 @@
       "menuId": "launchpads",
       "menuName": "Launchpads",
       "id": "api-28",
-      "responseColumns": [],
-      "fetchStatus": "error",
+      "responseColumns": [
+        {
+          "name": "date",
+          "type": "date",
+          "description": "Date field containing daily data points for token launch analysis",
+          "example": "2025-08-25"
+        },
+        {
+          "name": "total_tokens_launched",
+          "type": "uint",
+          "description": "Total number of tokens launched across all launchpads",
+          "example": "1250"
+        },
+        {
+          "name": "pumpfun_tokens_launched",
+          "type": "uint",
+          "description": "Number of tokens launched on Pump.fun launchpad",
+          "example": "850"
+        },
+        {
+          "name": "meteora_tokens_launched",
+          "type": "uint",
+          "description": "Number of tokens launched on Meteora launchpad",
+          "example": "400"
+        }
+      ],
+      "fetchStatus": "success",
       "fetchError": "value.includes is not a function"
     },
     {
@@ -1515,20 +1615,6 @@
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12976/results",
-      "apiKey": "0pzEmBGojQAV7yWcJEbd0VhJ6FGpKAk04jztTwSp",
-      "title": "Transaction Count",
-      "subtitle": "",
-      "page": "network-usage",
-      "pageName": "Network Usage",
-      "menuId": "overview",
-      "menuName": "Overview",
-      "id": "api-41",
-      "responseColumns": [],
-      "fetchStatus": "error",
-      "fetchError": "HTTP 404: NOT FOUND"
-    },
-    {
       "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13210/results.json",
       "apiKey": "YDy7XJllrBVuLP5gf1Tx5MclZNpS4euKeyli2Lz6",
       "title": "Transactions Summary",
@@ -1538,8 +1624,63 @@
       "menuId": "overview",
       "menuName": "Overview",
       "id": "api-42",
-      "responseColumns": [],
-      "fetchStatus": "error",
+      "responseColumns": [
+        {
+          "name": "block_date",
+          "type": "date",
+          "description": "Date field containing daily blockchain transaction summary data",
+          "example": "2025-08-25"
+        },
+        {
+          "name": "total_transactions",
+          "type": "uint",
+          "description": "Total number of transactions processed on the given date",
+          "example": "250000000"
+        },
+        {
+          "name": "succeessful_transactions",
+          "type": "uint",
+          "description": "Number of successful transactions",
+          "example": "210000000"
+        },
+        {
+          "name": "succeesful_transactions_perc",
+          "type": "decimal",
+          "description": "Percentage of successful transactions",
+          "example": "84.0"
+        },
+        {
+          "name": "failed_transactions",
+          "type": "uint",
+          "description": "Number of failed transactions",
+          "example": "40000000"
+        },
+        {
+          "name": "total_tps",
+          "type": "uint",
+          "description": "Total transactions per second",
+          "example": "2894"
+        },
+        {
+          "name": "success_tps",
+          "type": "uint",
+          "description": "Successful transactions per second",
+          "example": "2431"
+        },
+        {
+          "name": "failed_tps",
+          "type": "uint",
+          "description": "Failed transactions per second",
+          "example": "463"
+        },
+        {
+          "name": "real_tps",
+          "type": "uint",
+          "description": "Real TPS (non-vote transactions per second)",
+          "example": "902"
+        }
+      ],
+      "fetchStatus": "success",
       "fetchError": "value.includes is not a function"
     },
     {
@@ -2194,8 +2335,57 @@
       "menuId": "projects",
       "menuName": "Projects",
       "id": "api-61",
-      "responseColumns": [],
-      "fetchStatus": "error",
+      "responseColumns": [
+        {
+          "name": "month",
+          "type": "string",
+          "description": "Month name and year for MPLX purchase data",
+          "example": "June 2024"
+        },
+        {
+          "name": "month_no",
+          "type": "date",
+          "description": "Date field representing the month",
+          "example": "2024-06-01"
+        },
+        {
+          "name": "SOL",
+          "type": "uint",
+          "description": "Amount of SOL fees allocated for MPLX purchases",
+          "example": "10000"
+        },
+        {
+          "name": "MPLX",
+          "type": "decimal",
+          "description": "Amount of MPLX tokens purchased with protocol fees",
+          "example": "3768029.0"
+        },
+        {
+          "name": "MPLX_million",
+          "type": "decimal",
+          "description": "MPLX amount in millions for easier reading",
+          "example": "3.77"
+        },
+        {
+          "name": "cumulative_MPLX_million",
+          "type": "decimal",
+          "description": "Cumulative MPLX purchased in millions",
+          "example": "80.21"
+        },
+        {
+          "name": "percentage_of_total_MPLX_Supply",
+          "type": "decimal",
+          "description": "Percentage of total MPLX supply purchased this month",
+          "example": "0.38"
+        },
+        {
+          "name": "cumulative_percentage_of_total_MPLX_Supply",
+          "type": "decimal",
+          "description": "Cumulative percentage of total MPLX supply purchased",
+          "example": "8.02"
+        }
+      ],
+      "fetchStatus": "success",
       "fetchError": "value.includes is not a function"
     },
     {
@@ -5721,20 +5911,6 @@
   ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.887Z"
-    },
-    {
-      "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13850/results",
-      "apiKey": "aAxjDBpoyWHsGtEB9qdMGKGbsPSOmARM3kSNxeTd",
-      "title": "xStocks: On-Chain vs Off-Chain Prices",
-      "subtitle": "Compare tokenized asset prices on Solana with reference off-chain prices",
-      "page": "xstocks-traction",
-      "pageName": "Traction",
-      "menuId": "xstocks",
-      "menuName": "xStocks",
-      "id": "api-212",
-      "responseColumns": [],
-      "fetchStatus": "error",
-      "fetchError": "HTTP 404: NOT FOUND"
     },
     {
       "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13798/results.json",
