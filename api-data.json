@@ -4011,24 +4011,25 @@
       "menuName": "Projects",
       "id": "api-109",
       "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-25"
-        },
-        {
-          "name": "pool_type",
-          "type": "text",
-          "description": "Type field enabling polymorphic behavior and category-based processing",
-          "example": "(Meme)Others"
-        },
-        {
-          "name": "volume_usd",
-          "type": "null",
-          "description": "Null or undefined value indicating missing, unknown, or not applicable data"
-        }
-      ],
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Date when trading activity was recorded",
+      "example": "2025-08-25"
+    },
+    {
+      "name": "pool_type",
+      "type": "text",
+      "description": "Category of liquidity pool contributing to trading activity. Possible values include: (Meme)Others, Meme(Pump.fun), SOL-Stable, Stable, Bluechip, LST, Meme(Moonshot), AI",
+      "example": "Meme(Pump.fun)"
+    },
+    {
+      "name": "volume_usd",
+      "type": "decimal",
+      "description": "Total trading volume in USD for the given pool type on the specified date (can be null if unavailable)",
+      "example": "1456789.23"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -4043,42 +4044,43 @@
       "menuName": "Projects",
       "id": "api-110",
       "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-21"
-        },
-        {
-          "name": "product",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "CLMM"
-        },
-        {
-          "name": "trades",
-          "type": "uint",
-          "description": "trades field containing integer data for application-specific processing and analysis",
-          "example": "449179"
-        },
-        {
-          "name": "volume_usd",
-          "type": "null",
-          "description": "Null or undefined value indicating missing, unknown, or not applicable data"
-        },
-        {
-          "name": "cumulative_trades",
-          "type": "bigint",
-          "description": "cumulative_trades field containing integer data for application-specific processing and analysis",
-          "example": "6876972882"
-        },
-        {
-          "name": "cumulative_volume_usd",
-          "type": "decimal",
-          "description": "cumulative_volume_usd field containing float data for application-specific processing and analysis",
-          "example": "1023714347992.3638"
-        }
-      ],
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Date when trading activity was recorded",
+      "example": "2025-08-21"
+    },
+    {
+      "name": "product",
+      "type": "text",
+      "description": "Raydium product or feature (e.g., AMM, CLMM, order book) contributing to trading activity",
+      "example": "CLMM"
+    },
+    {
+      "name": "trades",
+      "type": "uint",
+      "description": "Number of trades executed for the product on the given date",
+      "example": "449179"
+    },
+    {
+      "name": "volume_usd",
+      "type": "decimal",
+      "description": "Total trading volume in USD for the product on the given date (can be null if unavailable)",
+      "example": "0"
+    },
+    {
+      "name": "cumulative_trades",
+      "type": "bigint",
+      "description": "Running total of trades executed for the product since inception",
+      "example": "6876972882"
+    },
+    {
+      "name": "cumulative_volume_usd",
+      "type": "decimal",
+      "description": "Running total trading volume in USD for the product since inception",
+      "example": "1023714347992.3638"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -4093,25 +4095,25 @@
       "menuName": "Protocol Revenue",
       "id": "api-111",
       "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-24"
-        },
-        {
-          "name": "platform",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "Helium"
-        },
-        {
-          "name": "protocol_revenue",
-          "type": "decimal",
-          "description": "Revenue field tracking income generation and protocol economic performance",
-          "example": "44777.87657"
-        }
-      ],
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Date field providing temporal context for data aggregation and filtering",
+      "example": "2025-08-24"
+    },
+    {
+      "name": "platform",
+      "type": "text",
+      "description": "Name of the DePIN platform or service",
+      "example": "Helium"
+    },
+    {
+      "name": "protocol_revenue",
+      "type": "decimal",
+      "description": "Revenue field tracking income generation and protocol performance for DePIN activity",
+      "example": "44777.87657"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -4126,25 +4128,25 @@
       "menuName": "Protocol Revenue",
       "id": "api-112",
       "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-24"
-        },
-        {
-          "name": "platform",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "Moonshot"
-        },
-        {
-          "name": "protocol_revenue",
-          "type": "decimal",
-          "description": "Revenue field tracking income generation and protocol economic performance",
-          "example": "542.7451404375524"
-        }
-      ],
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Date field providing temporal context for data aggregation and filtering",
+      "example": "2025-08-24"
+    },
+    {
+      "name": "platform",
+      "type": "text",
+      "description": "Name of the memecoin launchpad platform or service",
+      "example": "Moonshot"
+    },
+    {
+      "name": "protocol_revenue",
+      "type": "decimal",
+      "description": "Revenue field capturing income generation and protocol performance for launchpad activity",
+      "example": "542.7451404375524"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -4159,25 +4161,25 @@
       "menuName": "Protocol Revenue",
       "id": "api-113",
       "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-25"
-        },
-        {
-          "name": "platform",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "DexScreener"
-        },
-        {
-          "name": "protocol_revenue",
-          "type": "uint",
-          "description": "Revenue field tracking income generation and protocol economic performance",
-          "example": "0"
-        }
-      ],
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Date field providing temporal context for data aggregation and filtering",
+      "example": "2025-08-25"
+    },
+    {
+      "name": "platform",
+      "type": "text",
+      "description": "Name of the memecoin trading platform or marketplace",
+      "example": "DexScreener"
+    },
+    {
+      "name": "protocol_revenue",
+      "type": "decimal",
+      "description": "Revenue field capturing income generation and fee accrual for memecoin trading activity",
+      "example": "0"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -4192,25 +4194,25 @@
       "menuName": "Protocol Revenue",
       "id": "api-114",
       "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-24"
-        },
-        {
-          "name": "platform",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "Pump AMM"
-        },
-        {
-          "name": "protocol_revenue",
-          "type": "decimal",
-          "description": "Revenue field tracking income generation and protocol economic performance",
-          "example": "155138.4058772212"
-        }
-      ],
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Date of daily revenue aggregation for spot DEX activity",
+      "example": "2025-08-24"
+    },
+    {
+      "name": "platform",
+      "type": "text",
+      "description": "Name of the spot DEX platform generating revenue",
+      "example": "Pump AMM"
+    },
+    {
+      "name": "protocol_revenue",
+      "type": "decimal",
+      "description": "Daily protocol revenue earned by the spot DEX (in USD terms, before adjustments)",
+      "example": "155138.4058772212"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -4225,25 +4227,25 @@
       "menuName": "Protocol Revenue",
       "id": "api-115",
       "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-25"
-        },
-        {
-          "name": "platform",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "Banana Gun"
-        },
-        {
-          "name": "protocol_revenue",
-          "type": "uint",
-          "description": "Revenue field tracking income generation and protocol economic performance",
-          "example": "0"
-        }
-      ],
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Date corresponding to daily revenue aggregation for Telegram bots",
+      "example": "2025-08-25"
+    },
+    {
+      "name": "platform",
+      "type": "text",
+      "description": "Name of the Telegram bot or platform generating revenue",
+      "example": "Banana Gun"
+    },
+    {
+      "name": "protocol_revenue",
+      "type": "decimal",
+      "description": "Daily revenue earned by the Telegram bot platform (in USD terms, before adjustments)",
+      "example": "0"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -4258,25 +4260,25 @@
       "menuName": "Protocol Revenue",
       "id": "api-116",
       "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-18"
-        },
-        {
-          "name": "platform",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "Magiceden"
-        },
-        {
-          "name": "protocol_revenue",
-          "type": "decimal",
-          "description": "Revenue field tracking income generation and protocol economic performance",
-          "example": "7483.4837565727"
-        }
-      ],
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Date corresponding to daily revenue data aggregation",
+      "example": "2025-08-18"
+    },
+    {
+      "name": "platform",
+      "type": "text",
+      "description": "Name of the NFT marketplace or trading platform",
+      "example": "Magiceden"
+    },
+    {
+      "name": "protocol_revenue",
+      "type": "decimal",
+      "description": "Daily revenue earned by the NFT marketplace (in USD terms, before adjustments)",
+      "example": "7483.4837565727"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -4294,31 +4296,31 @@
         {
           "name": "block_date",
           "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
+          "description": "Date corresponding to revenue data aggregation",
           "example": "2025-08-24"
         },
         {
-          "name": "dApp Revenue",
+          "name": "dapp_revenue",
           "type": "decimal",
-          "description": "Revenue field tracking income generation and protocol economic performance",
+          "description": "Daily revenue generated by decentralized applications (in USD terms, before adjustments)",
           "example": "2860394.5494920216"
         },
         {
-          "name": "Total dApp Revenue",
+          "name": "total_dapp_revenue",
           "type": "decimal",
-          "description": "Revenue field tracking income generation and protocol economic performance",
+          "description": "Cumulative revenue generated by decentralized applications over time",
           "example": "3800563486.8957133"
         },
         {
-          "name": "Network Revenue",
+          "name": "network_revenue",
           "type": "decimal",
-          "description": "Revenue field tracking income generation and protocol economic performance",
+          "description": "Daily network revenue from fees and tips (in USD terms, after applying adjustment factors)",
           "example": "1412337.3589945526"
         },
         {
-          "name": "Total Network Revenue",
+          "name": "total_network_revenue",
           "type": "decimal",
-          "description": "Revenue field tracking income generation and protocol economic performance",
+          "description": "Cumulative revenue generated by the network over time",
           "example": "1932932153.7004097"
         }
       ],
@@ -4336,25 +4338,25 @@
       "menuName": "Protocol Revenue",
       "id": "api-118",
       "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-23"
-        },
-        {
-          "name": "platform",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "Banana Gun"
-        },
-        {
-          "name": "dapp revenue",
-          "type": "uint",
-          "description": "Revenue field tracking income generation and protocol economic performance",
-          "example": "0"
-        }
-      ],
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Date corresponding to revenue data aggregation",
+      "example": "2025-08-23"
+    },
+    {
+      "name": "platform",
+      "type": "text",
+      "description": "Name of the dapp or protocol generating revenue",
+      "example": "Banana Gun"
+    },
+    {
+      "name": "dapp_revenue",
+      "type": "decimal",
+      "description": "Revenue generated by the dapp on the specified date (in USD terms, before adjustments)",
+      "example": "0"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -4369,25 +4371,25 @@
       "menuName": "Protocol Revenue",
       "id": "api-119",
       "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-25"
-        },
-        {
-          "name": "Segment",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "Memecoin Trading App"
-        },
-        {
-          "name": "dAPP Revenue",
-          "type": "uint",
-          "description": "Revenue field tracking income generation and protocol economic performance",
-          "example": "0"
-        }
-      ],
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Date corresponding to revenue data aggregation",
+      "example": "2025-08-25"
+    },
+    {
+      "name": "Segment",
+      "type": "text",
+      "description": "Ecosystem category or segment under which the dapp revenue is tracked",
+      "example": "Memecoin Trading App"
+    },
+    {
+      "name": "dapp_revenue",
+      "type": "decimal",
+      "description": "Revenue generated by dapps within the given ecosystem segment on the specified date (in USD terms)",
+      "example": "0"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -4402,31 +4404,31 @@
       "menuName": "Protocol Revenue",
       "id": "api-120",
       "responseColumns": [
-        {
-          "name": "Dapp",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "Photon"
-        },
-        {
-          "name": "Segment",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "Telegram Bot"
-        },
-        {
-          "name": "protocol_revenue",
-          "type": "decimal",
-          "description": "Revenue field tracking income generation and protocol economic performance",
-          "example": "168308116.60908642"
-        },
-        {
-          "name": "segment_revenue",
-          "type": "decimal",
-          "description": "Revenue field tracking income generation and protocol economic performance",
-          "example": "514746801.8889444"
-        }
-      ],
+    {
+      "name": "Dapp",
+      "type": "text",
+      "description": "Name of the dapp generating revenue",
+      "example": "Photon"
+    },
+    {
+      "name": "Segment",
+      "type": "text",
+      "description": "Ecosystem category or segment the dapp belongs to",
+      "example": "Telegram Bot"
+    },
+    {
+      "name": "protocol_revenue",
+      "type": "decimal",
+      "description": "Total revenue generated by the individual dapp within its ecosystem (in USD terms)",
+      "example": "168308116.60908642"
+    },
+    {
+      "name": "segment_revenue",
+      "type": "decimal",
+      "description": "Aggregate revenue generated by all dapps within the same ecosystem segment (in USD terms)",
+      "example": "514746801.8889444"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -4441,19 +4443,19 @@
       "menuName": "Protocol Revenue",
       "id": "api-121",
       "responseColumns": [
-        {
-          "name": "platform",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "Pump Fun"
-        },
-        {
-          "name": "dapp_revenue",
-          "type": "decimal",
-          "description": "Revenue field tracking income generation and protocol economic performance",
-          "example": "653420106.061055"
-        }
-      ],
+    {
+      "name": "platform",
+      "type": "text",
+      "description": "Name of the dapp or platform generating revenue",
+      "example": "Pump Fun"
+    },
+    {
+      "name": "dapp_revenue",
+      "type": "decimal",
+      "description": "Total revenue earned by the dapp since Jan 2024 (in USD terms)",
+      "example": "653420106.061055"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -4471,55 +4473,55 @@
         {
           "name": "block_date",
           "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
+          "description": "Date of recorded fee and tip activity",
           "example": "2024-10-09"
         },
         {
           "name": "base_fee_sol",
           "type": "decimal",
-          "description": "base_fee_sol field containing float data for application-specific processing and analysis",
+          "description": "Base transaction fees collected (in SOL)",
           "example": "367.80551000000014"
         },
         {
           "name": "priority_fee_sol",
           "type": "decimal",
-          "description": "priority_fee_sol field containing float data for application-specific processing and analysis",
+          "description": "Priority fees paid for faster transaction processing (in SOL)",
           "example": "9032.525065982"
         },
         {
           "name": "jito_total_tips_sol",
           "type": "decimal",
-          "description": "jito_total_tips_sol field containing float data for application-specific processing and analysis",
+          "description": "Total Jito tips earned by validators (in SOL)",
           "example": "10522.233563483029"
         },
         {
           "name": "vote_fee_sol",
           "type": "decimal",
-          "description": "vote_fee_sol field containing float data for application-specific processing and analysis",
+          "description": "Fees associated with validator vote transactions (in SOL)",
           "example": "944.329207287"
         },
         {
           "name": "base_fee_usd",
           "type": "decimal",
-          "description": "base_fee_usd field containing float data for application-specific processing and analysis",
+          "description": "Base transaction fees collected (in USD)",
           "example": "52165.07264942503"
         },
         {
           "name": "priority_fee_usd",
           "type": "decimal",
-          "description": "priority_fee_usd field containing float data for application-specific processing and analysis",
+          "description": "Priority fees paid for faster transaction processing (in USD)",
           "example": "1281063.8053646977"
         },
         {
           "name": "jito_total_tips_usd",
           "type": "decimal",
-          "description": "jito_total_tips_usd field containing float data for application-specific processing and analysis",
+          "description": "Total Jito tips earned by validators (in USD)",
           "example": "1492345.9908833622"
         },
         {
           "name": "vote_fee_usd",
           "type": "decimal",
-          "description": "vote_fee_usd field containing float data for application-specific processing and analysis",
+          "description": "Fees associated with validator vote transactions (in USD)",
           "example": "133932.2015678892"
         }
       ],
@@ -4547,7 +4549,7 @@
   {
     "name": "jito_labs_commission_sol",
     "type": "decimal",
-    "description": "Total SOL commissions earned by Jito Labs validators from MEV operations during the epoch.",
+    "description": "Total SOL commissions earned by Jito Labs validators.",
     "example": "442.7695476475528"
   },
   {
