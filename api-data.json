@@ -4003,117 +4003,117 @@
     {
       "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13499/results",
       "apiKey": "D8FIAv2MtjpTRuW3yRRrT1hA1GtHU3awKfomY6gm",
-      "title": "Volume By Pool Type",
-      "subtitle": "",
+      "title": "Trading Volume by Liquidity Pool Type",
+      "subtitle": "Daily USD volumes categorized by pool type (Meme, Stable, LST, AI, etc.)",
       "page": "raydium-traction",
       "pageName": "Traction",
       "menuId": "projects",
       "menuName": "Projects",
       "id": "api-109",
       "responseColumns": [
-    {
-      "name": "block_date",
-      "type": "date",
-      "description": "Date when trading activity was recorded",
-      "example": "2025-08-25"
-    },
-    {
-      "name": "pool_type",
-      "type": "text",
-      "description": "Category of liquidity pool contributing to trading activity. Possible values include: (Meme)Others, Meme(Pump.fun), SOL-Stable, Stable, Bluechip, LST, Meme(Moonshot), AI",
-      "example": "Meme(Pump.fun)"
-    },
-    {
-      "name": "volume_usd",
-      "type": "decimal",
-      "description": "Total trading volume in USD for the given pool type on the specified date (can be null if unavailable)",
-      "example": "1456789.23"
-    }
-  ],
+        {
+          "name": "block_date",
+          "type": "date",
+          "description": "Date when trading activity was recorded",
+          "example": "2025-08-25"
+        },
+        {
+          "name": "pool_type",
+          "type": "text",
+          "description": "Category of liquidity pool contributing to trading activity. Possible values include: (Meme)Others, Meme(Pump.fun), SOL-Stable, Stable, Bluechip, LST, Meme(Moonshot), AI",
+          "example": "Meme(Pump.fun)"
+        },
+        {
+          "name": "volume_usd",
+          "type": "decimal",
+          "description": "Total trading volume in USD for the given pool type on the specified date (can be null if unavailable)",
+          "example": "1456789.23"
+        }
+      ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
     {
       "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13497/results.json",
       "apiKey": "Ioj7rYbSvlv13qFKehJ4oIwFs5ZSCu9aW3eqzvFZ",
-      "title": "Volume By Product",
-      "subtitle": "",
+      "title": "Trading Volume by Raydium Product",
+      "subtitle": "Daily and cumulative trades & USD volume across AMM, CLMM, and order book",
       "page": "raydium-traction",
       "pageName": "Traction",
       "menuId": "projects",
       "menuName": "Projects",
       "id": "api-110",
       "responseColumns": [
-    {
-      "name": "block_date",
-      "type": "date",
-      "description": "Date when trading activity was recorded",
-      "example": "2025-08-21"
-    },
-    {
-      "name": "product",
-      "type": "text",
-      "description": "Raydium product or feature (e.g., AMM, CLMM, order book) contributing to trading activity",
-      "example": "CLMM"
-    },
-    {
-      "name": "trades",
-      "type": "uint",
-      "description": "Number of trades executed for the product on the given date",
-      "example": "449179"
-    },
-    {
-      "name": "volume_usd",
-      "type": "decimal",
-      "description": "Total trading volume in USD for the product on the given date (can be null if unavailable)",
-      "example": "0"
-    },
-    {
-      "name": "cumulative_trades",
-      "type": "bigint",
-      "description": "Running total of trades executed for the product since inception",
-      "example": "6876972882"
-    },
-    {
-      "name": "cumulative_volume_usd",
-      "type": "decimal",
-      "description": "Running total trading volume in USD for the product since inception",
-      "example": "1023714347992.3638"
-    }
-  ],
+        {
+          "name": "block_date",
+          "type": "date",
+          "description": "Date when trading activity was recorded",
+          "example": "2025-08-21"
+        },
+        {
+          "name": "product",
+          "type": "text",
+          "description": "Raydium product or feature (e.g., AMM, CLMM, order book) contributing to trading activity",
+          "example": "CLMM"
+        },
+        {
+          "name": "trades",
+          "type": "uint",
+          "description": "Number of trades executed for the product on the given date",
+          "example": "449179"
+        },
+        {
+          "name": "volume_usd",
+          "type": "decimal",
+          "description": "Total trading volume in USD for the product on the given date (can be null if unavailable)",
+          "example": "0"
+        },
+        {
+          "name": "cumulative_trades",
+          "type": "bigint",
+          "description": "Running total of trades executed for the product since inception",
+          "example": "6876972882"
+        },
+        {
+          "name": "cumulative_volume_usd",
+          "type": "decimal",
+          "description": "Running total trading volume in USD for the product since inception",
+          "example": "1023714347992.3638"
+        }
+      ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
     {
       "endpoint": "https://analytics.topledger.xyz/solana/api/queries/13252/results.json",
       "apiKey": "TLqCBQoor6alADQbYUfFRNNc3h1KAtbH5xg3GDzh",
-      "title": "DePIN Revenue",
-      "subtitle": "",
+      "title": "DePIN Protocol Revenue",
+      "subtitle": "Daily revenue trends for decentralized physical infrastructure networks",
       "page": "depin",
       "pageName": "Depin",
       "menuId": "protocol-revenue",
       "menuName": "Protocol Revenue",
       "id": "api-111",
       "responseColumns": [
-    {
-      "name": "block_date",
-      "type": "date",
-      "description": "Date field providing temporal context for data aggregation and filtering",
-      "example": "2025-08-24"
-    },
-    {
-      "name": "platform",
-      "type": "text",
-      "description": "Name of the DePIN platform or service",
-      "example": "Helium"
-    },
-    {
-      "name": "protocol_revenue",
-      "type": "decimal",
-      "description": "Revenue field tracking income generation and protocol performance for DePIN activity",
-      "example": "44777.87657"
-    }
-  ],
+        {
+          "name": "block_date",
+          "type": "date",
+          "description": "Date field providing temporal context for data aggregation and filtering",
+          "example": "2025-08-24"
+        },
+        {
+          "name": "platform",
+          "type": "text",
+          "description": "Name of the DePIN platform or service",
+          "example": "Helium"
+        },
+        {
+          "name": "protocol_revenue",
+          "type": "decimal",
+          "description": "Revenue field tracking income generation and protocol performance for DePIN activity",
+          "example": "44777.87657"
+        }
+      ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -4121,172 +4121,172 @@
       "endpoint": "https://analytics.topledger.xyz/solana/api/queries/13169/results.json",
       "apiKey": "5csRuDS90HOdVaNWFua3wRc8e5gYyePNuHGcshkv",
       "title": "Memecoin Launchpad Revenue",
-      "subtitle": "",
+      "subtitle": "Daily protocol revenue generated by meme token launch platforms",
       "page": "dex-ecosystem",
       "pageName": "DEX Ecosystem",
       "menuId": "protocol-revenue",
       "menuName": "Protocol Revenue",
       "id": "api-112",
       "responseColumns": [
-    {
-      "name": "block_date",
-      "type": "date",
-      "description": "Date field providing temporal context for data aggregation and filtering",
-      "example": "2025-08-24"
-    },
-    {
-      "name": "platform",
-      "type": "text",
-      "description": "Name of the memecoin launchpad platform or service",
-      "example": "Moonshot"
-    },
-    {
-      "name": "protocol_revenue",
-      "type": "decimal",
-      "description": "Revenue field capturing income generation and protocol performance for launchpad activity",
-      "example": "542.7451404375524"
-    }
-  ],
+        {
+          "name": "block_date",
+          "type": "date",
+          "description": "Date field providing temporal context for data aggregation and filtering",
+          "example": "2025-08-24"
+        },
+        {
+          "name": "platform",
+          "type": "text",
+          "description": "Name of the memecoin launchpad platform or service",
+          "example": "Moonshot"
+        },
+        {
+          "name": "protocol_revenue",
+          "type": "decimal",
+          "description": "Revenue field capturing income generation and protocol performance for launchpad activity",
+          "example": "542.7451404375524"
+        }
+      ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
     {
       "endpoint": "https://analytics.topledger.xyz/solana/api/queries/13182/results.json",
       "apiKey": "TKHcPPIIfclxuUcvLvQ43vVAw6OKglHDf469m5py",
-      "title": "Memecoin Trading Platform Revenue",
-      "subtitle": "",
+      "title": "Memecoin Trading Revenue",
+      "subtitle": "Daily revenue from meme token trading platforms and marketplaces",
       "page": "dex-ecosystem",
       "pageName": "DEX Ecosystem",
       "menuId": "protocol-revenue",
       "menuName": "Protocol Revenue",
       "id": "api-113",
       "responseColumns": [
-    {
-      "name": "block_date",
-      "type": "date",
-      "description": "Date field providing temporal context for data aggregation and filtering",
-      "example": "2025-08-25"
-    },
-    {
-      "name": "platform",
-      "type": "text",
-      "description": "Name of the memecoin trading platform or marketplace",
-      "example": "DexScreener"
-    },
-    {
-      "name": "protocol_revenue",
-      "type": "decimal",
-      "description": "Revenue field capturing income generation and fee accrual for memecoin trading activity",
-      "example": "0"
-    }
-  ],
+        {
+          "name": "block_date",
+          "type": "date",
+          "description": "Date field providing temporal context for data aggregation and filtering",
+          "example": "2025-08-25"
+        },
+        {
+          "name": "platform",
+          "type": "text",
+          "description": "Name of the memecoin trading platform or marketplace",
+          "example": "DexScreener"
+        },
+        {
+          "name": "protocol_revenue",
+          "type": "decimal",
+          "description": "Revenue field capturing income generation and fee accrual for memecoin trading activity",
+          "example": "0"
+        }
+      ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
     {
       "endpoint": "https://analytics.topledger.xyz/solana/api/queries/13171/results.json",
       "apiKey": "rEzuwlk0RAE0NejUfX3vVcKmiO6ocehFgsBjq5qK",
-      "title": "Spot DEX Revenue",
-      "subtitle": "",
+      "title": "Spot DEX Revenue (Daily)",
+      "subtitle": "Daily protocol revenue by spot DEX platform, in USD",
       "page": "dex-ecosystem",
       "pageName": "DEX Ecosystem",
       "menuId": "protocol-revenue",
       "menuName": "Protocol Revenue",
       "id": "api-114",
       "responseColumns": [
-    {
-      "name": "block_date",
-      "type": "date",
-      "description": "Date of daily revenue aggregation for spot DEX activity",
-      "example": "2025-08-24"
-    },
-    {
-      "name": "platform",
-      "type": "text",
-      "description": "Name of the spot DEX platform generating revenue",
-      "example": "Pump AMM"
-    },
-    {
-      "name": "protocol_revenue",
-      "type": "decimal",
-      "description": "Daily protocol revenue earned by the spot DEX (in USD terms, before adjustments)",
-      "example": "155138.4058772212"
-    }
-  ],
+        {
+          "name": "block_date",
+          "type": "date",
+          "description": "Date of daily revenue aggregation for spot DEX activity",
+          "example": "2025-08-24"
+        },
+        {
+          "name": "platform",
+          "type": "text",
+          "description": "Name of the spot DEX platform generating revenue",
+          "example": "Pump AMM"
+        },
+        {
+          "name": "protocol_revenue",
+          "type": "decimal",
+          "description": "Daily protocol revenue earned by the spot DEX (in USD terms, before adjustments)",
+          "example": "155138.4058772212"
+        }
+      ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
     {
       "endpoint": "https://analytics.topledger.xyz/solana/api/queries/13170/results.json",
       "apiKey": "oL930Rxt1WLfufIUXUyz6QRfjXTUInkqS5foPV0j",
-      "title": "Telegram Bot Revenue",
-      "subtitle": "",
+      "title": "Telegram Trading Bot Revenue (Daily)",
+      "subtitle": "USD revenue by bot platform from trading activity",
       "page": "dex-ecosystem",
       "pageName": "DEX Ecosystem",
       "menuId": "protocol-revenue",
       "menuName": "Protocol Revenue",
       "id": "api-115",
       "responseColumns": [
-    {
-      "name": "block_date",
-      "type": "date",
-      "description": "Date corresponding to daily revenue aggregation for Telegram bots",
-      "example": "2025-08-25"
-    },
-    {
-      "name": "platform",
-      "type": "text",
-      "description": "Name of the Telegram bot or platform generating revenue",
-      "example": "Banana Gun"
-    },
-    {
-      "name": "protocol_revenue",
-      "type": "decimal",
-      "description": "Daily revenue earned by the Telegram bot platform (in USD terms, before adjustments)",
-      "example": "0"
-    }
-  ],
+        {
+          "name": "block_date",
+          "type": "date",
+          "description": "Date corresponding to daily revenue aggregation for Telegram bots",
+          "example": "2025-08-25"
+        },
+        {
+          "name": "platform",
+          "type": "text",
+          "description": "Name of the Telegram bot or platform generating revenue",
+          "example": "Banana Gun"
+        },
+        {
+          "name": "protocol_revenue",
+          "type": "decimal",
+          "description": "Daily revenue earned by the Telegram bot platform (in USD terms, before adjustments)",
+          "example": "0"
+        }
+      ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
     {
       "endpoint": "https://analytics.topledger.xyz/solana/api/queries/13172/results.json",
       "apiKey": "ALdIglv0PhFtf1or3jLzYlqaSlbjndx3wZzRlnhx",
-      "title": "NFT Marketplace Revenue",
-      "subtitle": "",
+      "title": "NFT Marketplace Revenue (Daily)",
+      "subtitle": "USD revenue by NFT trading venue on Solana",
       "page": "nft-ecosystem",
       "pageName": "NFT Ecosystem",
       "menuId": "protocol-revenue",
       "menuName": "Protocol Revenue",
       "id": "api-116",
       "responseColumns": [
-    {
-      "name": "block_date",
-      "type": "date",
-      "description": "Date corresponding to daily revenue data aggregation",
-      "example": "2025-08-18"
-    },
-    {
-      "name": "platform",
-      "type": "text",
-      "description": "Name of the NFT marketplace or trading platform",
-      "example": "Magiceden"
-    },
-    {
-      "name": "protocol_revenue",
-      "type": "decimal",
-      "description": "Daily revenue earned by the NFT marketplace (in USD terms, before adjustments)",
-      "example": "7483.4837565727"
-    }
-  ],
+        {
+          "name": "block_date",
+          "type": "date",
+          "description": "Date corresponding to daily revenue data aggregation",
+          "example": "2025-08-18"
+        },
+        {
+          "name": "platform",
+          "type": "text",
+          "description": "Name of the NFT marketplace or trading platform",
+          "example": "Magiceden"
+        },
+        {
+          "name": "protocol_revenue",
+          "type": "decimal",
+          "description": "Daily revenue earned by the NFT marketplace (in USD terms, before adjustments)",
+          "example": "7483.4837565727"
+        }
+      ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
     {
       "endpoint": "https://analytics.topledger.xyz/solana/api/queries/13163/results.json",
       "apiKey": "S8KkuOqLoYqCIPGstMYVC7zxl84uW7c16KT4nNLH",
-      "title": "Network & dApp Revenue",
-      "subtitle": "Network revenue = (Base + Priority + Vote) × 0.5 + Jito × 0.95, accounting for fee burns and Jito tips",
+      "title": "Network vs dApp Revenue (Adjusted)",
+      "subtitle": "Network revenue = (Base + Priority + Vote) × 0.5 + Jito × 0.95; includes dApp revenue",
       "page": "protocol-revenue-summary",
       "pageName": "Summary",
       "menuId": "protocol-revenue",
@@ -4330,140 +4330,140 @@
     {
       "endpoint": "https://analytics.topledger.xyz/solana/api/queries/12589/results.json",
       "apiKey": "oiGI7qFLlC7o3etCqCywaqnYbY2Z2bGFxOOKdJwO",
-      "title": "Top Dapp's Revenue",
-      "subtitle": "Revenue before buybacks, rebates, and other adjustments",
+      "title": "Top dApps Revenue (Daily)",
+      "subtitle": "Pre-adjustment figures (before buybacks, rebates, and other adjustments)",
       "page": "protocol-revenue-summary",
       "pageName": "Summary",
       "menuId": "protocol-revenue",
       "menuName": "Protocol Revenue",
       "id": "api-118",
       "responseColumns": [
-    {
-      "name": "block_date",
-      "type": "date",
-      "description": "Date corresponding to revenue data aggregation",
-      "example": "2025-08-23"
-    },
-    {
-      "name": "platform",
-      "type": "text",
-      "description": "Name of the dapp or protocol generating revenue",
-      "example": "Banana Gun"
-    },
-    {
-      "name": "dapp_revenue",
-      "type": "decimal",
-      "description": "Revenue generated by the dapp on the specified date (in USD terms, before adjustments)",
-      "example": "0"
-    }
-  ],
+        {
+          "name": "block_date",
+          "type": "date",
+          "description": "Date corresponding to revenue data aggregation",
+          "example": "2025-08-23"
+        },
+        {
+          "name": "platform",
+          "type": "text",
+          "description": "Name of the dapp or protocol generating revenue",
+          "example": "Banana Gun"
+        },
+        {
+          "name": "dapp_revenue",
+          "type": "decimal",
+          "description": "Revenue generated by the dapp on the specified date (in USD terms, before adjustments)",
+          "example": "0"
+        }
+      ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
     {
       "endpoint": "https://analytics.topledger.xyz/solana/api/queries/13168/results.json",
       "apiKey": "AhoU1Wq4NS9iHdyeJy6VejNkCIZE5PVSsL2Xg0MM",
-      "title": "dApp Revenue By Ecosystem",
-      "subtitle": "",
+      "title": "dApp Revenue by Ecosystem Segment (Daily)",
+      "subtitle": "USD revenue by category such as memecoin trading apps, bots, and more",
       "page": "total",
       "pageName": "Total",
       "menuId": "protocol-revenue",
       "menuName": "Protocol Revenue",
       "id": "api-119",
       "responseColumns": [
-    {
-      "name": "block_date",
-      "type": "date",
-      "description": "Date corresponding to revenue data aggregation",
-      "example": "2025-08-25"
-    },
-    {
-      "name": "Segment",
-      "type": "text",
-      "description": "Ecosystem category or segment under which the dapp revenue is tracked",
-      "example": "Memecoin Trading App"
-    },
-    {
-      "name": "dapp_revenue",
-      "type": "decimal",
-      "description": "Revenue generated by dapps within the given ecosystem segment on the specified date (in USD terms)",
-      "example": "0"
-    }
-  ],
+        {
+          "name": "block_date",
+          "type": "date",
+          "description": "Date corresponding to revenue data aggregation",
+          "example": "2025-08-25"
+        },
+        {
+          "name": "Segment",
+          "type": "text",
+          "description": "Ecosystem category or segment under which the dapp revenue is tracked",
+          "example": "Memecoin Trading App"
+        },
+        {
+          "name": "dapp_revenue",
+          "type": "decimal",
+          "description": "Revenue generated by dapps within the given ecosystem segment on the specified date (in USD terms)",
+          "example": "0"
+        }
+      ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
     {
       "endpoint": "https://analytics.topledger.xyz/solana/api/queries/13241/results.json",
       "apiKey": "gpgdCtoDOhHa2fc4FPd0NfwiCFfaREWflZ3knXJ3",
-      "title": "Ecosystem Wise Top Dapp's Revenue - Since Jan'25",
-      "subtitle": "",
+      "title": "Top dApps by Ecosystem — Since Jan 2025",
+      "subtitle": "Per-dApp revenue and segment totals (USD)",
       "page": "total",
       "pageName": "Total",
       "menuId": "protocol-revenue",
       "menuName": "Protocol Revenue",
       "id": "api-120",
       "responseColumns": [
-    {
-      "name": "Dapp",
-      "type": "text",
-      "description": "Name of the dapp generating revenue",
-      "example": "Photon"
-    },
-    {
-      "name": "Segment",
-      "type": "text",
-      "description": "Ecosystem category or segment the dapp belongs to",
-      "example": "Telegram Bot"
-    },
-    {
-      "name": "protocol_revenue",
-      "type": "decimal",
-      "description": "Total revenue generated by the individual dapp within its ecosystem (in USD terms)",
-      "example": "168308116.60908642"
-    },
-    {
-      "name": "segment_revenue",
-      "type": "decimal",
-      "description": "Aggregate revenue generated by all dapps within the same ecosystem segment (in USD terms)",
-      "example": "514746801.8889444"
-    }
-  ],
+        {
+          "name": "Dapp",
+          "type": "text",
+          "description": "Name of the dapp generating revenue",
+          "example": "Photon"
+        },
+        {
+          "name": "Segment",
+          "type": "text",
+          "description": "Ecosystem category or segment the dapp belongs to",
+          "example": "Telegram Bot"
+        },
+        {
+          "name": "protocol_revenue",
+          "type": "decimal",
+          "description": "Total revenue generated by the individual dapp within its ecosystem (in USD terms)",
+          "example": "168308116.60908642"
+        },
+        {
+          "name": "segment_revenue",
+          "type": "decimal",
+          "description": "Aggregate revenue generated by all dapps within the same ecosystem segment (in USD terms)",
+          "example": "514746801.8889444"
+        }
+      ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
     {
       "endpoint": "https://analytics.topledger.xyz/solana/api/queries/13165/results.json",
       "apiKey": "KcTuHb64zoaF0agKXEOg8XkK0wuJsxD8GjHMU2J5",
-      "title": "Top Dapp's Revenue - Since Jan'24",
-      "subtitle": "",
+      "title": "Top dApps Revenue — Since Jan 2024",
+      "subtitle": "Cumulative USD revenue by dApp since January 2024",
       "page": "total",
       "pageName": "Total",
       "menuId": "protocol-revenue",
       "menuName": "Protocol Revenue",
       "id": "api-121",
       "responseColumns": [
-    {
-      "name": "platform",
-      "type": "text",
-      "description": "Name of the dapp or platform generating revenue",
-      "example": "Pump Fun"
-    },
-    {
-      "name": "dapp_revenue",
-      "type": "decimal",
-      "description": "Total revenue earned by the dapp since Jan 2024 (in USD terms)",
-      "example": "653420106.061055"
-    }
-  ],
+        {
+          "name": "platform",
+          "type": "text",
+          "description": "Name of the dapp or platform generating revenue",
+          "example": "Pump Fun"
+        },
+        {
+          "name": "dapp_revenue",
+          "type": "decimal",
+          "description": "Total revenue earned by the dapp since Jan 2024 (in USD terms)",
+          "example": "653420106.061055"
+        }
+      ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
     {
       "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13207/results.json",
       "apiKey": "9zbkGgIfDrhCnAhfd5OMJe4z4JxJiB0d4SuO3ynF",
-      "title": "Transaction Fees + Jito Tips",
-      "subtitle": "",
+      "title": "Network Fees & Jito Tips",
+      "subtitle": "Daily base, priority, vote fees and MEV tips in SOL and USD",
       "page": "rev-cost-capacity",
       "pageName": "Cost & Capacity",
       "menuId": "rev",
@@ -4528,111 +4528,110 @@
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
-  
     {
       "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13212/results.json",
       "apiKey": "fJpv71SeTrORlyPx2dVbdTt07HrwuKbUobmb7Uzj",
-      "title": "Gross & Net SOL Issuance",
-      "subtitle": "",
+      "title": "SOL Issuance: Gross, Burn, and Net",
+      "subtitle": "Epoch-level issuance, staking & voting rewards, burns, and burn ratio (SOL & USD)",
       "page": "rev-issuance-burn",
       "pageName": "Issuance & Burn",
       "menuId": "rev",
       "menuName": "REV",
       "id": "api-124",
       "responseColumns": [
-  {
-    "name": "backfilling_epoch_date",
-    "type": "date",
-    "description": "Epoch date used for aggregating issuance, rewards, and burn data on Solana.",
-    "example": "2025-08-23"
-  },
-  {
-    "name": "jito_labs_commission_sol",
-    "type": "decimal",
-    "description": "Total SOL commissions earned by Jito Labs validators.",
-    "example": "442.7695476475528"
-  },
-  {
-    "name": "sol_burn_sol",
-    "type": "decimal",
-    "description": "Amount of SOL permanently burned (removed from supply) through transaction fees in the epoch.",
-    "example": "6613.162336576001"
-  },
-  {
-    "name": "staking_reward_sol",
-    "type": "decimal",
-    "description": "Total SOL issued as staking rewards to validators and delegators for securing the network.",
-    "example": "104719.744645955"
-  },
-  {
-    "name": "voting_reward_sol",
-    "type": "decimal",
-    "description": "SOL issued to validators as rewards for vote transactions confirming blocks.",
-    "example": "39552.744312355"
-  },
-  {
-    "name": "gross_sol_issuance_sol",
-    "type": "decimal",
-    "description": "Total SOL newly issued during the epoch before accounting for burns (staking + voting rewards + commissions).",
-    "example": "144272.48895831"
-  },
-  {
-    "name": "net_sol_issuance_sol",
-    "type": "decimal",
-    "description": "Net SOL issuance after subtracting SOL burned from gross issuance.",
-    "example": "137659.32662173398"
-  },
-  {
-    "name": "burn_ratio",
-    "type": "decimal",
-    "description": "Percentage of gross issuance offset by SOL burned (burn ÷ gross issuance × 100).",
-    "example": "4.583799991477923"
-  },
-  {
-    "name": "jito_labs_commission_usd",
-    "type": "decimal",
-    "description": "USD value of Jito Labs commissions from MEV rewards during the epoch.",
-    "example": "86114.66942102704"
-  },
-  {
-    "name": "sol_burn_usd",
-    "type": "decimal",
-    "description": "USD value of SOL burned from transaction fees during the epoch.",
-    "example": "1291485.1965213623"
-  },
-  {
-    "name": "staking_reward_usd",
-    "type": "decimal",
-    "description": "USD value of SOL issued as staking rewards to validators and delegators.",
-    "example": "21224689.15838596"
-  },
-  {
-    "name": "voting_reward_usd",
-    "type": "decimal",
-    "description": "USD value of SOL issued as voting rewards for block confirmations.",
-    "example": "8016584.706437976"
-  },
-  {
-    "name": "gross_sol_issuance_usd",
-    "type": "decimal",
-    "description": "USD value of total SOL issued during the epoch before burns.",
-    "example": "29241273.864823934"
-  },
-  {
-    "name": "net_sol_issuance_usd",
-    "type": "decimal",
-    "description": "USD value of net SOL issuance after accounting for SOL burned.",
-    "example": "27949788.668302573"
-  }
-],
+        {
+          "name": "backfilling_epoch_date",
+          "type": "date",
+          "description": "Epoch date used for aggregating issuance, rewards, and burn data on Solana.",
+          "example": "2025-08-23"
+        },
+        {
+          "name": "jito_labs_commission_sol",
+          "type": "decimal",
+          "description": "Total SOL commissions earned by Jito Labs validators.",
+          "example": "442.7695476475528"
+        },
+        {
+          "name": "sol_burn_sol",
+          "type": "decimal",
+          "description": "Amount of SOL permanently burned (removed from supply) through transaction fees in the epoch.",
+          "example": "6613.162336576001"
+        },
+        {
+          "name": "staking_reward_sol",
+          "type": "decimal",
+          "description": "Total SOL issued as staking rewards to validators and delegators for securing the network.",
+          "example": "104719.744645955"
+        },
+        {
+          "name": "voting_reward_sol",
+          "type": "decimal",
+          "description": "SOL issued to validators as rewards for vote transactions confirming blocks.",
+          "example": "39552.744312355"
+        },
+        {
+          "name": "gross_sol_issuance_sol",
+          "type": "decimal",
+          "description": "Total SOL newly issued during the epoch before accounting for burns (staking + voting rewards + commissions).",
+          "example": "144272.48895831"
+        },
+        {
+          "name": "net_sol_issuance_sol",
+          "type": "decimal",
+          "description": "Net SOL issuance after subtracting SOL burned from gross issuance.",
+          "example": "137659.32662173398"
+        },
+        {
+          "name": "burn_ratio",
+          "type": "decimal",
+          "description": "Percentage of gross issuance offset by SOL burned (burn ÷ gross issuance × 100).",
+          "example": "4.583799991477923"
+        },
+        {
+          "name": "jito_labs_commission_usd",
+          "type": "decimal",
+          "description": "USD value of Jito Labs commissions from MEV rewards during the epoch.",
+          "example": "86114.66942102704"
+        },
+        {
+          "name": "sol_burn_usd",
+          "type": "decimal",
+          "description": "USD value of SOL burned from transaction fees during the epoch.",
+          "example": "1291485.1965213623"
+        },
+        {
+          "name": "staking_reward_usd",
+          "type": "decimal",
+          "description": "USD value of SOL issued as staking rewards to validators and delegators.",
+          "example": "21224689.15838596"
+        },
+        {
+          "name": "voting_reward_usd",
+          "type": "decimal",
+          "description": "USD value of SOL issued as voting rewards for block confirmations.",
+          "example": "8016584.706437976"
+        },
+        {
+          "name": "gross_sol_issuance_usd",
+          "type": "decimal",
+          "description": "USD value of total SOL issued during the epoch before burns.",
+          "example": "29241273.864823934"
+        },
+        {
+          "name": "net_sol_issuance_usd",
+          "type": "decimal",
+          "description": "USD value of net SOL issuance after accounting for SOL burned.",
+          "example": "27949788.668302573"
+        }
+      ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
     {
       "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13230/results.json",
       "apiKey": "OUAKufVU3UKpwQd06ZUu3lYqrEM2W7cowtH5IoGV",
-      "title": "SOL Burn",
-      "subtitle": "",
+      "title": "SOL Burn (Daily & Cumulative)",
+      "subtitle": "Daily burned SOL and running totals in SOL and USD",
       "page": "rev-issuance-burn",
       "pageName": "Issuance & Burn",
       "menuId": "rev",
@@ -4676,8 +4675,8 @@
     {
       "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13227/results.json",
       "apiKey": "ic32Un4g6DkouRC8CKL6zvulzZH765l0iyLn5UEf",
-      "title": "Total Economic Value",
-      "subtitle": "Total economic value combines SOL Issuance and REV",
+      "title": "Total Economic Value (TEV) & REV",
+      "subtitle": "Monthly SOL issuance combined with Real Economic Value, in SOL and USD",
       "page": "rev-total-economic-value",
       "pageName": "Total Economic Value",
       "menuId": "rev",
@@ -4733,86 +4732,86 @@
     {
       "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12788/results.json",
       "apiKey": "qtmqsLMWCpEH4EhFbgB8BYKBi8IcFJ47i1JKACaq",
-      "title": "Monthly Stablecoin Transfer From Exchange",
-      "subtitle": "Volume of stablecoins transferred from exchanges, providing insights into liquidity outflow",
+      "title": "Stablecoin Outflows from CEXs (Monthly)",
+      "subtitle": "USD volume by source exchange; flows marked as 'from cex'",
       "page": "cexs",
       "pageName": "CEXs",
       "menuId": "stablecoins",
       "menuName": "Stablecoins",
       "id": "api-186",
       "responseColumns": [
-    {
-      "name": "month",
-      "type": "date",
-      "description": "Month of recorded stablecoin transfer activity",
-      "example": "2025-08-01"
-    },
-    {
-      "name": "name",
-      "type": "text",
-      "description": "Source centralized exchange sending the stablecoin transfers",
-      "example": "Backpack"
-    },
-    {
-      "name": "flow_type",
-      "type": "text",
-      "description": "Direction of flow, categorizing whether transfers are going to or from CEXs",
-      "example": "from cex"
-    },
-    {
-      "name": "volume",
-      "type": "decimal",
-      "description": "Total stablecoin transfer volume (in USD) for the given month from Centralized Exchanges",
-      "example": "267919509.241662"
-    }
-  ],
+        {
+          "name": "month",
+          "type": "date",
+          "description": "Month of recorded stablecoin transfer activity",
+          "example": "2025-08-01"
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "description": "Source centralized exchange sending the stablecoin transfers",
+          "example": "Backpack"
+        },
+        {
+          "name": "flow_type",
+          "type": "text",
+          "description": "Direction of flow, categorizing whether transfers are going to or from CEXs",
+          "example": "from cex"
+        },
+        {
+          "name": "volume",
+          "type": "decimal",
+          "description": "Total stablecoin transfer volume (in USD) for the given month from Centralized Exchanges",
+          "example": "267919509.241662"
+        }
+      ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.887Z"
     },
     {
       "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12789/results.json",
       "apiKey": "BxiXraSaVxbbTXg5pArmhmirBiErX2qiKogxOgAo",
-      "title": "Monthly Stablecoin Transfer To Exchange",
-      "subtitle": "Volume of stablecoins transferred to centralized exchanges, indicating inflow and potential for market impact",
+      "title": "Stablecoin Inflows to CEXs (Monthly)",
+      "subtitle": "USD volume by destination exchange; flows marked as 'to cex'",
       "page": "cexs",
       "pageName": "CEXs",
       "menuId": "stablecoins",
       "menuName": "Stablecoins",
       "id": "api-187",
       "responseColumns": [
-    {
-      "name": "month",
-      "type": "date",
-      "description": "Month of recorded stablecoin transfer activity",
-      "example": "2025-08-01"
-    },
-    {
-      "name": "name",
-      "type": "text",
-      "description": "Destination centralized exchange receiving the stablecoin transfers",
-      "example": "OKX"
-    },
-    {
-      "name": "flow_type",
-      "type": "text",
-      "description": "Direction of flow, categorizing whether transfers are going to or from CEXs",
-      "example": "to cex"
-    },
-    {
-      "name": "volume",
-      "type": "decimal",
-      "description": "Total stablecoin transfer volume (in USD) for the given month to Centralized Exchanges",
-      "example": "889.41"
-    }
-  ],
+        {
+          "name": "month",
+          "type": "date",
+          "description": "Month of recorded stablecoin transfer activity",
+          "example": "2025-08-01"
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "description": "Destination centralized exchange receiving the stablecoin transfers",
+          "example": "OKX"
+        },
+        {
+          "name": "flow_type",
+          "type": "text",
+          "description": "Direction of flow, categorizing whether transfers are going to or from CEXs",
+          "example": "to cex"
+        },
+        {
+          "name": "volume",
+          "type": "decimal",
+          "description": "Total stablecoin transfer volume (in USD) for the given month to Centralized Exchanges",
+          "example": "889.41"
+        }
+      ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.887Z"
     },
     {
       "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13457/results.json",
       "apiKey": "iQAoodBhCz6kls9LrklUh8aG1tCwVjSVW8aaqJHu",
-      "title": "Stablecoin Net Inflow",
-      "subtitle": "Net stablecoin inflow from CEXs to Solana, showing adoption and capital movement",
+      "title": "Stablecoin Net Inflow from CEXs to Solana",
+      "subtitle": "Monthly and cumulative USD inflows to Solana",
       "page": "cexs",
       "pageName": "CEXs",
       "menuId": "stablecoins",
@@ -4844,87 +4843,86 @@
     {
       "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12899/results",
       "apiKey": "PDO9L8zUfu9YfUaqvNXTW13Zwz9jJiYYB2HmjAyN",
-      "title": "Daily Avg P2p Transfer Size",
-      "subtitle": "Average size of user-driven P2P transactions, showing ecosystem trends",
+      "title": "P2P Stablecoin Transfer Sizes (Daily)",
+      "subtitle": "Average and median wallet-to-wallet amounts by token",
       "page": "liquidity-velocity",
       "pageName": "Liquidity Velocity",
       "menuId": "stablecoins",
       "menuName": "Stablecoins",
       "id": "api-189",
       "responseColumns": [
-    {
-      "name": "block_date",
-      "type": "date",
-      "description": "Daily data point marking when P2P transfer activity was recorded",
-      "example": "2025-08-24"
-    },
-    {
-      "name": "mint_name",
-      "type": "text",
-      "description": "Token identifier by name (e.g., USDC, EURC) representing the stablecoin involved in transfers",
-      "example": "EURC"
-    },
-    {
-      "name": "Avg_P2P_Transfer_Size",
-      "type": "decimal",
-      "description": "Mean size of peer-to-peer transactions, showing typical transfer magnitude",
-      "example": "4957.506556185907"
-    },
-    {
-      "name": "Median_P2P_Transfer_Size",
-      "type": "decimal",
-      "description": "Median size of peer-to-peer transactions, highlighting the central tendency while reducing outlier effects",
-      "example": "96.42505893055555"
-    }
-  ],
+        {
+          "name": "block_date",
+          "type": "date",
+          "description": "Daily data point marking when P2P transfer activity was recorded",
+          "example": "2025-08-24"
+        },
+        {
+          "name": "mint_name",
+          "type": "text",
+          "description": "Token identifier by name (e.g., USDC, EURC) representing the stablecoin involved in transfers",
+          "example": "EURC"
+        },
+        {
+          "name": "Avg_P2P_Transfer_Size",
+          "type": "decimal",
+          "description": "Mean size of peer-to-peer transactions, showing typical transfer magnitude",
+          "example": "4957.506556185907"
+        },
+        {
+          "name": "Median_P2P_Transfer_Size",
+          "type": "decimal",
+          "description": "Median size of peer-to-peer transactions, highlighting the central tendency while reducing outlier effects",
+          "example": "96.42505893055555"
+        }
+      ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.887Z"
     },
-    
     {
       "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12796/results.json",
       "apiKey": "FsMRolQsXioS23lMYqhIqoD98nrm2EjkxgeqyPuW",
-      "title": "Mints",
-      "subtitle": "Amount of stablecoins minted, showing the supply expansion",
+      "title": "Stablecoin Mints & Burns (Daily)",
+      "subtitle": "Issued and redeemed amounts by mint on Solana",
       "page": "mint-burn",
       "pageName": "Mint & Burn",
       "menuId": "stablecoins",
       "menuName": "Stablecoins",
       "id": "api-191",
       "responseColumns": [
-    {
-      "name": "block_date",
-      "type": "date",
-      "description": "Date on which stablecoin mint and burn events were aggregated",
-      "example": "2025-08-24"
-    },
-    {
-      "name": "mint",
-      "type": "text",
-      "description": "Readable symbol or identifier of the stablecoin mint on Solana",
-      "example": "USDY"
-    },
-    {
-      "name": "mint_amount",
-      "type": "decimal",
-      "description": "Total quantity of the stablecoin minted (issued) on the given date",
-      "example": "144.434436"
-    },
-    {
-      "name": "burn_amount",
-      "type": "decimal",
-      "description": "Total quantity of the stablecoin burned (redeemed/destroyed) on the given date",
-      "example": "54.74655"
-    }
-  ],
+        {
+          "name": "block_date",
+          "type": "date",
+          "description": "Date on which stablecoin mint and burn events were aggregated",
+          "example": "2025-08-24"
+        },
+        {
+          "name": "mint",
+          "type": "text",
+          "description": "Readable symbol or identifier of the stablecoin mint on Solana",
+          "example": "USDY"
+        },
+        {
+          "name": "mint_amount",
+          "type": "decimal",
+          "description": "Total quantity of the stablecoin minted (issued) on the given date",
+          "example": "144.434436"
+        },
+        {
+          "name": "burn_amount",
+          "type": "decimal",
+          "description": "Total quantity of the stablecoin burned (redeemed/destroyed) on the given date",
+          "example": "54.74655"
+        }
+      ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.887Z"
     },
     {
       "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12781/results.json",
       "apiKey": "i1EMrmekV6vqSiyxWx3o8ncTbKqEIBBJ6Me3mwRu",
-      "title": "Top Stablecoins By Holders",
-      "subtitle": "Day-on-day changes in the number of holders (owners), indicating growing or shrinking user base.",
+      "title": "Stablecoin Holders & Supply (Top Tokens)",
+      "subtitle": "Daily holders and circulating supply by mint",
       "page": "stablecoin-usage",
       "pageName": "Stablecoin Usage",
       "menuId": "stablecoins",
@@ -4968,113 +4966,113 @@
     {
       "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13409/results.json",
       "apiKey": "w5H1Xhtgura5ZnmyZFeYIu1lQO0dBdth7UCAaU18",
-      "title": "Stablecoin Activity",
-      "subtitle": "Stablecoin transfer volume on Solana, reflecting ecosystem liquidity and adoption trends",
+      "title": "Stablecoin Transfer Activity (Daily)",
+      "subtitle": "Volume, transfers, P2P metrics, velocity, and program interactions",
       "page": "stablecoin-usage",
       "pageName": "Stablecoin Usage",
       "menuId": "stablecoins",
       "menuName": "Stablecoins",
       "id": "api-193",
       "responseColumns": [
-    {
-      "name": "block_date",
-      "type": "date",
-      "description": "Daily date for which stablecoin transfer activity metrics are recorded",
-      "example": "2025-08-23"
-    },
-    {
-      "name": "mint",
-      "type": "solana_address",
-      "description": "Stablecoin mint address on Solana, uniquely identifying the token",
-      "example": "AUSD1jCcCyPLybk1YnvPWsHQSrZ46dxwoMniN4N2UEB9"
-    },
-    {
-      "name": "mint_name",
-      "type": "text",
-      "description": "Readable symbol or name of the stablecoin mint",
-      "example": "AUSD"
-    },
-    {
-      "name": "token_supply",
-      "type": "decimal",
-      "description": "Circulating supply of the stablecoin at the given block_date",
-      "example": "39382809.735209"
-    },
-    {
-      "name": "fee_payer",
-      "type": "uint",
-      "description": "Count of fee-paying accounts involved in transfers",
-      "example": "78"
-    },
-    {
-      "name": "p2p_fee_payer",
-      "type": "uint",
-      "description": "Count of fee-paying accounts involved specifically in peer-to-peer (wallet-to-wallet) transfers",
-      "example": "0"
-    },
-    {
-      "name": "transfers",
-      "type": "uint",
-      "description": "Total number of stablecoin transfer transactions on Solana for the given day",
-      "example": "7428"
-    },
-    {
-      "name": "p2p_transfers",
-      "type": "uint",
-      "description": "Number of direct wallet-to-wallet transfer transactions",
-      "example": "0"
-    },
-    {
-      "name": "volume_usd",
-      "type": "decimal",
-      "description": "Total daily transfer volume denominated in USD",
-      "example": "748365.4853000001"
-    },
-    {
-      "name": "p2p_volume",
-      "type": "decimal",
-      "description": "Daily transfer volume from peer-to-peer transactions denominated in USD",
-      "example": null
-    },
-    {
-      "name": "avg_transfer_size",
-      "type": "decimal",
-      "description": "Average size of a transfer in USD, computed as total transfer volume divided by number of transfers",
-      "example": "100.7492575794292"
-    },
-    {
-      "name": "p2p_avg_transfer_size",
-      "type": "decimal",
-      "description": "Average peer-to-peer transfer size in USD, computed as P2P transfer volume divided by P2P transfers",
-      "example": null
-    },
-    {
-      "name": "velocity",
-      "type": "decimal",
-      "description": "Velocity of stablecoins on Solana, calculated as transfer volume divided by circulating supply. Indicates how frequently the token supply turns over in a day.",
-      "example": "0.0006334112864061318"
-    },
-    {
-      "name": "p2p_velocity",
-      "type": "decimal",
-      "description": "Peer-to-peer velocity, calculated as P2P transfer volume divided by supply. Shows turnover frequency for wallet-to-wallet transactions only.",
-      "example": null
-    },
-    {
-      "name": "program_interacted",
-      "type": "uint",
-      "description": "Number of unique Solana programs (smart contracts) stablecoins interacted with during transfers",
-      "example": "18"
-    }
-  ],
+        {
+          "name": "block_date",
+          "type": "date",
+          "description": "Daily date for which stablecoin transfer activity metrics are recorded",
+          "example": "2025-08-23"
+        },
+        {
+          "name": "mint",
+          "type": "solana_address",
+          "description": "Stablecoin mint address on Solana, uniquely identifying the token",
+          "example": "AUSD1jCcCyPLybk1YnvPWsHQSrZ46dxwoMniN4N2UEB9"
+        },
+        {
+          "name": "mint_name",
+          "type": "text",
+          "description": "Readable symbol or name of the stablecoin mint",
+          "example": "AUSD"
+        },
+        {
+          "name": "token_supply",
+          "type": "decimal",
+          "description": "Circulating supply of the stablecoin at the given block_date",
+          "example": "39382809.735209"
+        },
+        {
+          "name": "fee_payer",
+          "type": "uint",
+          "description": "Count of fee-paying accounts involved in transfers",
+          "example": "78"
+        },
+        {
+          "name": "p2p_fee_payer",
+          "type": "uint",
+          "description": "Count of fee-paying accounts involved specifically in peer-to-peer (wallet-to-wallet) transfers",
+          "example": "0"
+        },
+        {
+          "name": "transfers",
+          "type": "uint",
+          "description": "Total number of stablecoin transfer transactions on Solana for the given day",
+          "example": "7428"
+        },
+        {
+          "name": "p2p_transfers",
+          "type": "uint",
+          "description": "Number of direct wallet-to-wallet transfer transactions",
+          "example": "0"
+        },
+        {
+          "name": "volume_usd",
+          "type": "decimal",
+          "description": "Total daily transfer volume denominated in USD",
+          "example": "748365.4853000001"
+        },
+        {
+          "name": "p2p_volume",
+          "type": "decimal",
+          "description": "Daily transfer volume from peer-to-peer transactions denominated in USD",
+          "example": null
+        },
+        {
+          "name": "avg_transfer_size",
+          "type": "decimal",
+          "description": "Average size of a transfer in USD, computed as total transfer volume divided by number of transfers",
+          "example": "100.7492575794292"
+        },
+        {
+          "name": "p2p_avg_transfer_size",
+          "type": "decimal",
+          "description": "Average peer-to-peer transfer size in USD, computed as P2P transfer volume divided by P2P transfers",
+          "example": null
+        },
+        {
+          "name": "velocity",
+          "type": "decimal",
+          "description": "Velocity of stablecoins on Solana, calculated as transfer volume divided by circulating supply. Indicates how frequently the token supply turns over in a day.",
+          "example": "0.0006334112864061318"
+        },
+        {
+          "name": "p2p_velocity",
+          "type": "decimal",
+          "description": "Peer-to-peer velocity, calculated as P2P transfer volume divided by supply. Shows turnover frequency for wallet-to-wallet transactions only.",
+          "example": null
+        },
+        {
+          "name": "program_interacted",
+          "type": "uint",
+          "description": "Number of unique Solana programs (smart contracts) stablecoins interacted with during transfers",
+          "example": "18"
+        }
+      ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.887Z"
     },
     {
       "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12795/results.json",
       "apiKey": "xIeiFus6bymtdn5zq2EGXVHr9XcapwmMXoLdvW7R",
-      "title": "Stablecoin DEX Volume",
-      "subtitle": "Volume of stablecoin swaps on DEXs, showing how stablecoins are used in DeFi on Solana",
+      "title": "Stablecoin DEX Swap Volume (Daily)",
+      "subtitle": "Daily USD swap volume by stablecoin mint across Solana DEXs",
       "page": "transaction-activity",
       "pageName": "Transaction Activity",
       "menuId": "stablecoins",
@@ -5106,8 +5104,8 @@
     {
       "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12905/results.json",
       "apiKey": "5zstW6keBAxELlhfMpi2qvRUAykA5usVpkhOyFmI",
-      "title": "Stablecoin TVL In DEX Pools",
-      "subtitle": "The total value locked in decentralized stablecoin pools, showing capital allocation and liquidity on Solana DEXs",
+      "title": "Stablecoin TVL in DEX Pools (Daily)",
+      "subtitle": "Daily total USD value locked in Solana DEX pools containing stablecoins",
       "page": "stablecoins-tvl",
       "pageName": "TVL",
       "menuId": "stablecoins",
@@ -5133,8 +5131,8 @@
     {
       "endpoint": "https://analytics.topledger.xyz/solana/api/queries/13974/results.json",
       "apiKey": "5uhMj0BrlNHXm1114i1VKnpknDutE2pwkVu9LYc9",
-      "title": "Protocol Revenue",
-      "subtitle": "",
+      "title": "Protocol Revenue & Valuation Metrics (Daily)",
+      "subtitle": "Daily protocol revenue, token price, revenue share, TVL (if available), and active wallets",
       "page": "valuation-insights-overview",
       "pageName": "Overview",
       "menuId": "valuation-insights",
@@ -5199,8 +5197,8 @@
     {
       "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13422/results.json",
       "apiKey": "TnJOTkKLkqBU3cEoK8uQtfOyzd7g5Cgcpxymu6oV",
-      "title": "Total Wrapped Btc Trade Volume - By Pool Type",
-      "subtitle": "last 30 days",
+      "title": "Wrapped BTC Volume by Pair (Last 30 Days)",
+      "subtitle": "Total USD DEX volume for wrapped BTC across trading pairs (e.g., BTC-SOL, BTC-USDC)",
       "page": "dex-activity",
       "pageName": "DEX Activity",
       "menuId": "wrapped-btc",
@@ -5226,8 +5224,8 @@
     {
       "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13427/results.json",
       "apiKey": "CAdciqVpawenBLQE4T4l7YeVMauInYbZfMdfbqyF",
-      "title": "Wrapped Btc Trade Volume",
-      "subtitle": "",
+      "title": "Wrapped BTC Monthly Trade Volume by Asset",
+      "subtitle": "Monthly USD DEX volume by wrapped BTC variant (e.g., WBTC, cbBTC, soBTC)",
       "page": "dex-activity",
       "pageName": "DEX Activity",
       "menuId": "wrapped-btc",
@@ -5259,8 +5257,8 @@
     {
       "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13424/results.json",
       "apiKey": "VxD3rsDiDjTNkXDB8NGu007FkRoyYyFrOxSW9gNT",
-      "title": "Wrapped Btc Trade Volume - By Pool Type",
-      "subtitle": "",
+      "title": "Wrapped BTC Monthly Volume by Pair",
+      "subtitle": "Monthly USD DEX volume grouped by trading pair (BTC-SOL, BTC-USDC, etc.)",
       "page": "dex-activity",
       "pageName": "DEX Activity",
       "menuId": "wrapped-btc",
@@ -5292,8 +5290,8 @@
     {
       "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13421/results.json",
       "apiKey": "YXezn6KnJfoKgGceI87sjDNIIe0DKKCf9pLZW6mx",
-      "title": "Wrapped Btc Trades",
-      "subtitle": "",
+      "title": "Wrapped BTC Trading Activity (Monthly)",
+      "subtitle": "Volume, traders, trades, and cumulative metrics across Solana DEXs",
       "page": "dex-activity",
       "pageName": "DEX Activity",
       "menuId": "wrapped-btc",
@@ -5373,8 +5371,8 @@
     {
       "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13418/results.json",
       "apiKey": "loYepWvnDGaUK1DWbQua395wQazlRRdiz5maqYVL",
-      "title": "Average Btc Holding Per Wallet",
-      "subtitle": "Includes holdings in programs",
+      "title": "Average Wrapped BTC Holding per Wallet (Daily)",
+      "subtitle": "Holders, circulating supply, market cap, and average BTC per wallet (includes program deposits)",
       "page": "holders-supply",
       "pageName": "Holders & Supply",
       "menuId": "wrapped-btc",
@@ -5418,8 +5416,8 @@
     {
       "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13417/results.json",
       "apiKey": "43oArwpC4KGiIESfKuwvqK7HGOzGGE9nqGSZrLyE",
-      "title": "Supply",
-      "subtitle": "Comparing wrapped bitcoin issued by different issuing entities",
+      "title": "Wrapped BTC Supply & Holders by Asset (Daily)",
+      "subtitle": "Daily supply, market cap, and holder count for each wrapped BTC variant",
       "page": "holders-supply",
       "pageName": "Holders & Supply",
       "menuId": "wrapped-btc",
@@ -5463,8 +5461,8 @@
     {
       "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13419/results.json",
       "apiKey": "2uh20UsQ9YxEtWP80SoP8n7vNKWwoxEwKPzFXExI",
-      "title": "Wrapped Btc Transfer Volume",
-      "subtitle": "",
+      "title": "Wrapped BTC Transfer Activity (Monthly)",
+      "subtitle": "P2P vs total transfer volume, transfers, fee payers, and program interactions by asset",
       "page": "transfers",
       "pageName": "Transfers",
       "menuId": "wrapped-btc",
@@ -5544,8 +5542,8 @@
     {
       "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13432/results.json",
       "apiKey": "7IQVHzE8vTPiMhd8jaLoAvqGqUHwqGJmDNgDeI9h",
-      "title": "Wrapped Btc TVL By DEX",
-      "subtitle": "",
+      "title": "Wrapped BTC TVL by DEX (Daily)",
+      "subtitle": "USD value of wrapped BTC liquidity locked on each Solana DEX",
       "page": "btc-tvl",
       "pageName": "TVL",
       "menuId": "wrapped-btc",
@@ -5577,8 +5575,8 @@
     {
       "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13434/results.json",
       "apiKey": "eIabVeL4E9CxitqGLzbghZvsqzuBZLk194lGxB3Y",
-      "title": "Wrapped Btc TVL By Perpetual",
-      "subtitle": "",
+      "title": "Wrapped BTC TVL by Perpetual Protocol (Daily)",
+      "subtitle": "USD value of wrapped BTC liquidity held in Solana perpetuals protocols",
       "page": "btc-tvl",
       "pageName": "TVL",
       "menuId": "wrapped-btc",
@@ -5610,8 +5608,8 @@
     {
       "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13431/results.json",
       "apiKey": "kyxmqvSLlaN5Rswz4SM0kbYAymmOdFTHpknUgPaZ",
-      "title": "Wrapped Btc TVL In DEX",
-      "subtitle": "",
+      "title": "Wrapped BTC TVL in DEX Pools by Asset (Daily)",
+      "subtitle": "USD value of each wrapped BTC variant locked in Solana DEX pools",
       "page": "btc-tvl",
       "pageName": "TVL",
       "menuId": "wrapped-btc",
@@ -5643,8 +5641,8 @@
     {
       "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13433/results.json",
       "apiKey": "krwE97KvHGq03PALdzh4h8JgrkWqxtu7tF8zZkZq",
-      "title": "Wrapped Btc TVL In Perpetuals",
-      "subtitle": "",
+      "title": "Wrapped BTC TVL in Perpetuals by Asset (Daily)",
+      "subtitle": "USD value of each wrapped BTC variant used in Solana perpetuals protocols",
       "page": "btc-tvl",
       "pageName": "TVL",
       "menuId": "wrapped-btc",
@@ -5676,8 +5674,8 @@
     {
       "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13814/results.json",
       "apiKey": "rP2DEyUTQ4xn7CFeS8nTO2eqXr8oBGZlwLmyppcx",
-      "title": "Fee By DEX",
-      "subtitle": "Breakdown of trading volume and fee distribution (LP fees, protocol fees, and total fees) by decentralized exchange (DEX) for xStocks on Solana",
+      "title": "xStocks Fees & Volume by DEX (Daily)",
+      "subtitle": "Daily DEX volume with LP fees, protocol fees, and total fees for xStocks on Solana",
       "page": "xstocks-fee-revenue",
       "pageName": "Fee Revenue",
       "menuId": "xstocks",
@@ -5727,8 +5725,8 @@
     {
       "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13850/results",
       "apiKey": "aAxjDBpoyWHsGtEB9qdMGKGbsPSOmARM3kSNxeTd",
-      "title": "Comparision Of Onchain & Offchain Prices",
-      "subtitle": "",
+      "title": "xStocks: On-Chain vs Off-Chain Prices",
+      "subtitle": "Compare tokenized asset prices on Solana with reference off-chain prices",
       "page": "xstocks-traction",
       "pageName": "Traction",
       "menuId": "xstocks",
@@ -5741,8 +5739,8 @@
     {
       "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13798/results.json",
       "apiKey": "20klT9XAM7tquzMqHrfWwcuZDzU8nABon5Nh9DCx",
-      "title": "Volume",
-      "subtitle": "Daily trading activity and cumulative growth of xStocks (tokenized U.S. equities) on the Solana blockchain",
+      "title": "xStocks Trading Activity (Daily)",
+      "subtitle": "Trades, traders, and USD volume with cumulative totals on Solana",
       "page": "xstocks-traction",
       "pageName": "Traction",
       "menuId": "xstocks",
@@ -5804,8 +5802,8 @@
     {
       "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13800/results.json",
       "apiKey": "D8qevDhHHS5wUoegABX72UQUsFYjBEzngJ8rjamR",
-      "title": "Volume By Asset",
-      "subtitle": "The daily trading activity of individual xStocks (tokenized U.S. equities) on Solana, including trades, traders, and volume",
+      "title": "xStocks Volume by Asset (Daily)",
+      "subtitle": "Per-asset trades, traders, and USD volume for tokenized equities",
       "page": "xstocks-traction",
       "pageName": "Traction",
       "menuId": "xstocks",
@@ -5849,8 +5847,8 @@
     {
       "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13820/results.json",
       "apiKey": "91oZw6oUPyaDyz89IsoVYSxQ1vO4cVlmS78sEXpE",
-      "title": "Volume By Day Of Week",
-      "subtitle": "Distribution of xStocks (tokenized U.S. equities) trading volume across days of the week on Solana",
+      "title": "xStocks Volume by Day of Week",
+      "subtitle": "USD volume and share distribution across Monday–Sunday",
       "page": "xstocks-traction",
       "pageName": "Traction",
       "menuId": "xstocks",
@@ -5882,8 +5880,8 @@
     {
       "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13805/results.json",
       "apiKey": "Fwa8vT15hbyRxbpLhOnQNQQ0HXN0LcNn8VTQ7pb4",
-      "title": "Volume By Hour",
-      "subtitle": "Shows the hourly trading volume of xStocks (tokenized U.S. equities) on the Solana blockchain",
+      "title": "xStocks Volume by Hour (UTC)",
+      "subtitle": "Hourly USD volume and share of daily trading activity",
       "page": "xstocks-traction",
       "pageName": "Traction",
       "menuId": "xstocks",
@@ -5915,8 +5913,8 @@
     {
       "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13811/results.json",
       "apiKey": "wgLJTpxiFdZvIcBq0sWtxBblW0Keb7xTJQDUWfFf",
-      "title": "Asset Wise TVL",
-      "subtitle": "Tracks the daily total value locked (TVL) for each individual xStock (tokenized U.S. equity) on Solana",
+      "title": "xStocks TVL by Asset (Daily)",
+      "subtitle": "Daily USD TVL for each tokenized equity or ETF on Solana",
       "page": "xstocks-tvl",
       "pageName": "TVL",
       "menuId": "xstocks",
@@ -5948,8 +5946,8 @@
     {
       "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13851/results.json",
       "apiKey": "hujPcxW5PDHBBscbjjjINceulhhIB5TBrAo2Nt3U",
-      "title": "Total Daily xStocks TVL on Solana",
-      "subtitle": "Tracks the total value locked (TVL) of tokenized U.S. equities (xStocks) on the Solana blockchain",
+      "title": "Total xStocks TVL (Daily)",
+      "subtitle": "Daily aggregate USD TVL of all xStocks on Solana",
       "page": "xstocks-tvl",
       "pageName": "TVL",
       "menuId": "xstocks",
