@@ -8,8 +8,8 @@
     {
       "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13448/results.json",
       "apiKey": "enfT00LNZEyisrWZh1mcgCLaPvcddY6r4nqlyN5J",
-      "title": "Avg & Median Cu Price",
-      "subtitle": "Includes all non-vote transactions (successful and failed)",
+      "title": "Compute Unit Price Trends",
+      "subtitle": "Daily average, median, and percentile values of compute unit pricing (lamports & USD)",
       "page": "compute-units",
       "pageName": "Compute Units",
       "menuId": "compute-units",
@@ -83,8 +83,8 @@
     {
   "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13447/results.json",
   "apiKey": "dYp9G4vrqTAqE4pEI2cjoisceJ5g1442XW7yagI7",
-  "title": "Avg Cu Allocated & Consumed Per Transaction",
-  "subtitle": "Includes all non-vote transactions (successful and failed)",
+  "title": "Compute Unit Allocation vs Consumption",
+  "subtitle": "Daily averages and extremes of allocated, consumed, and unused compute units per transaction",
   "page": "compute-units",
   "pageName": "Compute Units",
   "menuId": "compute-units",
@@ -146,8 +146,8 @@
 {
   "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13455/results.json",
   "apiKey": "IDknsOk4xxg7L0oseAOQHt80gsQjVRZTZ9Svyfgw",
-  "title": "Avg Cu Consumed Per Block",
-  "subtitle": "Includes all non-vote transactions (successful and failed)",
+  "title": "Compute Units Consumed Per Block",
+      "subtitle": "Average compute unit usage across all blocks processed daily",
   "page": "compute-units",
   "pageName": "Compute Units",
   "menuId": "compute-units",
@@ -174,7 +174,8 @@
   "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13449/results.json",
   "apiKey": "myAJgSU2nhoxFvmgmgSJRY08ecwK59QIkw4xs44T",
   "title": "Cu Consumed By Ecosystem",
-  "subtitle": "Includes all non-vote transactions (successful and failed)",
+  "subtitle": "Total compute units consumed across the entire Solana ecosystem by date",
+      
   "page": "compute-units",
   "pageName": "Compute Units",
   "menuId": "compute-units",
@@ -200,8 +201,9 @@
 {
   "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13450/results.json",
   "apiKey": "YuPnlyIpkHRQgCUHIsAWdWNTC1JmjOVgOVhdjNcs",
-  "title": "Cu Consumed By Ecosystem - Last 30 Days",
-  "subtitle": "Includes all non-vote transactions (successful and failed)",
+  "title": "Compute Units by Ecosystem Category (30-Day View)",
+  "subtitle": "Total compute units consumed in the last 30 days, grouped by ecosystem category",
+  
   "page": "compute-units",
   "pageName": "Compute Units",
   "menuId": "compute-units",
@@ -228,7 +230,7 @@
   "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13446/results.json",
   "apiKey": "1aLYPZuX8Lq4nGINkeibVqOmujWcw7oDnydJ1OwT",
   "title": "Transactions Using Compute Budget Program",
-  "subtitle": "Includes all non-vote transactions (successful and failed)",
+  "subtitle": "Daily count and percentage of transactions leveraging the compute budget program",
   "page": "compute-units",
   "pageName": "Compute Units",
   "menuId": "compute-units",
@@ -260,8 +262,8 @@
 {
   "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13453/results.json",
   "apiKey": "YsiiU9f3RuuT8L5YbysSgde9MNkpLOptBhUXoI9g",
-  "title": "Cu Overspending",
-  "subtitle": "Daily CU overspending by transactions, measured as (allocated - consumed) / allocated. For example, xxx transactions overspent by 80–100%",
+  "title": "Compute Unit Overspending (Daily Buckets)",
+  "subtitle": "Distribution of transactions overspending compute units, grouped into usage buckets",
   "page": "cu-overspending",
   "pageName": "CU Overspending",
   "menuId": "compute-units",
@@ -293,8 +295,8 @@
 {
   "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13454/results.json",
   "apiKey": "1HAPupelDkhIsTwEJFUSc9OcXjnA9gajslaIMFbq",
-  "title": "Priority Fee Breakdown",
-  "subtitle": "Unused CU fee is calculated by multiplying the unused compute units with the per-unit priority fee derived from total allocated units",
+  "title": "Priority Fee Usage Breakdown",
+  "subtitle": "Daily split of priority fees into consumed vs unused compute units (in SOL & USD)",
   "page": "cu-overspending",
   "pageName": "CU Overspending",
   "menuId": "compute-units",
@@ -356,8 +358,8 @@
 {
   "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13456/results.json",
   "apiKey": "pIZbUOVVSmy0JoeBNIcBxy61FAo06MVVtl3HVav1",
-  "title": "Total Cu Overspending - Last 30 Days",
-  "subtitle": "Daily CU overspending by transactions, measured as (allocated - consumed) / allocated. For example, xxx transactions overspent by 80–100%",
+  "title": "Compute Unit Overspending (30-Day Totals)",
+  "subtitle": "Aggregate overspending distribution across the last 30 days, grouped by usage buckets",
   "page": "cu-overspending",
   "pageName": "CU Overspending",
   "menuId": "compute-units",
@@ -383,8 +385,8 @@
 {
   "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13445/results.json",
   "apiKey": "xnfRkicaESr2bwMlF8KTLwLwtjTzU84DQyIWUqjQ",
-  "title": "Byte Size Quantiles",
-  "subtitle": "Solana's max transaction size is 1232 bytes",
+  "title": "Transaction Size Quantiles",
+  "subtitle": "Daily distribution of transaction sizes at key percentiles",
   "page": "transaction-bytes",
   "pageName": "Transaction Bytes",
   "menuId": "compute-units",
@@ -428,8 +430,8 @@
 {
   "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13443/results.json",
   "apiKey": "XsCunes5JrcnFMTFz23pOgDn6fTX7hqZRKYPXTM1",
-  "title": "Transaction Bytes",
-  "subtitle": "Solana's max transaction size is 1232 bytes",
+  "title": "Transaction Size Metrics",
+  "subtitle": "Daily averages, medians, and share of max-size transactions",
   "page": "transaction-bytes",
   "pageName": "Transaction Bytes",
   "menuId": "compute-units",
@@ -476,11 +478,11 @@
   "fetchStatus": "success",
   "lastFetched": "2025-08-25T14:17:20.886Z"
 },
-    {
+{
   "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13234/results.json",
   "apiKey": "jes4jbtggmsezoHwIxltmSjmQxmExPOgnQNhFzZm",
-  "title": "DEX Volume Aggregator Vs Direct Share",
-  "subtitle": "Aggregator vs Direct share Since Jan'25",
+  "title": "DEX Volume by Aggregator vs Direct",
+  "subtitle": "Yearly breakdown of DEX trading routed through aggregators versus direct execution",
   "page": "aggregators",
   "pageName": "DEX Aggregators",
   "menuId": "dex",
@@ -524,8 +526,8 @@
 {
   "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12428/results.json",
   "apiKey": "M50ElvuV9FtY3XlSVP2GtGfSTefJ13C8z4y742da",
-  "title": "DEX Volume Share",
-  "subtitle": "",
+  "title": "DEX Volume Share by Aggregator",
+  "subtitle": "Monthly trading activity share routed through major DEX aggregators",
   "page": "aggregators",
   "pageName": "DEX Aggregators",
   "menuId": "dex",
@@ -563,8 +565,8 @@
 {
   "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12459/results.json",
   "apiKey": "MwgPFDxoN9SCpEC6I6nhBH85dtNkXndNYcRtHLYA",
-  "title": "Daily TVL Vs Velocity",
-  "subtitle": "TVL(Total Value Locked) represents total amount of assets (in USD) locked in a pool.",
+  "title": "DEX TVL and Velocity (Daily)",
+  "subtitle": "Daily total value locked (TVL) and liquidity velocity across all DEXs",
   "page": "dex-summary",
   "pageName": "Summary",
   "menuId": "dex",
@@ -602,8 +604,8 @@
 {
   "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12439/results.json",
   "apiKey": "zFtRMSKAAC8nTdp6JX2NebxyP6YCct9poXLe5WfN",
-  "title": "Velocity By DEX Program Category",
-  "subtitle": "",
+  "title": "DEX Velocity by Program Type",
+  "subtitle": "Daily liquidity velocity segmented by DEX design type (AMM, CLMM, Orderbook)",
   "page": "dex-summary",
   "pageName": "Summary",
   "menuId": "dex",
@@ -635,8 +637,8 @@
 {
   "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12392/results.json",
   "apiKey": "aSgz8ztgBg46FAoarkY8JGS5K0jxqm9t60sF3CDQ",
-  "title": "Distribution By Traders' Trade Frequency",
-  "subtitle": "",
+  "title": "Trader Activity by Frequency",
+  "subtitle": "Monthly distribution of traders grouped by number of trades executed",
   "page": "traders",
   "pageName": "Traders",
   "menuId": "dex",
@@ -674,8 +676,8 @@
 {
   "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13181/results.json",
   "apiKey": "fLzwXGF8j4St6XvrckEAe1gjQRHKveWvvCafx2Zz",
-  "title": "Monthly Traders",
-  "subtitle": "",
+  "title": "Monthly Trader Growth",
+  "subtitle": "New, active, and cumulative trader counts on DEXs by month",
   "page": "traders",
   "pageName": "Traders",
   "menuId": "dex",
@@ -713,8 +715,8 @@
 {
   "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12422/results.json",
   "apiKey": "pOuD9xaxsmquzZGOnUcR9disUQI3EeXNQKuKpO6l",
-  "title": "Volume Distribution By Traders' Lifetime Trade Volume",
-  "subtitle": "",
+  "title": "Trader Distribution by Lifetime Volume",
+  "subtitle": "Monthly breakdown of traders grouped by lifetime trade volume buckets",
   "page": "traders",
   "pageName": "Traders",
   "menuId": "dex",
@@ -752,8 +754,8 @@
 {
   "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13461/results.json",
   "apiKey": "6VxvtalvUgsuSnkLIzcoEdI6t2GySCTmClGbKAK1",
-  "title": "DEX TVL",
-  "subtitle": "",
+  "title": "Total DEX TVL (Daily)",
+  "subtitle": "Overall value locked across all DEXs by date",
   "page": "tvl",
   "pageName": "TVL",
   "menuId": "dex",
@@ -779,8 +781,8 @@
 {
   "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12435/results.json",
   "apiKey": "QoHzXXunvuLg0rrTWyFTNzmIjIoqY5MJhHo3ltZg",
-  "title": "DEX TVL Daily",
-  "subtitle": "",
+  "title": "DEX TVL by Program Type (Daily)",
+  "subtitle": "Daily total value locked segmented by AMM, CLMM, and Orderbook designs",
   "page": "tvl",
   "pageName": "TVL",
   "menuId": "dex",
@@ -812,8 +814,8 @@
 {
   "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13225/results.json",
   "apiKey": "6rNImjI05B6uxQzhrJcoOkrYN4Upw6oFkN1yqm76",
-  "title": "Top Pools By TVL",
-  "subtitle": "",
+  "title": "Top Liquidity Pools by TVL",
+  "subtitle": "Highest value locked across DEX pools by token pair",
   "page": "tvl",
   "pageName": "TVL",
   "menuId": "dex",
@@ -845,8 +847,8 @@
 {
   "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13192/results.json",
   "apiKey": "PSDSE4K3HsoXJX8a3dgeps4GF1ilSejrVjmkF8Fe",
-  "title": "DEX Volume",
-  "subtitle": "",
+  "title": "DEX Trading Volume (Daily)",
+  "subtitle": "Daily total trading volume across all decentralized exchanges",
   "page": "volume",
   "pageName": "Volume",
   "menuId": "dex",
@@ -872,8 +874,8 @@
 {
   "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12401/results.json",
   "apiKey": "fGkLNd9bLPAbP4nEImmeGpeNc03BFl1B6nuUcD16",
-  "title": "Distribution By Token Category",
-  "subtitle": "",
+  "title": "DEX Volume by Token Category",
+  "subtitle": "Daily trading volume segmented by token categories (Stable, Meme, DeFi, etc.)",
   "page": "volume",
   "pageName": "Volume",
   "menuId": "dex",
@@ -905,8 +907,8 @@
 {
   "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13231/results.json",
   "apiKey": "gFXy7839FSeqNL8PFFT8rVNNBWt9IJ9Jp7UOKzSu",
-  "title": "Top Memecoins By Volume",
-  "subtitle": "",
+  "title": "Top Memecoins by DEX Volume",
+  "subtitle": "Monthly trading volume of leading memecoins across decentralized exchanges",
   "page": "volume",
   "pageName": "Volume",
   "menuId": "dex",
@@ -935,75 +937,74 @@
   "fetchStatus": "success",
   "lastFetched": "2025-08-25T14:17:20.886Z"
 },
-
+{
+  "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13843/results.json",
+  "apiKey": "xqFztHCpLEqootvUoAnZ5AgMbhcqrBzCFOPmpPAd",
+  "title": "Launchpad Fee Revenue",
+  "subtitle": "Daily fees collected by launchpads (total, Pump.fun, Meteora) in SOL & USD",
+  "page": "launchpads-fee-revenue",
+  "pageName": "Fee Revenue",
+  "menuId": "launchpads",
+  "menuName": "Launchpads",
+  "id": "api-25",
+  "responseColumns": [
     {
-      "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13843/results.json",
-      "apiKey": "xqFztHCpLEqootvUoAnZ5AgMbhcqrBzCFOPmpPAd",
-      "title": "Fees",
-      "subtitle": "",
-      "page": "launchpads-fee-revenue",
-      "pageName": "Fee Revenue",
-      "menuId": "launchpads",
-      "menuName": "Launchpads",
-      "id": "api-25",
-      "responseColumns": [
-        {
-          "name": "date",
-          "type": "date",
-          "description": "Date field containing daily data points for launchpad fee analysis",
-          "example": "2025-08-25"
-        },
-        {
-          "name": "total_fees_sol",
-          "type": "decimal",
-          "description": "Total fees collected by all launchpads in SOL",
-          "example": "1250.75"
-        },
-        {
-          "name": "total_fees_usd",
-          "type": "decimal",
-          "description": "Total fees collected by all launchpads in USD",
-          "example": "187612.50"
-        },
-        {
-          "name": "pumpfun_fees_sol",
-          "type": "decimal",
-          "description": "Fees collected by Pump.fun launchpad in SOL",
-          "example": "850.25"
-        },
-        {
-          "name": "pumpfun_fees_usd",
-          "type": "decimal",
-          "description": "Fees collected by Pump.fun launchpad in USD",
-          "example": "127537.50"
-        },
-        {
-          "name": "meteora_fees_sol",
-          "type": "decimal",
-          "description": "Fees collected by Meteora launchpad in SOL",
-          "example": "400.50"
-        },
-        {
-          "name": "meteora_fees_usd",
-          "type": "decimal",
-          "description": "Fees collected by Meteora launchpad in USD",
-          "example": "60075.00"
-        }
-      ],
-      "fetchStatus": "success",
-      "fetchError": "value.includes is not a function"
+      "name": "date",
+      "type": "date",
+      "description": "Date field containing daily data points for launchpad fee analysis",
+      "example": "2025-08-25"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13825/results.json",
-      "apiKey": "ura6t788LF1CZgvF0CE4OA2sez8FLdKsehpxjXE6",
-      "title": "Creators By Token Launched",
-      "subtitle": "",
-      "page": "launchpads-financials",
-      "pageName": "Financials",
-      "menuId": "launchpads",
-      "menuName": "Launchpads",
-      "id": "api-26",
-      "responseColumns": [
+      "name": "total_fees_sol",
+      "type": "decimal",
+      "description": "Total fees collected by all launchpads in SOL",
+      "example": "1250.75"
+    },
+    {
+      "name": "total_fees_usd",
+      "type": "decimal",
+      "description": "Total fees collected by all launchpads in USD",
+      "example": "187612.50"
+    },
+    {
+      "name": "pumpfun_fees_sol",
+      "type": "decimal",
+      "description": "Fees collected by Pump.fun launchpad in SOL",
+      "example": "850.25"
+    },
+    {
+      "name": "pumpfun_fees_usd",
+      "type": "decimal",
+      "description": "Fees collected by Pump.fun launchpad in USD",
+      "example": "127537.50"
+    },
+    {
+      "name": "meteora_fees_sol",
+      "type": "decimal",
+      "description": "Fees collected by Meteora launchpad in SOL",
+      "example": "400.50"
+    },
+    {
+      "name": "meteora_fees_usd",
+      "type": "decimal",
+      "description": "Fees collected by Meteora launchpad in USD",
+      "example": "60075.00"
+    }
+  ],
+  "fetchStatus": "success",
+  "fetchError": "value.includes is not a function"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13825/results.json",
+  "apiKey": "ura6t788LF1CZgvF0CE4OA2sez8FLdKsehpxjXE6",
+  "title": "Creators by Token Launch Groups",
+  "subtitle": "Classification of creators grouped by the number of tokens launched",
+  "page": "launchpads-financials",
+  "pageName": "Financials",
+  "menuId": "launchpads",
+  "menuName": "Launchpads",
+  "id": "api-26",
+  "responseColumns": [
     {
       "name": "creator_group",
       "type": "text",
@@ -1017,20 +1018,20 @@
       "example": "983853"
     }
   ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
-    },
-    {
-      "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13824/results.json",
-      "apiKey": "TnBFmJA70hdArey2sKaJ7U1GoRzVXRTbU3TeSmd4",
-      "title": "Creators By Tokens Launched",
-      "subtitle": "",
-      "page": "launchpads-financials",
-      "pageName": "Financials",
-      "menuId": "launchpads",
-      "menuName": "Launchpads",
-      "id": "api-27",
-      "responseColumns": [
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13824/results.json",
+  "apiKey": "TnBFmJA70hdArey2sKaJ7U1GoRzVXRTbU3TeSmd4",
+  "title": "Creators by Tokens Launched (Daily)",
+  "subtitle": "Daily snapshot of creators grouped by the number of tokens launched",
+  "page": "launchpads-financials",
+  "pageName": "Financials",
+  "menuId": "launchpads",
+  "menuName": "Launchpads",
+  "id": "api-27",
+  "responseColumns": [
     {
       "name": "block_date",
       "type": "date",
@@ -1050,20 +1051,19 @@
       "example": "6180"
     }
   ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
-    },
-    {
-      "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13817/results.json",
-      "apiKey": "hWKBzmZNswtTupuTSJcft3kdxgtK0WuqPKXkIrDi",
-      "title": "Tokens Launched",
-      "subtitle": "",
-      "page": "launchpads-financials",
-      "pageName": "Financials",
-      "menuId": "launchpads",
-      "menuName": "Launchpads",
-      "id": "api-28",
-      "id": "api-28",
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13817/results.json",
+  "apiKey": "hWKBzmZNswtTupuTSJcft3kdxgtK0WuqPKXkIrDi",
+  "title": "Tokens Launched (Daily Totals)",
+  "subtitle": "Number of tokens launched across Pump.fun, Meteora, and overall per day",
+  "page": "launchpads-financials",
+  "pageName": "Financials",
+  "menuId": "launchpads",
+  "menuName": "Launchpads",
+  "id": "api-28",
   "responseColumns": [
     {
       "name": "date",
@@ -1090,20 +1090,20 @@
       "example": "400"
     }
   ],
-      "fetchStatus": "success",
-      "fetchError": "value.includes is not a function"
-    },
-    {
-      "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13829/results.json",
-      "apiKey": "R9f8tpZVBUYtHUEbpXJVwkDCtjX0r5R7IDQvZGyu",
-      "title": "Volume",
-      "subtitle": "",
-      "page": "launchpads-tokenized-equities",
-      "pageName": "Tokenized Equities",
-      "menuId": "launchpads",
-      "menuName": "Launchpads",
-      "id": "api-29",
-      "responseColumns": [
+  "fetchStatus": "success",
+  "fetchError": "value.includes is not a function"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13829/results.json",
+  "apiKey": "R9f8tpZVBUYtHUEbpXJVwkDCtjX0r5R7IDQvZGyu",
+  "title": "Tokenized Equities Volume",
+  "subtitle": "Daily and cumulative trading activity for tokenized equities platforms",
+  "page": "launchpads-tokenized-equities",
+  "pageName": "Tokenized Equities",
+  "menuId": "launchpads",
+  "menuName": "Launchpads",
+  "id": "api-29",
+  "responseColumns": [
     {
       "name": "block_date",
       "type": "date",
@@ -1147,20 +1147,20 @@
       "example": "593696064"
     }
   ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
-    },
-    {
-      "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13779/results.json",
-      "apiKey": "JkVI7PCisDFqMukfN3gBHF31BX4l3FkuhSEYmMFF",
-      "title": "Trade Volume",
-      "subtitle": "",
-      "page": "launchpads-traction",
-      "pageName": "Traction",
-      "menuId": "launchpads",
-      "menuName": "Launchpads",
-      "id": "api-30",
-      "responseColumns": [
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13779/results.json",
+  "apiKey": "JkVI7PCisDFqMukfN3gBHF31BX4l3FkuhSEYmMFF",
+  "title": "Launchpad Trade Volume",
+  "subtitle": "Daily trading activity (volume, trades, traders) across launchpad platforms",
+  "page": "launchpads-traction",
+  "pageName": "Traction",
+  "menuId": "launchpads",
+  "menuName": "Launchpads",
+  "id": "api-30",
+  "responseColumns": [
     {
       "name": "block_date",
       "type": "date",
@@ -1216,53 +1216,53 @@
       "example": "30"
     }
   ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13392/results.json",
+  "apiKey": "RqSl6Ca5yWt4QwkKSBB9q7RA0qyMtqeRSESgXvK1",
+  "title": "DEX Draining Attacks by SOL Drained",
+  "subtitle": "Top decentralized exchanges ranked by total SOL drained from attacks (30 days)",
+  "page": "dex-token-hotspots",
+  "pageName": "DEX & Token Hotspots",
+  "menuId": "mev",
+  "menuName": "MEV",
+  "id": "api-31",
+  "responseColumns": [
+    {
+      "name": "dex",
+      "type": "text",
+      "description": "Decentralized exchange (DEX) name where draining attacks occurred",
+      "example": "Raydium CPMM"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13392/results.json",
-      "apiKey": "RqSl6Ca5yWt4QwkKSBB9q7RA0qyMtqeRSESgXvK1",
-      "title": "Top Dexs Used - By SOL Drained",
-      "subtitle": "last 30 days",
-      "page": "dex-token-hotspots",
-      "pageName": "DEX & Token Hotspots",
-      "menuId": "mev",
-      "menuName": "MEV",
-      "id": "api-31",
-      "responseColumns": [
-        {
-          "name": "dex",
-          "type": "text",
-          "description": "Decentralized exchange (DEX) name where draining attacks occurred",
-          "example": "Raydium CPMM"
-        },
-        {
-          "name": "attacks",
-          "type": "uint",
-          "description": "Number of draining attacks executed on the given DEX within the period",
-          "example": "54498"
-        },
-        {
-          "name": "total_sol_drained",
-          "type": "decimal",
-          "description": "Total SOL drained across all recorded attacks on the DEX",
-          "example": "5797.514015480001"
-        }
-      ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
+      "name": "attacks",
+      "type": "uint",
+      "description": "Number of draining attacks executed on the given DEX within the period",
+      "example": "54498"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13391/results.json",
-      "apiKey": "3PjHRoejiRIHduZyo5NxvhEPNpOSfPFzFu0Hg09k",
-      "title": "Top Tokens Attacked - By SOL Drained",
-      "subtitle": "Total SOL extracted via attacks, broken down by token (last 30 days)",
-      "page": "dex-token-hotspots",
-      "pageName": "DEX & Token Hotspots",
-      "menuId": "mev",
-      "menuName": "MEV",
-      "id": "api-32",
-      "responseColumns": [
+      "name": "total_sol_drained",
+      "type": "decimal",
+      "description": "Total SOL drained across all recorded attacks on the DEX",
+      "example": "5797.514015480001"
+    }
+  ],
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13391/results.json",
+  "apiKey": "3PjHRoejiRIHduZyo5NxvhEPNpOSfPFzFu0Hg09k",
+  "title": "Tokens Targeted by Attacks",
+  "subtitle": "Top tokens ranked by number of attacks and SOL drained (30 days)",
+  "page": "dex-token-hotspots",
+  "pageName": "DEX & Token Hotspots",
+  "menuId": "mev",
+  "menuName": "MEV",
+  "id": "api-32",
+  "responseColumns": [
     {
       "name": "token",
       "type": "text",
@@ -1282,20 +1282,20 @@
       "example": "142.68318989099996"
     }
   ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
-    },
-    {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13388/results.json",
-      "apiKey": "v1I32v14WIg9uWYA8ypwToBK3uhPzCbQyBlw2907",
-      "title": "Attacks & Attackers",
-      "subtitle": "Visualizing the scale and spread of sandwich attacks across Solana's ecosystem",
-      "page": "extracted-value-pnl",
-      "pageName": "Extracted Value & PNL",
-      "menuId": "mev",
-      "menuName": "MEV",
-      "id": "api-33",
-      "responseColumns": [
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13388/results.json",
+  "apiKey": "v1I32v14WIg9uWYA8ypwToBK3uhPzCbQyBlw2907",
+  "title": "Attack Trends & Participants",
+  "subtitle": "Daily statistics on attacks, attackers, victims, and drained volumes",
+  "page": "extracted-value-pnl",
+  "pageName": "Extracted Value & PNL",
+  "menuId": "mev",
+  "menuName": "MEV",
+  "id": "api-33",
+  "responseColumns": [
     {
       "name": "block_date",
       "type": "date",
@@ -1363,20 +1363,20 @@
       "example": "225089928.4223322"
     }
   ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
-    },
-    {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13468/results.json",
-      "apiKey": "kIYkuqov4O7K3LTTP0o93VgbKFeiS0HxdKEEMbrE",
-      "title": "Exposed Volume Vs DEX Volume",
-      "subtitle": "",
-      "page": "extracted-value-pnl",
-      "pageName": "Extracted Value & PNL",
-      "menuId": "mev",
-      "menuName": "MEV",
-      "id": "api-34",
-     "responseColumns": [
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13468/results.json",
+  "apiKey": "kIYkuqov4O7K3LTTP0o93VgbKFeiS0HxdKEEMbrE",
+  "title": "Exposed vs Total DEX Volume",
+  "subtitle": "Daily comparison of exposed trading volume vs total DEX volume",
+  "page": "extracted-value-pnl",
+  "pageName": "Extracted Value & PNL",
+  "menuId": "mev",
+  "menuName": "MEV",
+  "id": "api-34",
+  "responseColumns": [
     {
       "name": "block_date",
       "type": "date",
@@ -1402,20 +1402,20 @@
       "example": "0.02980877373766524"
     }
   ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
-    },
-    {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13459/results.json",
-      "apiKey": "f1RHdbIXs4Y3SS40VT63b1OvS1GlEKO3tXA5kjxV",
-      "title": "Sandwich Trades By SOL Drained",
-      "subtitle": "last 30 days",
-      "page": "extracted-value-pnl",
-      "pageName": "Extracted Value & PNL",
-      "menuId": "mev",
-      "menuName": "MEV",
-      "id": "api-35",
-      "responseColumns": [
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13459/results.json",
+  "apiKey": "f1RHdbIXs4Y3SS40VT63b1OvS1GlEKO3tXA5kjxV",
+  "title": "Sandwich Trades by SOL Drained",
+  "subtitle": "Distribution of exposed transactions by buckets of SOL drained (30 days)",
+  "page": "extracted-value-pnl",
+  "pageName": "Extracted Value & PNL",
+  "menuId": "mev",
+  "menuName": "MEV",
+  "id": "api-35",
+  "responseColumns": [
     {
       "name": "sol_range",
       "type": "text",
@@ -1429,20 +1429,20 @@
       "example": "45"
     }
   ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
-    },
-    {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13460/results.json",
-      "apiKey": "oci9M527RiQFjD48qhfmNmUbZ0vTf5BEv06EufrF",
-      "title": "SOL Drained Vs Volume Exposed",
-      "subtitle": "",
-      "page": "extracted-value-pnl",
-      "pageName": "Extracted Value & PNL",
-      "menuId": "mev",
-      "menuName": "MEV",
-      "id": "api-36",
-      "responseColumns": [
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13460/results.json",
+  "apiKey": "oci9M527RiQFjD48qhfmNmUbZ0vTf5BEv06EufrF",
+  "title": "SOL Drained vs Volume Exposed",
+  "subtitle": "Daily efficiency of attacks measured by SOL drained relative to exposed volume",
+  "page": "extracted-value-pnl",
+  "pageName": "Extracted Value & PNL",
+  "menuId": "mev",
+  "menuName": "MEV",
+  "id": "api-36",
+  "responseColumns": [
     {
       "name": "block_date",
       "type": "date",
@@ -1468,20 +1468,20 @@
       "example": "4.191526850126651"
     }
   ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
-    },
-    {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13228/results.json",
-      "apiKey": "TX3IB72GCHQhkdtMsVBeXKflxLvbucqcGcdewsTI",
-      "title": "Daily Solana Annualized Volatility",
-      "subtitle": "",
-      "page": "market-dynamics",
-      "pageName": "Market Dynamics",
-      "menuId": "overview",
-      "menuName": "Overview",
-      "id": "api-37",
-      "responseColumns": [
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13228/results.json",
+  "apiKey": "TX3IB72GCHQhkdtMsVBeXKflxLvbucqcGcdewsTI",
+  "title": "SOL Price Volatility",
+  "subtitle": "Daily rolling annualized volatility of SOL prices (7d, 30d, 90d)",
+  "page": "market-dynamics",
+  "pageName": "Market Dynamics",
+  "menuId": "overview",
+  "menuName": "Overview",
+  "id": "api-37",
+  "responseColumns": [
     {
       "name": "day",
       "type": "date",
@@ -1507,20 +1507,20 @@
       "example": "0.6915426335875727"
     }
   ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
-    },
-    {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13426/results.json",
-      "apiKey": "x3ZEM6s0UwS2aiYh2yP1rT99UTS3pt92CLFmnSNR",
-      "title": "SOL Marketcap",
-      "subtitle": "",
-      "page": "market-dynamics",
-      "pageName": "Market Dynamics",
-      "menuId": "overview",
-      "menuName": "Overview",
-      "id": "api-38",
-      "responseColumns": [
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13426/results.json",
+  "apiKey": "x3ZEM6s0UwS2aiYh2yP1rT99UTS3pt92CLFmnSNR",
+  "title": "SOL Market Capitalization",
+  "subtitle": "Daily total market capitalization of SOL in USD",
+  "page": "market-dynamics",
+  "pageName": "Market Dynamics",
+  "menuId": "overview",
+  "menuName": "Overview",
+  "id": "api-38",
+  "responseColumns": [
     {
       "name": "block_date",
       "type": "date",
@@ -1534,20 +1534,20 @@
       "example": "111375323539.24036"
     }
   ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
-    },
-    {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13428/results.json",
-      "apiKey": "DB8JKxuFTJ7xFUW07TdWXMEgOdGk5ivr31DRpoId",
-      "title": "SOL Price",
-      "subtitle": "",
-      "page": "market-dynamics",
-      "pageName": "Market Dynamics",
-      "menuId": "overview",
-      "menuName": "Overview",
-      "id": "api-39",
-      "responseColumns": [
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13428/results.json",
+  "apiKey": "DB8JKxuFTJ7xFUW07TdWXMEgOdGk5ivr31DRpoId",
+  "title": "SOL Price (Daily)",
+  "subtitle": "Daily closing price of SOL in USD",
+  "page": "market-dynamics",
+  "pageName": "Market Dynamics",
+  "menuId": "overview",
+  "menuName": "Overview",
+  "id": "api-39",
+  "responseColumns": [
     {
       "name": "block_date",
       "type": "date",
@@ -1567,20 +1567,20 @@
       "example": "150.41253324196882"
     }
   ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
-    },
-    {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13249/results.json",
-      "apiKey": "VXYHhXmv3FGJJbtg0W8nxUm7RHWFH1sxVgXJ8Jn2",
-      "title": "Non-vote Transaction Fees",
-      "subtitle": "",
-      "page": "network-usage",
-      "pageName": "Network Usage",
-      "menuId": "overview",
-      "menuName": "Overview",
-      "id": "api-40",
-      "responseColumns": [
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13249/results.json",
+  "apiKey": "VXYHhXmv3FGJJbtg0W8nxUm7RHWFH1sxVgXJ8Jn2",
+  "title": "Transaction Fees (Non-Vote)",
+  "subtitle": "Daily average and median base/priority fees for non-vote transactions",
+  "page": "network-usage",
+  "pageName": "Network Usage",
+  "menuId": "overview",
+  "menuName": "Overview",
+  "id": "api-40",
+  "responseColumns": [
     {
       "name": "block_date",
       "type": "date",
@@ -1612,20 +1612,20 @@
       "example": "5.1e-7"
     }
   ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
-    },
-    {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13210/results.json",
-      "apiKey": "YDy7XJllrBVuLP5gf1Tx5MclZNpS4euKeyli2Lz6",
-      "title": "Transactions Summary",
-      "subtitle": "Real TPS is the number of non-vote transactions per second",
-      "page": "network-usage",
-      "pageName": "Network Usage",
-      "menuId": "overview",
-      "menuName": "Overview",
-      "id": "api-42",
-      "responseColumns": [
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13210/results.json",
+  "apiKey": "YDy7XJllrBVuLP5gf1Tx5MclZNpS4euKeyli2Lz6",
+  "title": "Transaction Summary",
+  "subtitle": "Daily totals for transactions, TPS, and success/failure rates",
+  "page": "network-usage",
+  "pageName": "Network Usage",
+  "menuId": "overview",
+  "menuName": "Overview",
+  "id": "api-42",
+  "responseColumns": [
     {
       "name": "block_date",
       "type": "date",
@@ -1681,65 +1681,65 @@
       "example": "902"
     }
   ],
-      "fetchStatus": "success",
-      "fetchError": "value.includes is not a function"
+  "fetchStatus": "success",
+  "fetchError": "value.includes is not a function"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13932/results.json",
+  "apiKey": "XkdswSdjpW9ISmjYqvkgNs8ggPeiyAUeruHhgq3s",
+  "title": "Weekly TPS & Fee Trends",
+  "subtitle": "Weekly averages for real TPS, base fees, and priority fees",
+  "page": "network-usage",
+  "pageName": "Network Usage",
+  "menuId": "overview",
+  "menuName": "Overview",
+  "id": "api-43",
+  "responseColumns": [
+    {
+      "name": "week",
+      "type": "date",
+      "description": "Start date of the week, used for aggregating weekly TPS and fee metrics",
+      "example": "2025-08-18"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13932/results.json",
-      "apiKey": "XkdswSdjpW9ISmjYqvkgNs8ggPeiyAUeruHhgq3s",
-      "title": "Weekly Real TPS And Fee Trends",
-      "subtitle": "",
-      "page": "network-usage",
-      "pageName": "Network Usage",
-      "menuId": "overview",
-      "menuName": "Overview",
-      "id": "api-43",
-      "responseColumns": [
-        {
-          "name": "week",
-          "type": "date",
-          "description": "Start date of the week, used for aggregating weekly TPS and fee metrics",
-          "example": "2025-08-18"
-        },
-        {
-          "name": "real_tps",
-          "type": "uint",
-          "description": "Average real transactions per second (non-vote) over the given week",
-          "example": "903"
-        },
-        {
-          "name": "avg_fee_lamport",
-          "type": "uint",
-          "description": "Weekly average transaction fee in lamports",
-          "example": "67014"
-        },
-        {
-          "name": "median_fee_lamport",
-          "type": "uint",
-          "description": "Weekly median transaction fee in lamports",
-          "example": "6312"
-        },
-        {
-          "name": "avg_priority_fee_lamport",
-          "type": "uint",
-          "description": "Weekly average priority fee in lamports",
-          "example": "61107"
-        }
-      ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
+      "name": "real_tps",
+      "type": "uint",
+      "description": "Average real transactions per second (non-vote) over the given week",
+      "example": "903"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12924/results.json",
-      "apiKey": "zJ0eDpbvi35e8axF6FIGZHHpAVuYpGHZoqCeAlh5",
-      "title": "Monthly Active & New Wallets",
-      "subtitle": "",
-      "page": "dashboard",
-      "pageName": "User Activity",
-      "menuId": "overview",
-      "menuName": "Overview",
-      "id": "api-44",
-      "responseColumns": [
+      "name": "avg_fee_lamport",
+      "type": "uint",
+      "description": "Weekly average transaction fee in lamports",
+      "example": "67014"
+    },
+    {
+      "name": "median_fee_lamport",
+      "type": "uint",
+      "description": "Weekly median transaction fee in lamports",
+      "example": "6312"
+    },
+    {
+      "name": "avg_priority_fee_lamport",
+      "type": "uint",
+      "description": "Weekly average priority fee in lamports",
+      "example": "61107"
+    }
+  ],
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12924/results.json",
+  "apiKey": "zJ0eDpbvi35e8axF6FIGZHHpAVuYpGHZoqCeAlh5",
+  "title": "Monthly Active & New Wallets",
+  "subtitle": "Monthly count of active wallets, new wallets, and cumulative totals",
+  "page": "dashboard",
+  "pageName": "User Activity",
+  "menuId": "overview",
+  "menuName": "Overview",
+  "id": "api-44",
+  "responseColumns": [
     {
       "name": "month",
       "type": "date",
@@ -1765,20 +1765,20 @@
       "example": "1102.170907"
     }
   ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
-    },
-    {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12929/results.json",
-      "apiKey": "qMWNTHb9k4p9UjvmT5omRmJghhGlJh5V9XH9Zet9",
-      "title": "Wallet By Txns Cohort",
-      "subtitle": "",
-      "page": "dashboard",
-      "pageName": "User Activity",
-      "menuId": "overview",
-      "menuName": "Overview",
-      "id": "api-45",
-      "responseColumns": [
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl/api/queries/12929/results.json",
+  "apiKey": "qMWNTHb9k4p9UjvmT5omRmJghhGlJh5V9XH9Zet9",
+  "title": "Wallets by Transaction Cohort",
+  "subtitle": "Distribution of wallets grouped by their lifetime transaction counts",
+  "page": "dashboard",
+  "pageName": "User Activity",
+  "menuId": "overview",
+  "menuName": "Overview",
+  "id": "api-45",
+  "responseColumns": [
     {
       "name": "txns_cohort",
       "type": "text",
@@ -1792,20 +1792,20 @@
       "example": "1391535"
     }
   ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
-    },
-    {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13248/results.json",
-      "apiKey": "hkE1WGaM5wcDut9q1Lvq3OFEpeUc3C8kHeAawrRy",
-      "title": "Wallet's Current SOL Holding",
-      "subtitle": "",
-      "page": "dashboard",
-      "pageName": "User Activity",
-      "menuId": "overview",
-      "menuName": "Overview",
-      "id": "api-46",
-      "responseColumns": [
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13248/results.json",
+  "apiKey": "hkE1WGaM5wcDut9q1Lvq3OFEpeUc3C8kHeAawrRy",
+  "title": "Wallet SOL Holdings",
+  "subtitle": "Distribution of wallets grouped by their SOL balance ranges",
+  "page": "dashboard",
+  "pageName": "User Activity",
+  "menuId": "overview",
+  "menuName": "Overview",
+  "id": "api-46",
+  "responseColumns": [
     {
       "name": "balance_cohort",
       "type": "text",
@@ -1819,20 +1819,20 @@
       "example": "33146644"
     }
   ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
-    },
-    {
-      "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13250/results.json",
-      "apiKey": "zZJ4P3HtiaEeLtDAgm7TvTPVHKofWGOpOHpqZPoM",
-      "title": "Wallet's SOL Balance Change - Since Jan'25",
-      "subtitle": "",
-      "page": "dashboard",
-      "pageName": "User Activity",
-      "menuId": "overview",
-      "menuName": "Overview",
-      "id": "api-47",
-      "responseColumns": [
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl/api/queries/13250/results.json",
+  "apiKey": "zZJ4P3HtiaEeLtDAgm7TvTPVHKofWGOpOHpqZPoM",
+  "title": "Wallet SOL Balance Change",
+  "subtitle": "Distribution of wallets by SOL balance changes since Jan 2025",
+  "page": "dashboard",
+  "pageName": "User Activity",
+  "menuId": "overview",
+  "menuName": "Overview",
+  "id": "api-47",
+  "responseColumns": [
     {
       "name": "sol_change_cohort",
       "type": "text",
@@ -1846,20 +1846,20 @@
       "example": "24145934"
     }
   ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
-    },
-    {
-      "endpoint": "https://analytics.topledger.xyz/metaplex/api/queries/13608/results.json",
-      "apiKey": "vo8bOPRnGz1CHrCu8KPlvXh6e1La8PXva3pXKtje",
-      "title": "Daily Holders",
-      "subtitle": "",
-      "page": "metaplex-competetive-landscape",
-      "pageName": "Competetive Landscape",
-      "menuId": "projects",
-      "menuName": "Projects",
-      "id": "api-48",
-      "responseColumns": [
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/metaplex/api/queries/13608/results.json",
+  "apiKey": "vo8bOPRnGz1CHrCu8KPlvXh6e1La8PXva3pXKtje",
+  "title": "Daily Token Holders & Supply",
+  "subtitle": "Daily count of holders, circulating supply, and market cap",
+  "page": "metaplex-competetive-landscape",
+  "pageName": "Competetive Landscape",
+  "menuId": "projects",
+  "menuName": "Projects",
+  "id": "api-48",
+  "responseColumns": [
     {
       "name": "block_date",
       "type": "date",
@@ -1885,114 +1885,114 @@
       "example": "178061153.1669029"
     }
   ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13549/results.json",
+  "apiKey": "sU79XR6BdxIgJqw2YLwSkKRJbu0FXjdGqv3imwsL",
+  "title": "DEX Volume (Monthly)",
+  "subtitle": "Monthly aggregated DEX trading volume in USD",
+  "page": "orca-competetive-landscape",
+  "pageName": "Competetive Landscape",
+  "menuId": "projects",
+  "menuName": "Projects",
+  "id": "api-49",
+  "responseColumns": [
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Date field representing the reporting month for aggregated trading volume",
+      "example": "2025-08-25"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13549/results.json",
-      "apiKey": "sU79XR6BdxIgJqw2YLwSkKRJbu0FXjdGqv3imwsL",
-      "title": "Monthly DEX Volume",
-      "subtitle": "",
-      "page": "orca-competetive-landscape",
-      "pageName": "Competetive Landscape",
-      "menuId": "projects",
-      "menuName": "Projects",
-      "id": "api-49",
-      "responseColumns": [
-      {
-        "name": "block_date",
-        "type": "date",
-        "description": "Date field representing the reporting month for aggregated trading volume",
-        "example": "2025-08-25"
-      },
-      {
-        "name": "dex",
-        "type": "text",
-        "description": "Name of the decentralized exchange (DEX)",
-        "example": "Pump Fun"
-      },
-      {
-        "name": "volume_usd",
-        "type": "decimal",
-        "description": "Aggregated monthly trading volume on the DEX denominated in USD",
-        "example": "30700707.474392164"
-      }
-    ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
+      "name": "dex",
+      "type": "text",
+      "description": "Name of the decentralized exchange (DEX)",
+      "example": "Pump Fun"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13572/results.json",
-      "apiKey": "fHHviCSS1CYRIHkosGuB7JXjDlgpJUsL2NSRv5n8",
-      "title": "Monthly Protocol Revenue",
-      "subtitle": "",
-      "page": "orca-competetive-landscape",
-      "pageName": "Competetive Landscape",
-      "menuId": "projects",
-      "menuName": "Projects",
-      "id": "api-50",
-      "responseColumns": [
-      {
-        "name": "block_date",
-        "type": "date",
-        "description": "Date field representing the reporting month for protocol revenue",
-        "example": "2025-08-24"
-      },
-      {
-        "name": "Project",
-        "type": "text",
-        "description": "Name of the project or protocol",
-        "example": "Raydium"
-      },
-      {
-        "name": "Protocol_fees",
-        "type": "decimal",
-        "description": "Total protocol fees collected during the reporting month denominated in USD",
-        "example": "11961.4615885101"
-      }
-    ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
+      "name": "volume_usd",
+      "type": "decimal",
+      "description": "Aggregated monthly trading volume on the DEX denominated in USD",
+      "example": "30700707.474392164"
+    }
+  ],
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13572/results.json",
+  "apiKey": "fHHviCSS1CYRIHkosGuB7JXjDlgpJUsL2NSRv5n8",
+  "title": "Protocol Revenue (Monthly)",
+  "subtitle": "Monthly protocol fee revenue denominated in USD",
+  "page": "orca-competetive-landscape",
+  "pageName": "Competetive Landscape",
+  "menuId": "projects",
+  "menuName": "Projects",
+  "id": "api-50",
+  "responseColumns": [
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Date field representing the reporting month for protocol revenue",
+      "example": "2025-08-24"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13557/results.json",
-      "apiKey": "VWpr3QW49psgyCr58QteGna6WFf2FkLM981hZGjB",
-      "title": "Monthly Traders",
-      "subtitle": "",
-      "page": "raydium-competetive-landscape",
-      "pageName": "Competetive Landscape",
-      "menuId": "projects",
-      "menuName": "Projects",
-      "id": "api-51",
-      "responseColumns": [
-      {
-        "name": "Month",
-        "type": "date",
-        "description": "Date field representing the reporting month for trader activity",
-        "example": "2025-08-01"
-      },
-      {
-        "name": "Dex",
-        "type": "text",
-        "description": "Name of the decentralized exchange (DEX)",
-        "example": "Raydium"
-      },
-      {
-        "name": "Traders",
-        "type": "uint",
-        "description": "Number of unique traders active during the reporting month",
-        "example": "14141546"
-      },
-      {
-        "name": "rn1",
-        "type": "uint",
-        "description": "Ranking index or auxiliary field for internal processing",
-        "example": "1"
-      }
-    ],
-      "fetchStatus": "success",
-      "lastFetched": "2025-08-25T14:17:20.886Z"
+      "name": "Project",
+      "type": "text",
+      "description": "Name of the project or protocol",
+      "example": "Raydium"
     },
+    {
+      "name": "Protocol_fees",
+      "type": "decimal",
+      "description": "Total protocol fees collected during the reporting month denominated in USD",
+      "example": "11961.4615885101"
+    }
+  ],
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
+{
+  "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13557/results.json",
+  "apiKey": "VWpr3QW49psgyCr58QteGna6WFf2FkLM981hZGjB",
+  "title": "DEX Traders (Monthly)",
+  "subtitle": "Monthly unique trader activity across decentralized exchanges",
+  "page": "raydium-competetive-landscape",
+  "pageName": "Competetive Landscape",
+  "menuId": "projects",
+  "menuName": "Projects",
+  "id": "api-51",
+  "responseColumns": [
+    {
+      "name": "Month",
+      "type": "date",
+      "description": "Date field representing the reporting month for trader activity",
+      "example": "2025-08-01"
+    },
+    {
+      "name": "Dex",
+      "type": "text",
+      "description": "Name of the decentralized exchange (DEX)",
+      "example": "Raydium"
+    },
+    {
+      "name": "Traders",
+      "type": "uint",
+      "description": "Number of unique traders active during the reporting month",
+      "example": "14141546"
+    },
+    {
+      "name": "rn1",
+      "type": "uint",
+      "description": "Ranking index or auxiliary field for internal processing",
+      "example": "1"
+    }
+  ],
+  "fetchStatus": "success",
+  "lastFetched": "2025-08-25T14:17:20.886Z"
+},
     {
       "endpoint": "https://analytics.topledger.xyz/tl-research/api/queries/13559/results.json",
       "apiKey": "dVCfnKDliSudamF3dZe0Cp2LnR2EICEUbbhGaBca",
