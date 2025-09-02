@@ -1004,19 +1004,19 @@
       "menuName": "Launchpads",
       "id": "api-26",
       "responseColumns": [
-        {
-          "name": "creator_group",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "1 token launched"
-        },
-        {
-          "name": "creators",
-          "type": "uint",
-          "description": "creators field containing integer data for application-specific processing and analysis",
-          "example": "983853"
-        }
-      ],
+    {
+      "name": "creator_group",
+      "type": "text",
+      "description": "Group classification of creators based on token launches.",
+      "example": "1-10 token launched"
+    },
+    {
+      "name": "creators",
+      "type": "uint",
+      "description": "Number of creators that fall into the corresponding creator_group",
+      "example": "983853"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -1031,25 +1031,25 @@
       "menuName": "Launchpads",
       "id": "api-27",
       "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-22"
-        },
-        {
-          "name": "creator_group",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "1 token launched"
-        },
-        {
-          "name": "creators",
-          "type": "uint",
-          "description": "creators field containing integer data for application-specific processing and analysis",
-          "example": "6180"
-        }
-      ],
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Date representing when the snapshot of creators and their token launch counts was recorded",
+      "example": "2025-08-22"
+    },
+    {
+      "name": "creator_group",
+      "type": "text",
+      "description": "Group classification of creators based on the number of tokens launched.",
+      "example": "1-10 token launched"
+    },
+    {
+      "name": "creators",
+      "type": "uint",
+      "description": "Number of creators within the corresponding creator_group for the given date",
+      "example": "6180"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -1063,32 +1063,33 @@
       "menuId": "launchpads",
       "menuName": "Launchpads",
       "id": "api-28",
-      "responseColumns": [
-        {
-          "name": "date",
-          "type": "date",
-          "description": "Date field containing daily data points for token launch analysis",
-          "example": "2025-08-25"
-        },
-        {
-          "name": "total_tokens_launched",
-          "type": "uint",
-          "description": "Total number of tokens launched across all launchpads",
-          "example": "1250"
-        },
-        {
-          "name": "pumpfun_tokens_launched",
-          "type": "uint",
-          "description": "Number of tokens launched on Pump.fun launchpad",
-          "example": "850"
-        },
-        {
-          "name": "meteora_tokens_launched",
-          "type": "uint",
-          "description": "Number of tokens launched on Meteora launchpad",
-          "example": "400"
-        }
-      ],
+      "id": "api-28",
+  "responseColumns": [
+    {
+      "name": "date",
+      "type": "date",
+      "description": "Date representing the daily snapshot of token launches",
+      "example": "2025-08-25"
+    },
+    {
+      "name": "total_tokens_launched",
+      "type": "uint",
+      "description": "Total number of tokens launched across all supported launchpads on the given date",
+      "example": "1250"
+    },
+    {
+      "name": "pumpfun_tokens_launched",
+      "type": "uint",
+      "description": "Number of tokens launched on Pump.fun launchpad on the given date",
+      "example": "850"
+    },
+    {
+      "name": "meteora_tokens_launched",
+      "type": "uint",
+      "description": "Number of tokens launched on Meteora launchpad on the given date",
+      "example": "400"
+    }
+  ],
       "fetchStatus": "success",
       "fetchError": "value.includes is not a function"
     },
@@ -1103,49 +1104,49 @@
       "menuName": "Launchpads",
       "id": "api-29",
       "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-25"
-        },
-        {
-          "name": "platform",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "pump.fun"
-        },
-        {
-          "name": "volume",
-          "type": "decimal",
-          "description": "Trading volume indicating market liquidity, activity levels, and investor interest",
-          "example": "37185975.2064717"
-        },
-        {
-          "name": "cumulative_volume",
-          "type": "decimal",
-          "description": "Volume field measuring transaction throughput, capacity, or market activity",
-          "example": "49727149649.268654"
-        },
-        {
-          "name": "traders",
-          "type": "uint",
-          "description": "traders field containing integer data for application-specific processing and analysis",
-          "example": "100045"
-        },
-        {
-          "name": "trades",
-          "type": "uint",
-          "description": "trades field containing integer data for application-specific processing and analysis",
-          "example": "429494"
-        },
-        {
-          "name": "cumulative_trades",
-          "type": "uint",
-          "description": "cumulative_trades field containing integer data for application-specific processing and analysis",
-          "example": "593696064"
-        }
-      ],
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Date representing the daily snapshot of trading and volume activity",
+      "example": "2025-08-25"
+    },
+    {
+      "name": "platform",
+      "type": "text",
+      "description": "Launchpad or platform name associated with the recorded trading data",
+      "example": "pump.fun"
+    },
+    {
+      "name": "volume",
+      "type": "decimal",
+      "description": "Daily trading volume, reflecting liquidity, investor activity, and market engagement",
+      "example": "37185975.2064717"
+    },
+    {
+      "name": "cumulative_volume",
+      "type": "decimal",
+      "description": "Cumulative trading volume aggregated over time for the platform",
+      "example": "49727149649.268654"
+    },
+    {
+      "name": "traders",
+      "type": "uint",
+      "description": "Number of unique traders actively participating on the given date",
+      "example": "100045"
+    },
+    {
+      "name": "trades",
+      "type": "uint",
+      "description": "Number of trades executed on the given date",
+      "example": "429494"
+    },
+    {
+      "name": "cumulative_trades",
+      "type": "uint",
+      "description": "Cumulative total of all trades executed over time for the platform",
+      "example": "593696064"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -1160,61 +1161,61 @@
       "menuName": "Launchpads",
       "id": "api-30",
       "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-25"
-        },
-        {
-          "name": "platform",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "Believe"
-        },
-        {
-          "name": "trades",
-          "type": "uint",
-          "description": "trades field containing integer data for application-specific processing and analysis",
-          "example": "51"
-        },
-        {
-          "name": "cumulative_trades",
-          "type": "uint",
-          "description": "cumulative_trades field containing integer data for application-specific processing and analysis",
-          "example": "2150064"
-        },
-        {
-          "name": "volume_sol",
-          "type": "decimal",
-          "description": "volume_sol field containing float data for application-specific processing and analysis",
-          "example": "43.21235838500001"
-        },
-        {
-          "name": "cumulative_volume_sol",
-          "type": "decimal",
-          "description": "cumulative_volume_sol field containing float data for application-specific processing and analysis",
-          "example": "2457960.0736513305"
-        },
-        {
-          "name": "volume_usd",
-          "type": "decimal",
-          "description": "volume_usd field containing float data for application-specific processing and analysis",
-          "example": "8850.948334972984"
-        },
-        {
-          "name": "cumulative_volume_usd",
-          "type": "decimal",
-          "description": "cumulative_volume_usd field containing float data for application-specific processing and analysis",
-          "example": "414602888.98144764"
-        },
-        {
-          "name": "traders",
-          "type": "uint",
-          "description": "traders field containing integer data for application-specific processing and analysis",
-          "example": "30"
-        }
-      ],
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Date representing the daily snapshot of trading and traction activity",
+      "example": "2025-08-25"
+    },
+    {
+      "name": "platform",
+      "type": "text",
+      "description": "Launchpad or platform name where the trading activity occurred",
+      "example": "Believe"
+    },
+    {
+      "name": "trades",
+      "type": "uint",
+      "description": "Number of trades executed on the given date",
+      "example": "51"
+    },
+    {
+      "name": "cumulative_trades",
+      "type": "uint",
+      "description": "Cumulative number of trades executed over time for the platform",
+      "example": "2150064"
+    },
+    {
+      "name": "volume_sol",
+      "type": "decimal",
+      "description": "Trading volume denominated in SOL for the given date",
+      "example": "43.21235838500001"
+    },
+    {
+      "name": "cumulative_volume_sol",
+      "type": "decimal",
+      "description": "Cumulative trading volume in SOL aggregated over time",
+      "example": "2457960.0736513305"
+    },
+    {
+      "name": "volume_usd",
+      "type": "decimal",
+      "description": "Trading volume denominated in USD for the given date",
+      "example": "8850.948334972984"
+    },
+    {
+      "name": "cumulative_volume_usd",
+      "type": "decimal",
+      "description": "Cumulative trading volume in USD aggregated over time",
+      "example": "414602888.98144764"
+    },
+    {
+      "name": "traders",
+      "type": "uint",
+      "description": "Number of unique traders actively participating on the given date",
+      "example": "30"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -1232,19 +1233,19 @@
         {
           "name": "dex",
           "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
+          "description": "Decentralized exchange (DEX) name where draining attacks occurred",
           "example": "Raydium CPMM"
         },
         {
           "name": "attacks",
           "type": "uint",
-          "description": "attacks field containing integer data for application-specific processing and analysis",
+          "description": "Number of draining attacks executed on the given DEX within the period",
           "example": "54498"
         },
         {
           "name": "total_sol_drained",
           "type": "decimal",
-          "description": "total_sol_drained field containing float data for application-specific processing and analysis",
+          "description": "Total SOL drained across all recorded attacks on the DEX",
           "example": "5797.514015480001"
         }
       ],
@@ -1262,25 +1263,25 @@
       "menuName": "MEV",
       "id": "api-32",
       "responseColumns": [
-        {
-          "name": "token",
-          "type": "text",
-          "description": "Token reference, identifier, or metadata for digital asset management and tracking",
-          "example": "Valentine"
-        },
-        {
-          "name": "attacks",
-          "type": "uint",
-          "description": "attacks field containing integer data for application-specific processing and analysis",
-          "example": "393"
-        },
-        {
-          "name": "total_sol_drained",
-          "type": "decimal",
-          "description": "total_sol_drained field containing float data for application-specific processing and analysis",
-          "example": "142.68318989099996"
-        }
-      ],
+    {
+      "name": "token",
+      "type": "text",
+      "description": "Token name or identifier representing the digital asset targeted by attacks",
+      "example": "Valentine"
+    },
+    {
+      "name": "attacks",
+      "type": "uint",
+      "description": "Number of draining attacks recorded on the token within the given period",
+      "example": "393"
+    },
+    {
+      "name": "total_sol_drained",
+      "type": "decimal",
+      "description": "Total SOL drained across all attacks targeting this token",
+      "example": "142.68318989099996"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -1295,73 +1296,73 @@
       "menuName": "MEV",
       "id": "api-33",
       "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-25"
-        },
-        {
-          "name": "attacks",
-          "type": "uint",
-          "description": "attacks field containing integer data for application-specific processing and analysis",
-          "example": "861"
-        },
-        {
-          "name": "cumulative_attacks",
-          "type": "uint",
-          "description": "cumulative_attacks field containing integer data for application-specific processing and analysis",
-          "example": "659403"
-        },
-        {
-          "name": "total_sol_drained",
-          "type": "decimal",
-          "description": "total_sol_drained field containing float data for application-specific processing and analysis",
-          "example": "53.736173169"
-        },
-        {
-          "name": "cumulative_sol_drained",
-          "type": "decimal",
-          "description": "cumulative_sol_drained field containing float data for application-specific processing and analysis",
-          "example": "58699.042905614"
-        },
-        {
-          "name": "attackers",
-          "type": "uint",
-          "description": "attackers field containing integer data for application-specific processing and analysis",
-          "example": "150"
-        },
-        {
-          "name": "victims",
-          "type": "uint",
-          "description": "victims field containing integer data for application-specific processing and analysis",
-          "example": "535"
-        },
-        {
-          "name": "exposed_volume",
-          "type": "decimal",
-          "description": "Volume field measuring transaction throughput, capacity, or market activity",
-          "example": "1614.332222015"
-        },
-        {
-          "name": "exposed_volume_usd",
-          "type": "decimal",
-          "description": "exposed_volume_usd field containing float data for application-specific processing and analysis",
-          "example": "330654.7392122138"
-        },
-        {
-          "name": "cumulative_exposed_volume",
-          "type": "decimal",
-          "description": "Volume field measuring transaction throughput, capacity, or market activity",
-          "example": "1372625.5174060313"
-        },
-        {
-          "name": "cumulative_exposed_volume_usd",
-          "type": "decimal",
-          "description": "cumulative_exposed_volume_usd field containing float data for application-specific processing and analysis",
-          "example": "225089928.4223322"
-        }
-      ],
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Date representing the daily snapshot of sandwich attacks",
+      "example": "2025-08-25"
+    },
+    {
+      "name": "attacks",
+      "type": "uint",
+      "description": "Number of attacks executed on the given date",
+      "example": "861"
+    },
+    {
+      "name": "cumulative_attacks",
+      "type": "uint",
+      "description": "Total number of attacks recorded up to and including this date, aggregated over time",
+      "example": "659403"
+    },
+    {
+      "name": "total_sol_drained",
+      "type": "decimal",
+      "description": "Total SOL extracted by attackers on the given date",
+      "example": "53.736173169"
+    },
+    {
+      "name": "cumulative_sol_drained",
+      "type": "decimal",
+      "description": "Cumulative SOL extracted by attackers across all time up to this date, aggregated over time",
+      "example": "58699.042905614"
+    },
+    {
+      "name": "attackers",
+      "type": "uint",
+      "description": "Number of unique addresses identified as attackers on the given date",
+      "example": "150"
+    },
+    {
+      "name": "victims",
+      "type": "uint",
+      "description": "Number of unique addresses affected or exploited by attacks on the given date",
+      "example": "535"
+    },
+    {
+      "name": "exposed_volume",
+      "type": "decimal",
+      "description": "Total trading volume (in SOL) that was vulnerable to attacks on the given date",
+      "example": "1614.332222015"
+    },
+    {
+      "name": "exposed_volume_usd",
+      "type": "decimal",
+      "description": "USD equivalent of exposed trading volume for that day",
+      "example": "330654.7392122138"
+    },
+    {
+      "name": "cumulative_exposed_volume",
+      "type": "decimal",
+      "description": "Aggregate SOL volume that has been exposed to attacks over time, aggregated over time",
+      "example": "1372625.5174060313"
+    },
+    {
+      "name": "cumulative_exposed_volume_usd",
+      "type": "decimal",
+      "description": "Aggregate exposed trading volume expressed in USD",
+      "example": "225089928.4223322"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -1375,32 +1376,32 @@
       "menuId": "mev",
       "menuName": "MEV",
       "id": "api-34",
-      "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-22"
-        },
-        {
-          "name": "exposed_volume_usd",
-          "type": "decimal",
-          "description": "exposed_volume_usd field containing float data for application-specific processing and analysis",
-          "example": "891034.7580966221"
-        },
-        {
-          "name": "dex_volume_usd",
-          "type": "decimal",
-          "description": "dex_volume_usd field containing float data for application-specific processing and analysis",
-          "example": "2989169450.3713994"
-        },
-        {
-          "name": "Exposed_volume_percentage",
-          "type": "decimal",
-          "description": "Percentage field enabling ratio calculations and comparative analysis",
-          "example": "0.02980877373766524"
-        }
-      ],
+     "responseColumns": [
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Date representing the daily snapshot of exposed volume vs DEX volume",
+      "example": "2025-08-22"
+    },
+    {
+      "name": "exposed_volume_usd",
+      "type": "decimal",
+      "description": "Trading volume (in USD) exposed to sandwich or MEV attacks on this date",
+      "example": "891034.7580966221"
+    },
+    {
+      "name": "dex_volume_usd",
+      "type": "decimal",
+      "description": "Total DEX trading volume (in USD) processed on the same date",
+      "example": "2989169450.3713994"
+    },
+    {
+      "name": "Exposed_volume_percentage",
+      "type": "decimal",
+      "description": "Share of total DEX volume that was exposed to MEV attacks, expressed as a ratio or percentage",
+      "example": "0.02980877373766524"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -1415,19 +1416,19 @@
       "menuName": "MEV",
       "id": "api-35",
       "responseColumns": [
-        {
-          "name": "sol_range",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "5-10 sol"
-        },
-        {
-          "name": "exposed_txns",
-          "type": "uint",
-          "description": "exposed_txns field containing integer data for application-specific processing and analysis",
-          "example": "45"
-        }
-      ],
+    {
+      "name": "sol_range",
+      "type": "text",
+      "description": "Value bucket representing the range of SOL drained per attack",
+      "example": "5-10 sol"
+    },
+    {
+      "name": "exposed_txns",
+      "type": "uint",
+      "description": "Number of exposed transactions that fall into the corresponding SOL drain range",
+      "example": "45"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -1442,31 +1443,31 @@
       "menuName": "MEV",
       "id": "api-36",
       "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-05-04"
-        },
-        {
-          "name": "total_sol_drained",
-          "type": "decimal",
-          "description": "total_sol_drained field containing float data for application-specific processing and analysis",
-          "example": "656.252918637"
-        },
-        {
-          "name": "exposed_volume",
-          "type": "decimal",
-          "description": "Volume field measuring transaction throughput, capacity, or market activity",
-          "example": "15656.655488612"
-        },
-        {
-          "name": "sol_drained_pct",
-          "type": "decimal",
-          "description": "sol_drained_pct field containing float data for application-specific processing and analysis",
-          "example": "4.191526850126651"
-        }
-      ],
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "The date on which the sandwich attack and exposure metrics were recorded",
+      "example": "2025-05-04"
+    },
+    {
+      "name": "total_sol_drained",
+      "type": "decimal",
+      "description": "Total amount of SOL successfully extracted from victims through attacks on that day",
+      "example": "656.252918637"
+    },
+    {
+      "name": "exposed_volume",
+      "type": "decimal",
+      "description": "Total trade volume (in SOL) that was vulnerable or exposed to sandwich attacks on that day",
+      "example": "15656.655488612"
+    },
+    {
+      "name": "sol_drained_pct",
+      "type": "decimal",
+      "description": "The percentage of exposed volume that was actually drained as SOL, showing attack efficiency",
+      "example": "4.191526850126651"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -1481,31 +1482,31 @@
       "menuName": "Overview",
       "id": "api-37",
       "responseColumns": [
-        {
-          "name": "day",
-          "type": "date",
-          "description": "day field containing date data for application-specific processing and analysis",
-          "example": "2022-01-01"
-        },
-        {
-          "name": "volatility_30d",
-          "type": "decimal",
-          "description": "volatility_30d field containing float data for application-specific processing and analysis",
-          "example": "0.8456485697248065"
-        },
-        {
-          "name": "volatility_90d",
-          "type": "decimal",
-          "description": "volatility_90d field containing float data for application-specific processing and analysis",
-          "example": "0.8294718887274205"
-        },
-        {
-          "name": "volatility_7d",
-          "type": "decimal",
-          "description": "volatility_7d field containing float data for application-specific processing and analysis",
-          "example": "0.6915426335875727"
-        }
-      ],
+    {
+      "name": "day",
+      "type": "date",
+      "description": "Daily timestamp for the volatility measurement",
+      "example": "2022-01-01"
+    },
+    {
+      "name": "volatility_30d",
+      "type": "decimal",
+      "description": "30-day rolling annualized volatility of SOL price",
+      "example": "0.8456485697248065"
+    },
+    {
+      "name": "volatility_90d",
+      "type": "decimal",
+      "description": "90-day rolling annualized volatility of SOL price",
+      "example": "0.8294718887274205"
+    },
+    {
+      "name": "volatility_7d",
+      "type": "decimal",
+      "description": "7-day rolling annualized volatility of SOL price",
+      "example": "0.6915426335875727"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -1520,19 +1521,19 @@
       "menuName": "Overview",
       "id": "api-38",
       "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-24"
-        },
-        {
-          "name": "mcap_usd",
-          "type": "decimal",
-          "description": "mcap_usd field containing float data for application-specific processing and analysis",
-          "example": "111375323539.24036"
-        }
-      ],
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Daily timestamp for the recorded market capitalization",
+      "example": "2025-08-24"
+    },
+    {
+      "name": "mcap_usd",
+      "type": "decimal",
+      "description": "Total market capitalization of SOL in USD",
+      "example": "111375323539.24036"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -1547,25 +1548,25 @@
       "menuName": "Overview",
       "id": "api-39",
       "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-07-08"
-        },
-        {
-          "name": "mint",
-          "type": "solana_address",
-          "description": "Token mint address controlling supply, metadata, and minting authority on Solana",
-          "example": "So11111111111111111111111111111111111111112"
-        },
-        {
-          "name": "price",
-          "type": "decimal",
-          "description": "Market price value in specified currency for real-time trading and portfolio valuation",
-          "example": "150.41253324196882"
-        }
-      ],
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Daily timestamp for the recorded SOL price",
+      "example": "2025-07-08"
+    },
+    {
+      "name": "mint",
+      "type": "solana_address",
+      "description": "SOL mint address on the Solana blockchain",
+      "example": "So11111111111111111111111111111111111111112"
+    },
+    {
+      "name": "price",
+      "type": "decimal",
+      "description": "Daily closing price of SOL in USD",
+      "example": "150.41253324196882"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -1580,37 +1581,37 @@
       "menuName": "Overview",
       "id": "api-40",
       "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-25"
-        },
-        {
-          "name": "avg_base_fee_sol",
-          "type": "decimal",
-          "description": "avg_base_fee_sol field containing float data for application-specific processing and analysis",
-          "example": "0.000006090883429014729"
-        },
-        {
-          "name": "avg_priority_fee_sol",
-          "type": "decimal",
-          "description": "avg_priority_fee_sol field containing float data for application-specific processing and analysis",
-          "example": "0.00005044730457387364"
-        },
-        {
-          "name": "median_base_fee_sol",
-          "type": "decimal",
-          "description": "median_base_fee_sol field containing float data for application-specific processing and analysis",
-          "example": "0.000005"
-        },
-        {
-          "name": "median_priority_fee_sol",
-          "type": "decimal",
-          "description": "median_priority_fee_sol field containing float data for application-specific processing and analysis",
-          "example": "5.1e-7"
-        }
-      ],
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Daily timestamp for recorded fee data",
+      "example": "2025-08-25"
+    },
+    {
+      "name": "avg_base_fee_sol",
+      "type": "decimal",
+      "description": "Average base fee (in SOL) for non-vote transactions",
+      "example": "0.000006090883429014729"
+    },
+    {
+      "name": "avg_priority_fee_sol",
+      "type": "decimal",
+      "description": "Average priority fee (in SOL) for non-vote transactions",
+      "example": "0.00005044730457387364"
+    },
+    {
+      "name": "median_base_fee_sol",
+      "type": "decimal",
+      "description": "Median base fee (in SOL) for non-vote transactions",
+      "example": "0.000005"
+    },
+    {
+      "name": "median_priority_fee_sol",
+      "type": "decimal",
+      "description": "Median priority fee (in SOL) for non-vote transactions",
+      "example": "5.1e-7"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -1625,61 +1626,61 @@
       "menuName": "Overview",
       "id": "api-42",
       "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field containing daily blockchain transaction summary data",
-          "example": "2025-08-25"
-        },
-        {
-          "name": "total_transactions",
-          "type": "uint",
-          "description": "Total number of transactions processed on the given date",
-          "example": "250000000"
-        },
-        {
-          "name": "succeessful_transactions",
-          "type": "uint",
-          "description": "Number of successful transactions",
-          "example": "210000000"
-        },
-        {
-          "name": "succeesful_transactions_perc",
-          "type": "decimal",
-          "description": "Percentage of successful transactions",
-          "example": "84.0"
-        },
-        {
-          "name": "failed_transactions",
-          "type": "uint",
-          "description": "Number of failed transactions",
-          "example": "40000000"
-        },
-        {
-          "name": "total_tps",
-          "type": "uint",
-          "description": "Total transactions per second",
-          "example": "2894"
-        },
-        {
-          "name": "success_tps",
-          "type": "uint",
-          "description": "Successful transactions per second",
-          "example": "2431"
-        },
-        {
-          "name": "failed_tps",
-          "type": "uint",
-          "description": "Failed transactions per second",
-          "example": "463"
-        },
-        {
-          "name": "real_tps",
-          "type": "uint",
-          "description": "Real TPS (non-vote transactions per second)",
-          "example": "902"
-        }
-      ],
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Daily timestamp for transaction summary",
+      "example": "2025-08-25"
+    },
+    {
+      "name": "total_transactions",
+      "type": "uint",
+      "description": "Total number of transactions processed on that day",
+      "example": "250000000"
+    },
+    {
+      "name": "succeessful_transactions",
+      "type": "uint",
+      "description": "Total number of successful transactions",
+      "example": "210000000"
+    },
+    {
+      "name": "succeesful_transactions_perc",
+      "type": "decimal",
+      "description": "Percentage of transactions that succeeded",
+      "example": "84.0"
+    },
+    {
+      "name": "failed_transactions",
+      "type": "uint",
+      "description": "Total number of failed transactions",
+      "example": "40000000"
+    },
+    {
+      "name": "total_tps",
+      "type": "uint",
+      "description": "Total transactions per second (TPS) including all types",
+      "example": "2894"
+    },
+    {
+      "name": "success_tps",
+      "type": "uint",
+      "description": "Successful transactions per second",
+      "example": "2431"
+    },
+    {
+      "name": "failed_tps",
+      "type": "uint",
+      "description": "Failed transactions per second",
+      "example": "463"
+    },
+    {
+      "name": "real_tps",
+      "type": "uint",
+      "description": "Real TPS, i.e., non-vote transactions per second",
+      "example": "902"
+    }
+  ],
       "fetchStatus": "success",
       "fetchError": "value.includes is not a function"
     },
@@ -1697,31 +1698,31 @@
         {
           "name": "week",
           "type": "date",
-          "description": "week field containing date data for application-specific processing and analysis",
+          "description": "Start date of the week, used for aggregating weekly TPS and fee metrics",
           "example": "2025-08-18"
         },
         {
           "name": "real_tps",
           "type": "uint",
-          "description": "real_tps field containing integer data for application-specific processing and analysis",
+          "description": "Average real transactions per second (non-vote) over the given week",
           "example": "903"
         },
         {
           "name": "avg_fee_lamport",
           "type": "uint",
-          "description": "avg_fee_lamport field containing integer data for application-specific processing and analysis",
+          "description": "Weekly average transaction fee in lamports",
           "example": "67014"
         },
         {
           "name": "median_fee_lamport",
           "type": "uint",
-          "description": "median_fee_lamport field containing integer data for application-specific processing and analysis",
+          "description": "Weekly median transaction fee in lamports",
           "example": "6312"
         },
         {
           "name": "avg_priority_fee_lamport",
           "type": "uint",
-          "description": "avg_priority_fee_lamport field containing integer data for application-specific processing and analysis",
+          "description": "Weekly average priority fee in lamports",
           "example": "61107"
         }
       ],
@@ -1739,31 +1740,31 @@
       "menuName": "Overview",
       "id": "api-44",
       "responseColumns": [
-        {
-          "name": "month",
-          "type": "date",
-          "description": "month field containing date data for application-specific processing and analysis",
-          "example": "2025-08-01"
-        },
-        {
-          "name": "Active_Wallet",
-          "type": "uint",
-          "description": "Active_Wallet field containing integer data for application-specific processing and analysis",
-          "example": "41409203"
-        },
-        {
-          "name": "New_Wallet",
-          "type": "uint",
-          "description": "New_Wallet field containing integer data for application-specific processing and analysis",
-          "example": "35131342"
-        },
-        {
-          "name": "Cumulative_Wallets_million",
-          "type": "decimal",
-          "description": "Cumulative_Wallets_million field containing float data for application-specific processing and analysis",
-          "example": "1102.170907"
-        }
-      ],
+    {
+      "name": "month",
+      "type": "date",
+      "description": "Start date of the month, used for aggregating monthly wallet activity",
+      "example": "2025-08-01"
+    },
+    {
+      "name": "Active_Wallet",
+      "type": "uint",
+      "description": "Total number of active wallets in the given month",
+      "example": "41409203"
+    },
+    {
+      "name": "New_Wallet",
+      "type": "uint",
+      "description": "Number of new wallets created during the month",
+      "example": "35131342"
+    },
+    {
+      "name": "Cumulative_Wallets_million",
+      "type": "decimal",
+      "description": "Cumulative total wallets (in millions) up to the given month",
+      "example": "1102.170907"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -1778,19 +1779,19 @@
       "menuName": "Overview",
       "id": "api-45",
       "responseColumns": [
-        {
-          "name": "txns_cohort",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "501-1000 Txns"
-        },
-        {
-          "name": "wallet_count",
-          "type": "uint",
-          "description": "Count field enabling aggregation, analytics, and performance measurement",
-          "example": "1391535"
-        }
-      ],
+    {
+      "name": "txns_cohort",
+      "type": "text",
+      "description": "Transaction cohort label, representing a wallet’s lifetime transaction count range",
+      "example": "501-1000 Txns"
+    },
+    {
+      "name": "wallet_count",
+      "type": "uint",
+      "description": "Number of wallets that fall into the given transaction cohort",
+      "example": "1391535"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -1805,19 +1806,19 @@
       "menuName": "Overview",
       "id": "api-46",
       "responseColumns": [
-        {
-          "name": "balance_cohort",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "<0.01 SOL"
-        },
-        {
-          "name": "wallets",
-          "type": "uint",
-          "description": "wallets field containing integer data for application-specific processing and analysis",
-          "example": "33146644"
-        }
-      ],
+    {
+      "name": "balance_cohort",
+      "type": "text",
+      "description": "Cohort representing wallet balance range in SOL",
+      "example": "<0.01 SOL"
+    },
+    {
+      "name": "wallets",
+      "type": "uint",
+      "description": "Number of wallets in the specified balance cohort",
+      "example": "33146644"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -1832,19 +1833,19 @@
       "menuName": "Overview",
       "id": "api-47",
       "responseColumns": [
-        {
-          "name": "sol_change_cohort",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "1-5 SOL"
-        },
-        {
-          "name": "wallets",
-          "type": "uint",
-          "description": "wallets field containing integer data for application-specific processing and analysis",
-          "example": "24145934"
-        }
-      ],
+    {
+      "name": "sol_change_cohort",
+      "type": "text",
+      "description": "Cohort representing net change in wallet SOL balance since Jan 2025",
+      "example": "1-5 SOL"
+    },
+    {
+      "name": "wallets",
+      "type": "uint",
+      "description": "Number of wallets within the specified SOL balance change range",
+      "example": "24145934"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -1859,31 +1860,31 @@
       "menuName": "Projects",
       "id": "api-48",
       "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-20"
-        },
-        {
-          "name": "Holders",
-          "type": "uint",
-          "description": "Holders field containing integer data for application-specific processing and analysis",
-          "example": "18515"
-        },
-        {
-          "name": "Supply",
-          "type": "decimal",
-          "description": "Token supply metrics including total, circulating, or maximum amounts for tokenomics",
-          "example": "1001690016.4312377"
-        },
-        {
-          "name": "Morketcap",
-          "type": "decimal",
-          "description": "Morketcap field containing float data for application-specific processing and analysis",
-          "example": "178061153.1669029"
-        }
-      ],
+    {
+      "name": "block_date",
+      "type": "date",
+      "description": "Date associated with holders and supply metrics",
+      "example": "2025-08-20"
+    },
+    {
+      "name": "Holders",
+      "type": "uint",
+      "description": "Total number of unique token holders on the given date",
+      "example": "18515"
+    },
+    {
+      "name": "Supply",
+      "type": "decimal",
+      "description": "Total circulating supply of the token on the given date",
+      "example": "1001690016.4312377"
+    },
+    {
+      "name": "Morketcap",
+      "type": "decimal",
+      "description": "Market capitalization of the token on the given date",
+      "example": "178061153.1669029"
+    }
+  ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -1898,25 +1899,25 @@
       "menuName": "Projects",
       "id": "api-49",
       "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-25"
-        },
-        {
-          "name": "dex",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "Pump Fun"
-        },
-        {
-          "name": "volume_usd",
-          "type": "decimal",
-          "description": "volume_usd field containing float data for application-specific processing and analysis",
-          "example": "30700707.474392164"
-        }
-      ],
+      {
+        "name": "block_date",
+        "type": "date",
+        "description": "Date field representing the reporting month for aggregated trading volume",
+        "example": "2025-08-25"
+      },
+      {
+        "name": "dex",
+        "type": "text",
+        "description": "Name of the decentralized exchange (DEX)",
+        "example": "Pump Fun"
+      },
+      {
+        "name": "volume_usd",
+        "type": "decimal",
+        "description": "Aggregated monthly trading volume on the DEX denominated in USD",
+        "example": "30700707.474392164"
+      }
+    ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -1931,25 +1932,25 @@
       "menuName": "Projects",
       "id": "api-50",
       "responseColumns": [
-        {
-          "name": "block_date",
-          "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
-          "example": "2025-08-24"
-        },
-        {
-          "name": "Project",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "Raydium"
-        },
-        {
-          "name": "Protocol_fees",
-          "type": "decimal",
-          "description": "Protocol_fees field containing float data for application-specific processing and analysis",
-          "example": "11961.4615885101"
-        }
-      ],
+      {
+        "name": "block_date",
+        "type": "date",
+        "description": "Date field representing the reporting month for protocol revenue",
+        "example": "2025-08-24"
+      },
+      {
+        "name": "Project",
+        "type": "text",
+        "description": "Name of the project or protocol",
+        "example": "Raydium"
+      },
+      {
+        "name": "Protocol_fees",
+        "type": "decimal",
+        "description": "Total protocol fees collected during the reporting month denominated in USD",
+        "example": "11961.4615885101"
+      }
+    ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
@@ -1964,31 +1965,31 @@
       "menuName": "Projects",
       "id": "api-51",
       "responseColumns": [
-        {
-          "name": "Month",
-          "type": "date",
-          "description": "Month field containing date data for application-specific processing and analysis",
-          "example": "2025-08-01"
-        },
-        {
-          "name": "Dex",
-          "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
-          "example": "Raydium"
-        },
-        {
-          "name": "Traders",
-          "type": "uint",
-          "description": "Traders field containing integer data for application-specific processing and analysis",
-          "example": "14141546"
-        },
-        {
-          "name": "rn1",
-          "type": "uint",
-          "description": "rn1 field containing integer data for application-specific processing and analysis",
-          "example": "1"
-        }
-      ],
+      {
+        "name": "Month",
+        "type": "date",
+        "description": "Date field representing the reporting month for trader activity",
+        "example": "2025-08-01"
+      },
+      {
+        "name": "Dex",
+        "type": "text",
+        "description": "Name of the decentralized exchange (DEX)",
+        "example": "Raydium"
+      },
+      {
+        "name": "Traders",
+        "type": "uint",
+        "description": "Number of unique traders active during the reporting month",
+        "example": "14141546"
+      },
+      {
+        "name": "rn1",
+        "type": "uint",
+        "description": "Ranking index or auxiliary field for internal processing",
+        "example": "1"
+      }
+    ],
       "fetchStatus": "success",
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
