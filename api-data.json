@@ -2327,20 +2327,6 @@
       "lastFetched": "2025-08-25T14:17:20.886Z"
     },
     {
-      "endpoint": "https://analytics.topledger.xyz/metaplex/api/queries/10490/results.json",
-      "apiKey": "O4oThUGx8UXDMqrocLInpCvP0KaDBAqNYdLALtd4",
-      "title": "Protocol Fee Used To Buy Mplx",
-      "subtitle": "",
-      "page": "metaplex-financials",
-      "pageName": "Financials",
-      "menuId": "projects",
-      "menuName": "Projects",
-      "id": "api-61",
-      "responseColumns": [],
-      "fetchStatus": "error",
-      "fetchError": "value.includes is not a function"
-    },
-    {
       "endpoint": "https://analytics.topledger.xyz/orca/api/queries/10993/results.json",
       "apiKey": "Y03lOzx08ssOLAkjCDP1zQBsw68yZXRkjg0F7oSE",
       "title": "Protocol Fees And Revenue",
