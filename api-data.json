@@ -2142,7 +2142,7 @@
         {
           "name": "cumulative_dc_burn",
           "type": "decimal",
-          "description": "cumulative_dc_burn field containing float data for application-specific processing and analysis",
+          "description": "cumulative dc burnt by the customer or user to access Helium network services over the stated time period",
           "example": "4201123.373449999"
         }
       ],
@@ -2163,19 +2163,19 @@
         {
           "name": "block_date",
           "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
+          "description": "The actual calendar date (UTC) derived from the block time of transactions. Used for reporting and analysis.",
           "example": "2025-08-24"
         },
         {
           "name": "Fees",
           "type": "decimal",
-          "description": "Fees field containing float data for application-specific processing and analysis",
+          "description": "The total amount charged to the user to access or use the protocol's services.",
           "example": "84476.6496595363"
         },
         {
           "name": "Protocol fees",
           "type": "decimal",
-          "description": "Protocol fees field containing float data for application-specific processing and analysis",
+          "description": "Portion of the fees paid by user which goes to the protocol for providing the services accessed by user.",
           "example": "11961.4615885101"
         }
       ],
@@ -2196,7 +2196,7 @@
         {
           "name": "partition_0",
           "type": "date",
-          "description": "ISO date format string for temporal data representation and chronological organization",
+          "description": "Represents the date associated with this data partition, enabling daily data segmentation and retrieval.",
           "example": "2025-08-24"
         },
         {
@@ -2208,19 +2208,19 @@
         {
           "name": "total_reward",
           "type": "decimal",
-          "description": "total_reward field containing float data for application-specific processing and analysis",
+          "description": "Total amount of IoT rewards (in tokens) earned by the account for the specified period.",
           "example": "4444.73244481"
         },
         {
           "name": "total_reward_usd",
           "type": "decimal",
-          "description": "total_reward_usd field containing float data for application-specific processing and analysis",
+          "description": "Total value of IoT rewards earned, converted to USD for the specified period.",
           "example": "11910.219286545245"
         },
         {
           "name": "cumulative_reward_usd",
           "type": "decimal",
-          "description": "cumulative_reward_usd field containing float data for application-specific processing and analysis",
+          "description": "Total accumulated IoT rewards for the account, expressed in USD, across all time.",
           "example": "58229917.11923423"
         }
       ],
@@ -2241,13 +2241,13 @@
         {
           "name": "partition_0",
           "type": "date",
-          "description": "ISO date format string for temporal data representation and chronological organization",
+          "description": "Represents the date associated with this data partition, enabling daily data segmentation and retrieval.",
           "example": "2025-07-26"
         },
         {
           "name": "iot_reward",
           "type": "decimal",
-          "description": "iot_reward field containing float data for application-specific processing and analysis",
+          "description": "Total accumulated IoT rewards for the account, expressed in USD, across all time.",
           "example": "13119.50174366"
         }
       ],
@@ -2268,19 +2268,19 @@
         {
           "name": "block_date",
           "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
+          "description": "The actual calendar date (UTC) derived from the block time of transactions. Used for reporting and analysis.",
           "example": "2025-08-25"
         },
         {
           "name": "Category",
           "type": "text",
-          "description": "Category classification for organizational hierarchy and filtered data access",
+          "description": "Category is classification.",
           "example": "Additional $MPLX Including Tokens Bought Back"
         },
         {
           "name": "Balance",
           "type": "decimal",
-          "description": "Account balance showing current available funds, tokens, or staked assets",
+          "description": "The amount in USD added or purchased.",
           "example": "77207150.01625101"
         }
       ],
@@ -2301,7 +2301,7 @@
         {
           "name": "partition_0",
           "type": "date",
-          "description": "ISO date format string for temporal data representation and chronological organization",
+          "description": "presents the date associated with this data partition, enabling daily data segmentation and retrieval.",
           "example": "2025-08-25"
         },
         {
@@ -2313,13 +2313,13 @@
         {
           "name": "total_reward",
           "type": "decimal",
-          "description": "total_reward field containing float data for application-specific processing and analysis",
+          "description": "Total amount of mobile rewards (in tokens) earned by the account for the specified period.",
           "example": "43802.0264593978"
         },
         {
           "name": "cumulative_reward_usd",
           "type": "decimal",
-          "description": "cumulative_reward_usd field containing float data for application-specific processing and analysis",
+          "description": "Total amount of mobile rewards (in USD) earned by the account for the specified period.",
           "example": "72123007.25460191"
         }
       ],
@@ -2336,57 +2336,8 @@
       "menuId": "projects",
       "menuName": "Projects",
       "id": "api-61",
-      "responseColumns": [
-        {
-          "name": "month",
-          "type": "string",
-          "description": "Month name and year for MPLX purchase data",
-          "example": "June 2024"
-        },
-        {
-          "name": "month_no",
-          "type": "date",
-          "description": "Date field representing the month",
-          "example": "2024-06-01"
-        },
-        {
-          "name": "SOL",
-          "type": "uint",
-          "description": "Amount of SOL fees allocated for MPLX purchases",
-          "example": "10000"
-        },
-        {
-          "name": "MPLX",
-          "type": "decimal",
-          "description": "Amount of MPLX tokens purchased with protocol fees",
-          "example": "3768029.0"
-        },
-        {
-          "name": "MPLX_million",
-          "type": "decimal",
-          "description": "MPLX amount in millions for easier reading",
-          "example": "3.77"
-        },
-        {
-          "name": "cumulative_MPLX_million",
-          "type": "decimal",
-          "description": "Cumulative MPLX purchased in millions",
-          "example": "80.21"
-        },
-        {
-          "name": "percentage_of_total_MPLX_Supply",
-          "type": "decimal",
-          "description": "Percentage of total MPLX supply purchased this month",
-          "example": "0.38"
-        },
-        {
-          "name": "cumulative_percentage_of_total_MPLX_Supply",
-          "type": "decimal",
-          "description": "Cumulative percentage of total MPLX supply purchased",
-          "example": "8.02"
-        }
-      ],
-      "fetchStatus": "success",
+      "responseColumns": [],
+      "fetchStatus": "error",
       "fetchError": "value.includes is not a function"
     },
     {
@@ -2403,55 +2354,55 @@
         {
           "name": "block_date",
           "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
+          "description": "The actual calendar date (UTC) derived from the block time of transactions. Used for reporting and analysis.",
           "example": "2025-08-24"
         },
         {
           "name": "volume",
           "type": "decimal",
-          "description": "Trading volume indicating market liquidity, activity levels, and investor interest",
+          "description": "Trading volume for the calendar date in USD terms",
           "example": "350534965.7061538"
         },
         {
           "name": "cumulative_volume",
           "type": "decimal",
-          "description": "Volume field measuring transaction throughput, capacity, or market activity",
+          "description": "Cumulative trading volume for the calendar date in USD terms",
           "example": "379265478723.3467"
         },
         {
           "name": "Protocol_fee_usd",
           "type": "decimal",
-          "description": "Protocol_fee_usd field containing float data for application-specific processing and analysis",
+          "description": "Fees earned by Orca for providing services to the users over the stated time period in USD terms",
           "example": "181173.5623923474"
         },
         {
           "name": "cumulative_Protocol_fee_usd",
           "type": "decimal",
-          "description": "cumulative_Protocol_fee_usd field containing float data for application-specific processing and analysis",
+          "description": "Cumulative fees earned by Orca for providing services to the users over the stated time period in USD terms",
           "example": "427750963.81584847"
         },
         {
           "name": "LP_fee_usd",
           "type": "decimal",
-          "description": "LP_fee_usd field containing float data for application-specific processing and analysis",
+          "description": "Portion of the fees collected from the users going to the liquidity providers in USD terms over the stated time period",
           "example": "157622.1938398282"
         },
         {
           "name": "cumulative_LP_fee_usd",
           "type": "decimal",
-          "description": "cumulative_LP_fee_usd field containing float data for application-specific processing and analysis",
+          "description": "Cumualative portion of the fees collected from the users going to the liquidity providers in USD terms over the stated time period",
           "example": "372143674.6795624"
         },
         {
           "name": "Protocol_revenue_usd",
           "type": "decimal",
-          "description": "Protocol_revenue_usd field containing float data for application-specific processing and analysis",
+          "description": "Total revenue earned by Orca for providing services to the users over the stated time period in USD terms",
           "example": "23551.3685525192"
         },
         {
           "name": "cumulative_Protocol_revenue_usd",
           "type": "decimal",
-          "description": "cumulative_Protocol_revenue_usd field containing float data for application-specific processing and analysis",
+          "description": "Cumulative revenue earned by Orca for providing services to the users over the stated time period in USD terms",
           "example": "55607289.13628587"
         }
       ],
@@ -2472,31 +2423,31 @@
         {
           "name": "block_date",
           "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
+          "description": "The actual calendar date (UTC) derived from the block time of transactions. Used for reporting and analysis.",
           "example": "2025-08-24"
         },
         {
           "name": "Revenue_SOL",
           "type": "decimal",
-          "description": "Revenue_SOL field containing float data for application-specific processing and analysis",
+          "description": "Revenue earned by metaplex in SOL terms over the stated time period for delivering the service to the customers or users",
           "example": "177.16215"
         },
         {
           "name": "Revenue_USD",
           "type": "decimal",
-          "description": "Revenue_USD field containing float data for application-specific processing and analysis",
+          "description": "Revenue earned by metaplex in USD terms over the stated time period for delivering the service to the customers or users",
           "example": "36705.51012150121"
         },
         {
           "name": "cumulative_revenue",
           "type": "decimal",
-          "description": "Revenue field tracking income generation and protocol economic performance",
+          "description": "Cumulative revenue earned by metaplex in SOL terms over the stated time period for delivering the service to the customers or users",
           "example": "277016.3743239831"
         },
         {
           "name": "cumulative_revenue_usd",
           "type": "decimal",
-          "description": "cumulative_revenue_usd field containing float data for application-specific processing and analysis",
+          "description": "Cumulative revenue earned by metaplex in USD terms over the stated time period for delivering the service to the customers or users",
           "example": "39931066.42497014"
         }
       ],
@@ -2517,25 +2468,25 @@
         {
           "name": "block_date",
           "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
+          "description": "The actual calendar date (UTC) derived from the block time of transactions. Used for reporting and analysis.",
           "example": "2025-08-24"
         },
         {
           "name": "Asset_Type",
           "type": "text",
-          "description": "Type field enabling polymorphic behavior and category-based processing",
+          "description": "The asset type being minted using metaplex programs or protocols",
           "example": "NFTs"
         },
         {
           "name": "Revenue_SOL",
           "type": "decimal",
-          "description": "Revenue_SOL field containing float data for application-specific processing and analysis",
+          "description": "Revenue earned by metaplex in SOL terms over the stated time period for delivering the service to the customers or users",
           "example": "3.32868"
         },
         {
           "name": "Revenue_USD",
           "type": "decimal",
-          "description": "Revenue_USD field containing float data for application-specific processing and analysis",
+          "description": "Revenue earned by metaplex in USD terms over the stated time period for delivering the service to the customers or users",
           "example": "691.1037429757355"
         }
       ],
@@ -2556,37 +2507,37 @@
         {
           "name": "block_date",
           "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
+          "description": "The actual calendar date (UTC) derived from the block time of transactions. Used for reporting and analysis.",
           "example": "2025-08-24"
         },
         {
           "name": "Swap_Mint_Type",
           "type": "text",
-          "description": "Type field enabling polymorphic behavior and category-based processing",
+          "description": "Indicates the type of liquidity pool or mint used in a swap transaction on Orca, helping categorize protocol revenue by pool type (e.g., stable, concentrated, or traditional pools).",
           "example": "SOL-Stable"
         },
         {
           "name": "volume",
           "type": "decimal",
-          "description": "Trading volume indicating market liquidity, activity levels, and investor interest",
+          "description": "Trading volume in USD terms",
           "example": "752135636.688651"
         },
         {
           "name": "Protocol_fee_usd",
           "type": "decimal",
-          "description": "Protocol_fee_usd field containing float data for application-specific processing and analysis",
+          "description": "Protocol fees earned by Orca for providing services to the users over the stated time period in USD terms",
           "example": "289484.9341175304"
         },
         {
           "name": "LP_fee_usd",
           "type": "decimal",
-          "description": "LP_fee_usd field containing float data for application-specific processing and analysis",
+          "description": "Portion of the protocol fees earned by the liquidity providers for providing services to the users over the stated time period in USD terms",
           "example": "289465.29844485846"
         },
         {
           "name": "Protocol_revenue_usd",
           "type": "decimal",
-          "description": "Protocol_revenue_usd field containing float data for application-specific processing and analysis",
+          "description": "Total revenue earned by Orca for providing services to the users over the stated time period in USD terms",
           "example": "19.635672671966528"
         }
       ],
@@ -2607,7 +2558,7 @@
         {
           "name": "block_date",
           "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
+          "description": "The actual calendar date (UTC) derived from the block time of transactions. Used for reporting and analysis.",
           "example": "2025-08-25"
         },
         {
@@ -2619,13 +2570,13 @@
         {
           "name": "Revenue_Sol",
           "type": "decimal",
-          "description": "Revenue_Sol field containing float data for application-specific processing and analysis",
+          "description": "Revenue earned by metaplex in SOL terms over the stated time period for delivering the service to the customers or users",
           "example": "1.9395"
         },
         {
           "name": "Revenue_USD",
           "type": "decimal",
-          "description": "Revenue_USD field containing float data for application-specific processing and analysis",
+          "description": "Revenue earned by metaplex in USD terms over the stated time period for delivering the service to the customers or users",
           "example": "403.7049992718382"
         }
       ],
@@ -2646,25 +2597,25 @@
         {
           "name": "block_date",
           "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
+          "description": "The actual calendar date (UTC) derived from the block time of transactions. Used for reporting and analysis.",
           "example": "2025-08-25"
         },
         {
           "name": "Segment",
           "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
+          "description": "Category or grouping (such as marketplace, creator, or collection) used to classify and analyze Metaplex revenue streams.",
           "example": "Asset Creation"
         },
         {
           "name": "Revenue_SOL",
           "type": "decimal",
-          "description": "Revenue_SOL field containing float data for application-specific processing and analysis",
+          "description": "Revenue earned by metaplex in SOL terms over the stated time period for delivering the service to the customers or users",
           "example": "63.34246"
         },
         {
           "name": "Revenue_USD",
           "type": "decimal",
-          "description": "Revenue_USD field containing float data for application-specific processing and analysis",
+          "description": "Revenue earned by metaplex in USD terms over the stated time period for delivering the service to the customers or users",
           "example": "13184.670156316804"
         }
       ],
@@ -2685,7 +2636,7 @@
         {
           "name": "block_date",
           "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
+          "description": "The actual calendar date (UTC) derived from the block time of transactions. Used for reporting and analysis.",
           "example": "2025-08-20"
         },
         {
@@ -2718,25 +2669,25 @@
         {
           "name": "block_date",
           "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
+          "description": "The actual calendar date (UTC) derived from the block time of transactions. Used for reporting and analysis.",
           "example": "2025-08-25"
         },
         {
           "name": "Product",
           "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
+          "description": "Specifies the Raydium product (e.g., swap, liquidity, farm, staking) generating the revenue.",
           "example": "CLMM"
         },
         {
           "name": "Fees",
           "type": "decimal",
-          "description": "Fees field containing float data for application-specific processing and analysis",
+          "description": "Total amount of fees collected by the specified Raydium product, representing protocol earnings from transactions, swaps, or other activities.",
           "example": "37536.0539495171"
         },
         {
           "name": "Protocol_fees",
           "type": "decimal",
-          "description": "Protocol_fees field containing float data for application-specific processing and analysis",
+          "description": "Portion of total fees allocated to the Raydium protocol itself, excluding any fees shared with liquidity providers or third parties.",
           "example": "6005.7686319227"
         }
       ],
@@ -2757,43 +2708,43 @@
         {
           "name": "block_date",
           "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
+          "description": "The actual calendar date (UTC) derived from the block time of transactions. Used for reporting and analysis.",
           "example": "2025-08-24"
         },
         {
           "name": "Swap Revenue",
           "type": "decimal",
-          "description": "Revenue field tracking income generation and protocol economic performance",
+          "description": "Total revenue generated from swap transactions, representing fees earned by the protocol through token swaps.",
           "example": "11961.4615885101"
         },
         {
           "name": "Pool Creation Revenue",
           "type": "uint",
-          "description": "Revenue field tracking income generation and protocol economic performance",
+          "description": "Total revenue earned by the protocol from the creation of new liquidity pools, typically from pool creation fees paid by users or projects.",
           "example": "0"
         },
         {
           "name": "Launchlab Revenue",
           "type": "uint",
-          "description": "Revenue field tracking income generation and protocol economic performance",
+          "description": "Total revenue generated by the protocol from Launchlab activities, including fees from token launches, project listings, or related services.",
           "example": "0"
         },
         {
           "name": "Infrastructure Cost",
           "type": "uint",
-          "description": "Infrastructure Cost field containing integer data for application-specific processing and analysis",
+          "description": "Total expenses incurred by the protocol for maintaining and operating underlying infrastructure, such as servers, nodes, and network resources.",
           "example": "0"
         },
         {
           "name": "Total Revenue",
           "type": "decimal",
-          "description": "Revenue field tracking income generation and protocol economic performance",
+          "description": "Sum of all revenue streams earned by the protocol over a specified period, including fees from swaps, pool creation, Launchlab, and other activities.",
           "example": "11961.4615885101"
         },
         {
           "name": "Gross Profit",
           "type": "decimal",
-          "description": "Gross Profit field containing float data for application-specific processing and analysis",
+          "description": "Total revenue minus infrastructure and direct operational costs, representing the protocol’s gross profit for the specified period.",
           "example": "11961.4615885101"
         }
       ],
@@ -2814,19 +2765,19 @@
         {
           "name": "block_date",
           "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
+          "description": "The actual calendar date (UTC) derived from the block time of transactions. Used for reporting and analysis.",
           "example": "2025-08-24"
         },
         {
           "name": "pool_type",
           "type": "text",
-          "description": "Type field enabling polymorphic behavior and category-based processing",
+          "description": "Specifies the category of liquidity pool, such as stable, concentrated, or traditional, where transactions occur on the Raydium protocol.",
           "example": "(Meme)Others"
         },
         {
           "name": "revenue",
           "type": "decimal",
-          "description": "Protocol revenue from fees, trading, or service monetization for sustainability analysis",
+          "description": "Total amount of fees or income generated by the specified Raydium pool or product during the reporting period.",
           "example": "58203.523099201564"
         }
       ],
@@ -2847,49 +2798,49 @@
         {
           "name": "epoch",
           "type": "uint",
-          "description": "Blockchain epoch representing larger time periods for validator rotation and network governance",
+          "description": "Represents the specific Solana epoch—a fixed period of blockchain time—during which the validator’s revenue was recorded.",
           "example": "838"
         },
         {
           "name": "validator",
           "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
+          "description": "Unique identifier or address of the Solana validator earning revenue during the specified period.",
           "example": "Orangefin Ventures"
         },
         {
           "name": "stake",
           "type": "decimal",
-          "description": "stake field containing float data for application-specific processing and analysis",
+          "description": "Total amount of SOL delegated to the validator during the specified epoch, used to secure the network and earn rewards.",
           "example": "735692.07460064"
         },
         {
           "name": "stakers",
           "type": "uint",
-          "description": "stakers field containing integer data for application-specific processing and analysis",
+          "description": "Number of unique accounts or entities that have delegated SOL to the validator during the specified epoch.",
           "example": "787"
         },
         {
           "name": "Revenue",
           "type": "decimal",
-          "description": "Protocol revenue from fees, trading, or service monetization for sustainability analysis",
+          "description": "Total earnings accumulated by the validator during the specified epoch, typically from block rewards and fees.",
           "example": "89.736524859"
         },
         {
           "name": "Inflation_reward",
           "type": "uint",
-          "description": "Inflation_reward field containing float data for application-specific processing and analysis",
+          "description": "Amount of revenue earned by the validator from protocol inflation rewards during the specified epoch.",
           "example": "0"
         },
         {
           "name": "jito_tips",
           "type": "uint",
-          "description": "jito_tips field containing float data for application-specific processing and analysis",
+          "description": "Total amount of additional rewards earned by the validator from Jito tips, which are fees paid via the Jito MEV (Maximal Extractable Value) auction system during the specified epoch.",
           "example": "0"
         },
         {
           "name": "block_reward",
           "type": "decimal",
-          "description": "block_reward field containing float data for application-specific processing and analysis",
+          "description": "Amount of SOL earned by the validator as a reward for successfully producing blocks during the specified epoch.",
           "example": "5.340478543"
         }
       ],
@@ -2910,31 +2861,31 @@
         {
           "name": "block_date",
           "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
+          "description": "The actual calendar date (UTC) derived from the block time of transactions. Used for reporting and analysis.",
           "example": "2025-08-24"
         },
         {
           "name": "ray_bought",
           "type": "decimal",
-          "description": "ray_bought field containing float data for application-specific processing and analysis",
+          "description": "Total amount of RAY tokens purchased through swap transactions on the Raydium protocol during the specified period.",
           "example": "23070.266680994817"
         },
         {
           "name": "cumulative_ray_bought",
           "type": "decimal",
-          "description": "cumulative_ray_bought field containing float data for application-specific processing and analysis",
+          "description": "Cumulative amount of RAY tokens purchased through swap transactions on the Raydium protocol during the specified period.",
           "example": "71101823.36518905"
         },
         {
           "name": "usdc_amount",
           "type": "decimal",
-          "description": "Amount field storing quantitative values for financial operations and accounting",
+          "description": "Total amount of RAY tokens purchased through swap transactions on the Raydium protocol during the specified period in USD terms.",
           "example": "83604.40321354615"
         },
         {
           "name": "cumulative_usdc_spent",
           "type": "decimal",
-          "description": "cumulative_usdc_spent field containing float data for application-specific processing and analysis",
+          "description": "Cumulative amount of RAY tokens purchased through swap transactions on the Raydium protocol during the specified period in USD terms.",
           "example": "196659975.98756486"
         }
       ],
@@ -2955,19 +2906,19 @@
         {
           "name": "Month",
           "type": "date",
-          "description": "Month field containing datetime data for application-specific processing and analysis",
+          "description": "The month for which the data is being reported",
           "example": "2025-07-01"
         },
         {
           "name": "flow",
           "type": "decimal",
-          "description": "flow field containing float data for application-specific processing and analysis",
+          "description": "Indicates the movement of funds into or out of the Raydium treasury, specifying whether the recorded transaction is an inflow (deposit) or outflow (withdrawal).",
           "example": "227119.32698399204"
         },
         {
           "name": "Balance",
           "type": "decimal",
-          "description": "Account balance showing current available funds, tokens, or staked assets",
+          "description": "Total amount of funds held in the Raydium treasury after accounting for all inflows and outflows at the given point in time.",
           "example": "14695468.931039605"
         }
       ],
@@ -2988,19 +2939,19 @@
         {
           "name": "block_date",
           "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
+          "description": "The actual calendar date (UTC) derived from the block time of transactions. Used for reporting and analysis.",
           "example": "2025-08-25"
         },
         {
           "name": "product",
           "type": "text",
-          "description": "Text string containing human-readable content, labels, or descriptive information",
+          "description": "Specifies the Raydium product (e.g., swap, liquidity, farm, staking) generating the revenue.",
           "example": "CLMM"
         },
         {
           "name": "treasury_usd",
           "type": "null",
-          "description": "Null or undefined value indicating missing, unknown, or not applicable data"
+          "description": "Total value of funds held in the Raydium treasury, denominated in USD, attributable to the specified product or revenue source."
         }
       ],
       "fetchStatus": "success",
@@ -3020,13 +2971,13 @@
         {
           "name": "epoch",
           "type": "uint",
-          "description": "Blockchain epoch representing larger time periods for validator rotation and network governance",
+          "description": "Represents the specific Solana epoch—the defined period of network time—during which the company’s treasury stake and related metrics are measured.",
           "example": "838"
         },
         {
           "name": "treasury_Stake",
           "type": "decimal",
-          "description": "treasury_Stake field containing float data for application-specific processing and analysis",
+          "description": "Total amount of SOL staked from the company’s treasury during the specified epoch, used to participate in network validation and earn rewards.",
           "example": "400100.53920924204"
         }
       ],
@@ -3047,13 +2998,13 @@
         {
           "name": "block_date",
           "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
+          "description": "The actual calendar date (UTC) derived from the block time of transactions. Used for reporting and analysis.",
           "example": "2025-08-25"
         },
         {
           "name": "daily_total_hnt_mint",
           "type": "decimal",
-          "description": "Mint field referencing SPL token creation authority and supply control mechanisms",
+          "description": "Total amount of HNT tokens newly minted by the Helium protocol in a single day.",
           "example": "22191.7808219"
         },
         {
@@ -3065,25 +3016,25 @@
         {
           "name": "daily_hnt_mint_mobile_treasury",
           "type": "uint",
-          "description": "daily_hnt_mint_mobile_treasury field containing float data for application-specific processing and analysis",
+          "description": "Total amount of HNT tokens minted and allocated to the Mobile Treasury by the Helium protocol each day.",
           "example": "0"
         },
         {
           "name": "cumulative_total_hnt_mint",
           "type": "decimal",
-          "description": "Mint field referencing SPL token creation authority and supply control mechanisms",
+          "description": "Total amount of HNT tokens minted by the Helium protocol to date, representing the cumulative sum of all HNT ever created.",
           "example": "42389178.40313502"
         },
         {
           "name": "cumulative_hnt_mint_iot_treasury",
           "type": "decimal",
-          "description": "cumulative_hnt_mint_iot_treasury field containing float data for application-specific processing and analysis",
+          "description": "Total amount of HNT tokens minted and allocated to the IoT Treasury since the protocol’s inception, representing the cumulative sum over time.",
           "example": "12650515.401434926"
         },
         {
           "name": "cumulative_hnt_mint_mobile_treasury",
           "type": "decimal",
-          "description": "cumulative_hnt_mint_mobile_treasury field containing float data for application-specific processing and analysis",
+          "description": "Total amount of HNT tokens minted and allocated to the Mobile Treasury since the protocol’s inception, representing the cumulative sum over time.",
           "example": "11868491.817656636"
         }
       ],
@@ -3104,31 +3055,31 @@
         {
           "name": "block_date",
           "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
+          "description": "The actual calendar date (UTC) derived from the block time of transactions. Used for reporting and analysis.",
           "example": "2025-08-07"
         },
         {
           "name": "pct_iot_delegated_july",
           "type": "decimal",
-          "description": "pct_iot_delegated_july field containing float data for application-specific processing and analysis",
+          "description": "Percentage of the IoT token supply that was delegated for governance participation during the month of July.",
           "example": "18.18953995035888"
         },
         {
           "name": "pct_mobile_delegated_july",
           "type": "decimal",
-          "description": "pct_mobile_delegated_july field containing float data for application-specific processing and analysis",
+          "description": "Percentage of the Mobile token supply that was delegated for governance participation during the month of July.",
           "example": "81.81046004964111"
         },
         {
           "name": "pct_iot_delegated_aug_onwards",
           "type": "decimal",
-          "description": "pct_iot_delegated_aug_onwards field containing float data for application-specific processing and analysis",
+          "description": "Percentage of the IoT token supply that has been delegated for governance participation from August onwards.",
           "example": "13.31158271655361"
         },
         {
           "name": "pct_mobile_delegated_aug_onwards",
           "type": "decimal",
-          "description": "pct_mobile_delegated_aug_onwards field containing float data for application-specific processing and analysis",
+          "description": "Percentage of the Mobile token supply that has been delegated for governance participation from August onwards.",
           "example": "86.68841728344638"
         }
       ],
@@ -3155,13 +3106,13 @@
         {
           "name": "cex_name",
           "type": "text",
-          "description": "Name field containing descriptive labels for entity identification and organization",
+          "description": "Name of the centralized exchange or exchange aggregator holding Orca tokens.",
           "example": "Binance"
         },
         {
           "name": "Holdings",
           "type": "decimal",
-          "description": "Holdings field containing float data for application-specific processing and analysis",
+          "description": "The amount of Orca tokens held by the specified CEX or exchange aggregator at the end of the month.",
           "example": "3585660.9172364445"
         }
       ],
@@ -3188,13 +3139,13 @@
         {
           "name": "cex_name",
           "type": "text",
-          "description": "Name field containing descriptive labels for entity identification and organization",
+          "description": "Name of the centralized exchange or exchange aggregator holding Ray tokens.",
           "example": "Binance"
         },
         {
           "name": "Holdings",
           "type": "decimal",
-          "description": "Holdings field containing float data for application-specific processing and analysis",
+          "description": "The amount of Orca tokens held by the specified CEX or exchange aggregator at the end of the month.",
           "example": "37444029.281157635"
         }
       ],
@@ -3215,25 +3166,25 @@
         {
           "name": "block_date",
           "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
+          "description": "The actual calendar date (UTC) derived from the block time of transactions. Used for reporting and analysis.",
           "example": "2025-07-05"
         },
         {
           "name": "Holders",
           "type": "uint",
-          "description": "Holders field containing integer data for application-specific processing and analysis",
+          "description": "Total number of unique wallet addresses holding ORCA tokens at the time of measurement.",
           "example": "90468"
         },
         {
           "name": "Supply",
           "type": "decimal",
-          "description": "Token supply metrics including total, circulating, or maximum amounts for tokenomics",
+          "description": "Total circulating supply of ORCA tokens available on the blockchain at the time of measurement.",
           "example": "75010075.54902503"
         },
         {
           "name": "Morketcap",
           "type": "decimal",
-          "description": "Morketcap field containing float data for application-specific processing and analysis",
+          "description": "MorketTotal market value of all ORCA tokens in circulation, calculated as the current token price multiplied by the circulating supply.",
           "example": "145153213.16540548"
         }
       ],
@@ -3254,19 +3205,19 @@
         {
           "name": "block_date",
           "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
+          "description": "The actual calendar date (UTC) derived from the block time of transactions. Used for reporting and analysis.",
           "example": "2024-01-01"
         },
         {
           "name": "Dex_Volume",
           "type": "decimal",
-          "description": "Volume field measuring transaction throughput, capacity, or market activity",
+          "description": "Total trading volume processed through decentralized exchanges (DEXs) for Helium-related tokens within the specified timeframe.",
           "example": "7350323.750428547"
         },
         {
           "name": "cumulative_Dex_Volume",
           "type": "decimal",
-          "description": "Volume field measuring transaction throughput, capacity, or market activity",
+          "description": "Total trading volume processed through decentralized exchanges (DEXs) for Helium-related tokens within the specified timeframe.",
           "example": "7350323.750428547"
         }
       ],
@@ -3293,13 +3244,13 @@
         {
           "name": "cex_name",
           "type": "text",
-          "description": "Name field containing descriptive labels for entity identification and organization",
+          "description": "Name of the centralized exchange (CEX) where MPLX token holdings are tracked and reported.",
           "example": "Gate.io"
         },
         {
           "name": "Holdings",
           "type": "decimal",
-          "description": "Holdings field containing float data for application-specific processing and analysis",
+          "description": "Total amount of MPLX tokens held on the specified centralized exchange (CEX) as of the reporting period.",
           "example": "13353110.05374753"
         }
       ],
@@ -3320,19 +3271,19 @@
         {
           "name": "block_date",
           "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
+          "description": "The actual calendar date (UTC) derived from the block time of transactions. Used for reporting and analysis.",
           "example": "2025-08-25"
         },
         {
           "name": "mint",
           "type": "text",
-          "description": "Token mint address controlling supply, metadata, and minting authority on Solana",
+          "description": "Unique identifier of the token’s mint account on the blockchain, representing the original source from which the token is issued.",
           "example": "RAY"
         },
         {
           "name": "Dex_Volume",
           "type": "decimal",
-          "description": "Volume field measuring transaction throughput, capacity, or market activity",
+          "description": "Total trading volume processed through decentralized exchanges (DEXs) for Orca-related tokens within the specified timeframe.",
           "example": "8456195.71353887"
         }
       ],
@@ -3365,7 +3316,7 @@
         {
           "name": "Amount_in_Pool",
           "type": "decimal",
-          "description": "Amount_in_Pool field containing float data for application-specific processing and analysis",
+          "description": "Total quantity of tokens (MPLX or paired assets) present in the DEX liquidity pool on Solana as of the monthly reporting date.",
           "example": "673662.2268069071"
         }
       ],
@@ -3398,7 +3349,7 @@
         {
           "name": "amount_usd_in_pools",
           "type": "decimal",
-          "description": "amount_usd_in_pools field containing float data for application-specific processing and analysis",
+          "description": "Total value of all assets held in Orca liquidity pools, expressed in USD, as of the monthly reporting date.",
           "example": "11327539.883722147"
         }
       ],
@@ -3419,7 +3370,7 @@
         {
           "name": "block_date",
           "type": "date",
-          "description": "Date field providing temporal context for data aggregation and filtering",
+          "description": "The actual calendar date (UTC) derived from the block time of transactions. Used for reporting and analysis.",
           "example": "2025-07-18"
         },
         {
@@ -3431,7 +3382,7 @@
         {
           "name": "Dex_Volume",
           "type": "decimal",
-          "description": "Volume field measuring transaction throughput, capacity, or market activity",
+          "description": "Total trading volume of MPLX tokens executed on decentralized exchanges (DEXs) on Solana over the specified period.",
           "example": "1009120.2694563223"
         }
       ],
@@ -3458,13 +3409,13 @@
         {
           "name": "Holders",
           "type": "uint",
-          "description": "Holders field containing integer data for application-specific processing and analysis",
+          "description": "Total number of unique wallet addresses currently holding the specified token at the time of measurement.",
           "example": "192031"
         },
         {
           "name": "New_Holders",
           "type": "uint",
-          "description": "New_Holders field containing integer data for application-specific processing and analysis",
+          "description": "Number of unique wallet addresses that acquired and held the specified token for the first time during the reporting period.",
           "example": "2739"
         },
         {
